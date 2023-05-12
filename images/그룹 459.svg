@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="403" height="21.5" viewBox="0 0 403 21.5">
+  <g id="그룹_459" data-name="그룹 459" transform="translate(-1197 -48)">
+    <path id="링크" d="M2399,376.5l-12,12Zm1-1v0Zm-10,0h0Z" transform="translate(-908 -323.5)" fill="none" stroke="#1c98d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <text id="카드결제" transform="translate(1518 65)" font-size="15" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="0" y="0">카드결제</tspan></text>
+    <g id="그룹_457" data-name="그룹 457" transform="translate(-6)">
+      <text id="오시는길" transform="translate(1417 65)" font-size="15" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="0" y="0">오시는길</tspan></text>
+      <line id="선_2" data-name="선 2" y2="20" transform="translate(1391 49.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <text id="고객센터" transform="translate(1310 65)" font-size="15" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="0" y="0">고객센터</tspan></text>
+      <line id="선_19" data-name="선 19" y2="20" transform="translate(1284 49.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <text id="회사소개" transform="translate(1203 65)" fill="#1c98d1" font-size="15" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="0" y="0">회사소개</tspan></text>
+    </g>
+    <path id="링크-2" data-name="링크" d="M2399,376.5l-12,12Zm1-1v0Zm-10,0h0Z" transform="translate(-801 -323.5)" fill="none" stroke="#1c98d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
