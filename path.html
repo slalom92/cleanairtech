@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>크린에어테크 리뉴얼 파일 경로</title>
+<style>
+html {margin:0px;padding:0px;}
+body {font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:14px;color:#555555;width:100%;}
+* {margin:0;padding:0;list-style-type:none;}
+a, a:link, a:visited, a:active {color:#555555;text-decoration:none;}
+a:hover{color:#c00000;text-decoration:none;}
+.clfix:after {content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
+.clfix {display: inline-block;}
+.clfix {display: block;}
+* html .clfix {height: 1%;} /* Hides from IE-mac */
+.clfix { zoom:1; } /*for IE 5.5-7*/
+#wrapper {padding:1em;min-width:980px;}
+#sidebar {width:100%;}
+.menu {padding:1em;background:#cef9d0;}
+.menu h1 {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;font-size:1.5em;vertical-align:middle;margin-right:2em;}
+.menu ul {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;}
+.menu ul li {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;margin-right:3em;vertical-align:middle;}
+.menu ul li a {font-weight:bold;}
+#contents {width:100%;}
+.site {padding:1em;margin-top:1em;background:#dddddd;}
+.cont {padding:1em;background:#efefef;margin-top:1em;font-size:0.8em;line-height:1.7em;}
+.cont h3 {border-bottom:#555555 1px solid;padding-bottom:0.5em;margin-bottom:0.5em;font-size:1.5em;}
+.cont h3 strong {float:left;}
+.cont h3 a {float:right;font-size:0.7em;padding-right:1em;}
+div.tit {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;}
+div.url {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;width:40%;padding-left:1em;}
+div.date {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;width:30%;padding-left:1em;}
+ul li div.tit {width:25%;}
+ul li ul li div.tit {width:24%;padding-left:1%;}
+ul li ul li ul li div.tit {width:23%;padding-left:2%;}
+ul li ul li ul li ul li div.tit {width:22%;padding-left:3%;}
+div.date strong {margin-right:10px;font-weight:normal;}
+div.date a {cursor:help;font-weight:bold;}
+div.date a:hover {color:#ff0000;}
+li.on {background:#cef9d0;}
+a.gotop {cursor:pointer;}
+.first {background:#ffc548;}
+.complete {background:#75baf0;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="sidebar">
+		<div class="menu">
+			<h1>크린에어테크 리뉴얼</h1>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="site">
+			<h2>크린에어테크 리뉴얼 파일 경로</h2>
+			<div class="cont">
+				<h3 class="clfix"><strong>메인,서브레이아웃</strong><a class="gotop" href="#">▲ top</a></h3>
+				<ul>
+					<li>
+						<div class="tit">메인</div>
+						<div class="url">./main/</div>
+						<div class="date">
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<div class="tit">서브레이아웃</div>
+						<div class="url">./sublayout/</div>
+						<div class="date">
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cont">
+				<h3 class="clfix"><strong>회사소개</strong><a class="gotop" href="#">▲ top</a></h3>
+				<ul>
+					<li>
+						<div class="tit">크린에어테크 소개 &gt; 회사개요</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- // .site -->
+
+	</div><!-- // #contents -->
+</div><!-- // #wrapper -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".menu ul li").each(function() {
+		var index = $(".menu ul li").index($(this)[0]);
+		$(this).find("> a").attr("href","#menu" + index);
+	});
+	$("#contents h2").each(function() {
+		var index = $("#contents h2").index($(this)[0]);
+		$(this).attr("id","menu" + index);
+	});
+	$("div.date").each(function() {
+		var $date = $('> span', this),
+			str = "";
+		str += "<strong>" + $date.filter(':last').text() + "</strong>";
+		$date.filter(':not(:last)').each(function() {
+			str += "<a data-date=\"" + $(this).text() + "\">□</a>";
+		});
+		$date.filter(':last').each(function() {
+			str += "<a data-date=\"" + $(this).text() + "\">■</a>";
+		});
+		if($date.filter(':first').text() != "") {
+			$(this).empty().html(str);
+		}
+	});
+	$("div.url").each(function() {
+		var link = $(this).text(),
+			str = "";
+		if(link != null && link !="") {
+			str += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a>";
+			$(this).empty().html(str);
+		}
+	});
+	$("li > div").hover(function() {
+		$(this).parent("li").addClass("on");
+	}, function() {
+		$(this).parent("li").removeClass("on");
+	});
+	$("div.date a").bind("mouseenter", function() {
+		$(this).parent().find("strong").text($(this).attr("data-date"));
+	}).bind("mouseleave", function() {
+		$(this).parent().find("strong").text($(this).parent().find("a:last").attr("data-date"));
+	});
+});
+</script>
+</body>
+</html>
