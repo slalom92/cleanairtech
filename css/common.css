@@ -233,7 +233,7 @@ body{background-color:#fff;}
 .topMenuToggle>ul>li>a:hover,.topMenuToggle>ul>li>a.is_active{color:var(--blue_1);}
 
 /* gnb */
-.subGnbLayer{position:absolute;z-index:2;top:52px;left:0;width:100%;min-width:1280px;background:#fff;border-bottom:1px solid var(--gray_4)}
+.subGnbLayer{display:none;position:absolute;z-index:2;top:52px;left:0;width:100%;min-width:1280px;background:#fff;border-bottom:1px solid var(--gray_4)}
 
 
 /* footer */
