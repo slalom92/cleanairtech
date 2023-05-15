@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 
 /* sub visual */
 .visualArea{width:100%;height:168px;padding:92px 0 0 0;}
@@ -15,10 +15,10 @@
 .tabType1Flex>li>a {display:inline-block;padding:0 5px;font-size:16px;letter-spacing:-.16px;;}
 .tabType1Flex>li .is_active {color:var(--blue_1);}
 
+/* sub common */
 .subConLocation {border:1px solid blue;text-align:right;}
 
-
-
+/* corp_info */
 .subCon1Flex {display:flex;gap:20px;align-items:center;margin-bottom:47px;}
 .subCon1Title {flex-basis:490px;flex-shrink:0;box-shadow:inset 0 0 5px yellow;}
 .subCon1Title>h2 {font-size:40px;font-weight:700;margin-bottom:24px;}
@@ -57,3 +57,5 @@
 .businessTitle::before {content:'';display:block;width:30px;height:3px;background:var(--blue_1);margin-bottom:10px;}
 .businessText {font-size:18px;color:var(--black-1);}
 .subCon1Business>img {display:inline-block;width:774px;height:488px;margin:0 auto;}
+
+/* corp_history */
