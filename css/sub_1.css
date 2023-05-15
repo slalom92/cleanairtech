@@ -3,7 +3,7 @@
 /* sub visual */
 .visualArea{width:100%;height:168px;padding:92px 0 0 0;}
 .visualArea>h3{width:563px;height:76px;margin:0 auto;line-height:76px;text-align:center;font-size:30px;font-weight:700;color:var(--white_1);background:rgba(0,0,0,0.2)}
-.visualArea.type1{background:url(../images/sub_visual_1.png) center no-repeat;}
+.visualArea.type1{background:url(../images/sub/sub_etc/sub_visual_1.png) center no-repeat;}
 
 /* tabType1 Area */
 .tabType1 {}
