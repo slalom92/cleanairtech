@@ -7,10 +7,10 @@
 header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block}
 /* 모든 Device를 위한 공통 로드 */
 /* body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,figure,figcaption,span{margin:0;padding:0;font-family: 'Noto Sans KR', sans-serif;color:#000;} */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,figure,figcaption,span{margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,figure,figcaption,span{margin:0;padding:0;font-weight:500;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0;padding:0;}
 *{-webkit-text-size-adjust:none;}
-body{height:100%;font-size:12px;font-family: 'Noto Sans KR', sans-serif;color:#000;}
+body{height:100%;font-size:12px;font-family: 'Noto Sans KR', sans-serif;color:#000;font-weight:500;}
 table{border-spacing:0;*border-collapse:collapse;font-family:helvetica,apple sd gothic neo, sans-serif}
 fieldset,img{border:0}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;font-family: 'Noto Sans KR', sans-serif}
@@ -46,6 +46,7 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
   
 
   /* Font/text values */
+  --font-dotum : dotum;
   --unnamed-font-family-noto-sans-kr: Noto Sans KR;
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-medium: medium;
@@ -170,7 +171,7 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
 
   
   /* Character Styles */
-  .unnamed-character-style-1 {
+  .font-style-1 {
   font-family: var(--unnamed-font-family-noto-sans-kr);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-medium);
@@ -179,13 +180,22 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
   letter-spacing: var(--unnamed-character-spacing--0-15);
   color: var(--unnamed-color-000000);
   }
-  .unnamed-character-style-2 {
+  .font-style-2 {
   font-family: var(--unnamed-font-family-noto-sans-kr);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-30);
   line-height: var(--unnamed-line-spacing-44);
   letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  }
+  .font-style-3 {
+  font-family: var(--font-dotum);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-15);
+  line-height: var(--unnamed-line-spacing-21);
+  letter-spacing: var(--unnamed-character-spacing--0-15);
   color: var(--unnamed-color-ffffff);
   }
 body{background-color:#fff;}
@@ -233,8 +243,31 @@ body{background-color:#fff;}
 .topMenuToggle>ul>li>a:hover,.topMenuToggle>ul>li>a.is_active{color:var(--blue_1);}
 
 /* gnb */
-.subGnbLayer{display:none;position:absolute;z-index:2;top:52px;left:0;width:100%;min-width:1280px;background:#fff;border-bottom:1px solid var(--gray_4)}
+.subGnbLayer{position:absolute;z-index:2;top:51px;left:0;width:100%;min-width:1280px;background:#fff;border-bottom:1px solid var(--gray_4)}
+.subGnbLayer .wrapper{display:flex;}
+.subGnbLayer .flexBox{display:flex;flex-wrap:wrap;flex-direction: column;padding:30px 0 0 0;}
+.subGnbLayer .mainGnb .subTitle{padding:30px 30px 0 30px;line-height:27px;font-size:20px;}
+.subGnbLayer .asideGnb{border-left:1px solid var(--gray_4)}
+.subGnbLayer .bottomGnb{border-top:1px solid var(--gray_4)}
 
+.subGnb_1 .categoryOne{min-width:150px;padding:0 30px;}
+.subGnb_1 .categoryOne>h5>a{line-height:24px;font-size:16px;color:var(--blue_1)}
+.subGnb_1 .categoryOne>h5>a:hover{border-bottom:1px solid var(--blue_1)}
+.subGnb_1 .categoryOne>ul{padding:16px 0 34px 0;}
+.subGnb_1 .categoryOne>ul>li{line-height:26px;}
+.subGnb_1 .categoryOne>ul>li>a{font-size:14px;color:var(--black_1);line-height:26px;}
+.subGnb_1 .categoryOne>ul>li>a>mark{display:inline-block;width:20px;height:16px;margin:0 5px 0 0;line-height:16px;text-align:center;color:#fff;font-size:14px;background:var(--gray_8);border-radius:2px;}
+
+.subGnb_1 .flexBox{width:914px;height:425px}
+
+.asideGnb{} 
+.asideGnb>h4{padding:30px 30px 0 30px;line-height:27px;font-size:20px;}
+.asideGnb>h4::after {content:''; display:inline-block;width:15px;height:15px;margin:0 25px 0 12px;background:url(../images/common/arro_top.png) center no-repeat;}
+.asideGnb>ul{display:flex;flex-flow:column wrap;max-height:132px;padding:30px 0 0 0;}
+.asideGnb>ul>li{padding:0 0 19px 30px;line-height:24px;color:var(--blue_1)}
+.asideGnb>figure{display:block;position:relative;z-index:1;width:300px;height:200px;margin:20px 0 0 30px;border-radius: 4px;}
+.asideGnb>figure>img{border-radius: 4px;}
+.asideGnb>figure>figcaption{position:absolute;z-index:2;left:0;bottom:0;display:block;width:100%;color:var(--white_1);font-size:14px;line-height:34px;text-align: center;background:rgba(0,0,0,0.3);border-radius:0 0 4px 4px;}
 
 /* footer */
 .footerMenu{width:100%;border:1px solid #eff1f5;border-left:none;border-right:none;background:#fafafa;color:var(--black_1);}
@@ -253,7 +286,6 @@ body{background-color:#fff;}
 .snsWrap>li:nth-child(3) {background-position:-70px 0;}
 .snsWrap>li:nth-child(4) {background-position:-105px 0;}
 .snsWrap>li>a {display:inline-block;width:21px;height:20px;}
-
 
 .adressInfoFlex {display:flex;justify-content:space-between;align-items:center;padding:32px 10px 32px 0;}
 .adressInfo>ul {margin-bottom:30px;font-size:14px;}
