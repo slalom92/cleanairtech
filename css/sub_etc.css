@@ -16,7 +16,7 @@
 .tabType1Flex>li .is_active {color:var(--blue_1);}
 
 /* sub common */
-.subConLocation {display:flex;align-items:center;justify-content:right;text-align:right;margin-bottom:65px;font-size:13px;color:var(--black-1);vertical-align: middle;}
+.subConLocation {display:flex;align-items:center;justify-content:right;text-align:right;margin-bottom:36px;font-size:13px;color:var(--black-1);vertical-align: middle;}
 .subConLocation>img {margin-right:13px;;vertical-align:middle;}
 .subConLocation>span {display:inline-block;margin:0 9px 0 13px;}
 
@@ -56,7 +56,6 @@
 .subCon1CeoLeft>p {margin-top:30px;font-size:18px;color:var(--black-1);}
 .subCon1CeoRight {margin-left:auto;}
 
-.businessArea {}
 .subCon1Business {display:flex;flex-direction:column;margin-bottom:100px;}
 .businessTitle {font-size:23px; color:var(--black-0);margin-bottom:30px;}
 .businessTitle::before {content:'';display:block;width:30px;height:3px;background:var(--blue_1);margin-bottom:10px;}
@@ -71,5 +70,30 @@
 .subCon1BoxText>p {font-size:18px;color:var(--black-1);}
 .subCon1BoxText>p>span {color:var(--blue_1);}
 
-
 /* corp_history */
+.subCon2Flex {display:flex;align-items:center;justify-content:space-between;}
+.subCon2Flex>h2 {font-size:40px;line-height:50px;color:#000;}
+.subCon2Flex>h2>span {font-size:40px;color:#1c98d1;}
+
+button {all:unset;cursor:pointer;}
+.subCon2Bar {display:flex;align-items:center;box-shadow: inset 0 0 10px red;}
+.subCon2Bar>li {min-width:197px;flex-grow:0;height:50px;box-shadow: inset 0 0 10px green;}
+.subCon2Bar>li>button {display:inline-block;font-size:18px;line-height:26px;color:#aaa;}
+.historyList {margin-bottom:200px;}
+.historyList>li {display:flex;padding:40px 0;position:relative;z-index:1;}
+.historyList>li>h3 {margin:0 67px 0 11px;font-size:30px;letter-spacing:-0.3px;line-height:44px;color:#000;}
+.historyList .historyList_year>li {font-size:18px;color:#000;line-height:26px;letter-spacing:-0.18px;color:var(--black_1);}
+.historyList .historyList_year>li>span {margin-right:16px;}
+.historyList>li>img {margin-left:auto;}
+.historyList>li::after {content:'';display:block;height:2px;position:absolute;left:0;right:0;bottom:0;z-index:1;background:#f1f2f5;}
+
+/* corp_certificate */
+.certificateMenu {display:flex;align-items:center;margin-bottom:100px;}
+.certificateMenu>li {flex-basis:0;min-width:0;flex-grow:1;height:60px;border:1px solid #e2e5eb;font-size:18px;letter-spacing:-0.18px;color:#000;}
+.certificateMenu>li>button {height:60px;}
+.certificateList1 {font-size:24px;line-height:35px;color:var(--black_0);margin-bottom:30px;}
+.certificateList1::before {content:'';display:block;width:30px;height:2px;background:var(--blue_1);margin-bottom:10px;}
+.certifiListFlex {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:100px;}
+.certifiListFlex>li {min-width:206px;vertical-align:top;}
+
+/* corp_transaction  */
