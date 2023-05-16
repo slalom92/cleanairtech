@@ -15,8 +15,23 @@ var init = {
             if (!$clicked.parents().hasClass("topMenuToggleWrap"))
             $(".topMenuToggle").hide();
         });
+    },
+    gnbNav : function(){
+        if(!$('#gnb').length > 0){
+            return false;
+        }        
+        $('.headerGnb>li>a').bind('mouseover',function(){
+            $('.subGnbLayer').stop().slideUp();
+            $(this).next().stop().slideDown();
+        });
+        $(document).bind('mouseover', function(e) {
+            var $clicked = $(e.target);
+            if (!$clicked.parents().hasClass("headerGnb"))
+            $('.subGnbLayer').stop().slideUp();
+        });
     }
 }
 $(document).ready(function(){
     init.topRightNav(); // 우측상단 네비
+    init.gnbNav(); // 상단 네비
 });
