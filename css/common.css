@@ -210,7 +210,7 @@ body{background-color:#fff;}
 .headerFlex {display:flex;align-items:center;height:100px;position:relative;z-index:3;}
 /* .headerFlex>h1 {vertical-align: center;} */
 .headerFlex>h1>a {display:inline-block;width:180px;height:100px;line-height:100px;margin-right:40px;}
-.logo {width:180px; height:26px;}
+.logo {width:180px; height:26px;vertical-align:middle;}
 .search {width:400px;height:40px;border:1px solid var(--blue_1);}
 .search>input[type=text]{width:345px;padding:0 0 0 20px;line-height:40px;vertical-align:middle;font-size:13px;border:none;outline:none}
 .search>a{overflow:hidden;display:inline-block;width:18px;height:18px;vertical-align:middle;text-indent:999px;color:transparent;background:url(../images/common/zoom.svg) 0 0 no-repeat;}

@@ -75,7 +75,7 @@
 .subCon2Flex>h2 {font-size:40px;line-height:50px;color:#000;}
 .subCon2Flex>h2>span {font-size:40px;color:#1c98d1;}
 
-button {all:unset;cursor:pointer;}
+/* button {all:unset;cursor:pointer;} */
 .subCon2Bar {display:flex;align-items:center;box-shadow: inset 0 0 10px red;}
 .subCon2Bar>li {min-width:197px;flex-grow:0;height:50px;box-shadow: inset 0 0 10px green;}
 .subCon2Bar>li>button {display:inline-block;font-size:18px;line-height:26px;color:#aaa;}
@@ -89,7 +89,10 @@ button {all:unset;cursor:pointer;}
 
 /* corp_certificate */
 .certificateMenu {display:flex;align-items:center;margin-bottom:100px;}
-.certificateMenu>li {flex-basis:0;min-width:0;flex-grow:1;height:60px;border:1px solid #e2e5eb;font-size:18px;letter-spacing:-0.18px;color:#000;}
+.certificateMenu>li {flex-basis:0;min-width:0;flex-grow:1;height:60px;line-height:60px;border:1px solid #e2e5eb;font-size:18px;letter-spacing:-0.18px;color:#000;background:#fff;text-align:center;}
+.certificateMenu>li {border-right:none;}
+.certificateMenu>li:last-child {border:1px solid #e2e5eb;}
+.certificateMenu>li.is_active {background:var(--blue_1);color:#fff;}
 .certificateMenu>li>button {height:60px;}
 .certificateList1 {font-size:24px;line-height:35px;color:var(--black_0);margin-bottom:30px;}
 .certificateList1::before {content:'';display:block;width:30px;height:2px;background:var(--blue_1);margin-bottom:10px;}
