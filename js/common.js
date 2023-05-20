@@ -1,9 +1,10 @@
 var init = {
+    winWidth : $(window).width(),
     topRightNav : function(){
         if(!$('.showNav').length > 0){
             return false;
         }
-        $('.showNav').bind('mouseover',function(){
+        $('.showNav').on('mouseover',function(){
             $('.showNav').removeClass('is_active');
             $(this).addClass('is_active');
             $('.topMenuToggle').css({
@@ -15,12 +16,13 @@ var init = {
             if (!$clicked.parents().hasClass("topMenuToggleWrap"))
             $(".topMenuToggle").hide();
         });
+        return false;
     },
     gnbNav : function(){
         if(!$('#gnb').length > 0){
             return false;
-        }        
-        $('.headerGnb>li>a').bind('mouseover',function(){
+        }
+        $('.headerGnb>li>a').on('mouseover',function(){
             $('.headerGnb>li>a').removeClass('is_active');
             $(this).addClass('is_active');
             if($(this).next().css('display')=='block'){
@@ -54,10 +56,21 @@ var init = {
 }
 // 문서 호출 시
 $(document).ready(function(){
-    init.topRightNav(); // 우측상단 네비
-    init.gnbNav(); // 상단 네비
-    init.gnbScroll(); // 상단 네비 고정
-    $(window).scroll(function(){
-        init.gnbScroll();
-    })
+    var winHeightPx = $(window).width();
+    //PC 사이즈
+    if(winHeightPx>1280){
+        init.topRightNav(); // 우측상단 네비
+        init.gnbNav(); // 상단 네비
+        init.gnbScroll(); // 상단 네비 고정
+    }
+    $(window).resize(function(){
+        winHeightPx = $(window).width();
+        init.winWidth = winHeightPx;
+        console.log(init.winWidth);
+        if(winHeightPx>1280){
+            init.topRightNav(); // 우측상단 네비
+            init.gnbNav(); // 상단 네비
+            init.gnbScroll(); // 상단 네비 고정
+        }
+    });
 });

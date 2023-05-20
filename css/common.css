@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url('./sub_etc.css');
 @import url('./main.css');
+@import url('./common_mobile.css');
 
 -webkit-overflow-scrolling:touch;
 /* html5요소 하위브라우져 적용 */
@@ -168,13 +169,15 @@ a.skipNaviBtn{position: absolute;z-index:100;background:none repeat scroll 0 0 #
 a.skipNaviBtn:focus{left:50%;margin-left:-100px;z-index:10000;}
 a.skipNaviBtn:hover {left:50%;margin-left:-100px;z-index:10000;}
 a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
+/* 1280px 이상 아이패드 세로기준 */
+@media screen and (min-width:1280px){
 
 /* common */
+.mobileOnly{display:none !important}
+.pcOnly{display:block !important}
+
 /* layouts */
 .wrapper {width:1280px; margin:0 auto;}
-
-
-
   
   /* Character Styles */
   .font-style-1 {
@@ -374,28 +377,4 @@ body{background-color:#fff;}
 .csCenterInfoList {display:flex;justify-content:space-between;font-size:14px;font-weight:normal;}
 .csCenterInfoList>h4 {line-height:20px;font-size:14px;font-weight:normal;}
 
-
-
-
-
-
-
-
-
-/* 360px 이하 안드로이드 3x 세로모드*/
-@media screen and (min-width: 320px){
-}
-@media screen and (min-width: 360px){
-}
-/* 640px 이하 노트3기준 가로모드 */
-@media screen and (min-width:640px){
-}
-/* 667px 이하 아이폰6 가로모드 */
-@media screen and (min-width:667px){
-}
-/* 768px 이하 아이패드 세로기준 */
-@media screen and (min-width:769px){
-}
-/* 1280px 이상 */
-@media screen and (min-width:1200px){
 }
