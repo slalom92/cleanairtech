@@ -81,7 +81,11 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 .mt60{margin-top:60px !important;}
 .mt100{margin-top:100px !important;}
 
-.mtM10{margin-top:-10px !important}
+.mtM10{margin-top:-10px !important;}
+
+.mb20{margin-bottom:20px !important;}
+
+
 
 .ml0{margin-left:0 !important;}
 
