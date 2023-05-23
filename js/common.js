@@ -1,4 +1,5 @@
- var winWidthPx = $(window).width();
+ var winWidthPx = $(window).width(); 
+ var winTop = $(window).scrollTop();
  var init = {
     setting : function(){
         if(winWidthPx>=1280){
@@ -113,7 +114,6 @@
         }
     },
     gnbScroll : function(){
-        var winTop = $(window).scrollTop();
         if(winWidthPx>=1280){
             if(winTop>100){
                 $('.headerNav').css({
@@ -136,7 +136,8 @@
 // 문서 호출 시
 $(document).ready(function(){
     //PC 사이즈
-    winWidthPx = $(window).width();  
+    winWidthPx = $(window).width();
+    winTop = $(window).scrollTop();  
     init.setting();
     init.topRightNav(); // 우측상단 네비
     init.gnbNav(); // 상단 네비
@@ -148,5 +149,10 @@ $(window).on('resize',function(){
     init.setting();
     init.topRightNav(); // 우측상단 네비
     init.gnbNav(); // 상단 네비
+    init.gnbScroll(); // 상단 네비 고정
+});
+// 스크롤 시 호출
+$(window).on('scroll',function(){
+    winTop = $(window).scrollTop();
     init.gnbScroll(); // 상단 네비 고정
 });
