@@ -178,7 +178,7 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
 
 /* common */
 .mobileOnly{display:none !important}
-.pcOnly{display:block !important}
+.pcOnly{display:block}
 
 /* layouts */
 .wrapper {width:1280px; margin:0 auto;}

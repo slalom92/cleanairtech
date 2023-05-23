@@ -93,11 +93,19 @@
             var startX,startY, endX,endY;
             $(document).on('touchstart','.headerNav.mobileType',function(event){
                 startX = event.originalEvent.changedTouches[0].screenX;
-                startY = event.originalEvent.changedTouches[0].screenY;
+                console.log(startX);
             });
             $(document).on('touchend','.headerNav.mobileType',function(event){
                 endX=event.originalEvent.changedTouches[0].screenX;
-                endY=event.originalEvent.changedTouches[0].screenY;
+                if(startX-endX>100){
+                    $('.headerNav').stop().hide();
+                }
+            });
+            $(document).on('mousedown',function(event){
+                startX = event.clientX;                
+            });
+            $(document).on('mouseup',function(event){
+                endX = event.clientX;
                 if(startX-endX>100){
                     $('.headerNav').stop().hide();
                 }
