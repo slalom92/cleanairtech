@@ -30,6 +30,7 @@
             return false;
         }
         if(winWidthPx>=1280){
+            $('.headerNav').show();
             $(document).on('mouseover','.pcType .headerGnb>li>a',function(){
                 $('.pcType .headerGnb>li>a').removeClass('is_active');
                 $(this).addClass('is_active');
@@ -85,6 +86,21 @@
                     $('.mobileType .headerGnb>li .categoryOne>ul').stop().slideUp();
                 }
                 return false;
+            });
+            $('.hambergerBtn').bind('click',function(){
+                $('.headerNav').show();
+            });
+            var startX,startY, endX,endY;
+            $(document).on('touchstart','.headerNav.mobileType',function(event){
+                startX = event.originalEvent.changedTouches[0].screenX;
+                startY = event.originalEvent.changedTouches[0].screenY;
+            });
+            $(document).on('touchend','.headerNav.mobileType',function(event){
+                endX=event.originalEvent.changedTouches[0].screenX;
+                endY=event.originalEvent.changedTouches[0].screenY;
+                if(startX-endX>100){
+                    $('.headerNav').stop().hide();
+                }
             });
         }
     },
