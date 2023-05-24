@@ -164,98 +164,81 @@
         <div class="wrapper">
             <div class="mainContent">
                 <div class="contentMajor2">
-                    <div class="slideBox">                    
-                        <!-- <h4>추천 설치시공 사례</h4>
-                        <ul class="slideFlex2">
-                            <li><img src="./images/main/maincover9.png" alt=""/></li>
-                            <li><img src="./images/main/maincover8.png" alt=""/></li>
-                            <li><img src="./images/main/maincover9.png" alt=""/></li>
-                            <li><img src="./images/main/maincover8.png" alt=""/></li>                            
-                        </ul>
-                        <a href="#a" class="prev"><span class="ir">이전</span></a>
-                        <a href="#a" class="next"><span class="ir">다음</span></a>
-                        <div class="control">
-                            <div>
-                                <a href="#" class="play on"><span class="ir">시작</span></a> 
-                                <a href="#" class="pause on"><span class="ir">일시정지</span></a>
-                            </div>
-                            <ul class="controlBox">
-                                <li class="on"><a href="#"><span class="ir">시공사례1</span></a></li>
-                                <li><a href="#"><span class="ir">시공사례2</span></a></li>
-                                <li><a href="#"><span class="ir">시공사례3</span></a></li>
-                                <li><a href="#"><span class="ir">시공사례4</span></a></li>                            
-                                <li><a href="#"><span class="ir">시공사례4</span></a></li>                            
-                            </ul>
-                        </div> -->
+                    <div class="slideBox">
                         <!-- Slider main container -->
+                        <h4>추천 설치시공 사례</h4>
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img src="./images/main/maincover9.png" alt=""/></div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                ...
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination">
+                            </div>
                         
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         
                             <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                            <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
                     </div>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"/>
                     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
                     <script type="text/javascript">
-                        var visualBanner = new Swiper('.slideBox .swiper', {
-                            autoplay: {
-                                delay: 5000,
-                                disableOnInteraction: false
-                            },
-                            navigation: {
-                                nextEl: '.slideBox .swiper-button-next',
-                                prevEl: '.slideBox .swiper-button-prev'
-                            },
-                            pagination: {
-                                el: '.slideBox .swiper-pagination',
-                                type: 'bullets',
-                                clickable: true
-                            },
-                            a11y: {
-                                prevSlideMessage: '이전 슬라이드',
-                                nextSlideMessage: '다음 슬라이드',
-                                slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.'
-                            },
-                            loop: true,
-                        });
-                        $('.slideBox .swiper-slide').on('mouseenter', function () {
-                            visualBanner.autoplay.stop();
-                        });
-                        $('.slideBox .swiper-slide').on('mouseleave', function () {
-                            if (!$('.slideBox .swiper-button-autoplay').hasClass('stop')) {
-                                visualBanner.autoplay.start();
-                            }
-                        });
-                        $('.slideBox .swiper-button-autoplay').on('click', function () {
-                            var _this = $(this);
-                            if (!_this.hasClass('stop')) {
-                                visualBanner.autoplay.stop();
-                                _this.addClass('stop').find('span').text('다시재생');
-                            } else {
-                                visualBanner.autoplay.start();
-                                _this.removeClass('stop').find('span').text('일시정지');
-                            }
-                        });
-                        $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
-                        visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                            $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                            $('.slideBox .swiper-slide').css('opacity', '1');
-                            $('.slideBox').css('overflow', 'hidden');
-                            $('.slideBox .swiper-button-autoplay').addClass('stop').find('span').text('재생하기');
+                        $(document).ready(function(){
+                            var visualBanner = new Swiper('.slideBox .swiper', {
+                                autoplay: {
+                                    delay: 5000,
+                                    disableOnInteraction: false
+                                },
+                                spaceBetween: 25,
+                                slidesPerView: 4,
+                                slidesPerGroup : 2, // 넘길 갯수 지정
+                                navigation: {
+                                    nextEl: '.slideBox .swiper-button-next',
+                                    prevEl: '.slideBox .swiper-button-prev'
+                                },
+                                pagination: {
+                                    el: '.slideBox .swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: false
+                                },
+                                loop: true,
+                            });
+                            $('.swiper-pagination').prepend(
+                                '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
+                            // $('.slideBox .swiper-slide').on('mouseenter', function () {
+                            //     visualBanner.autoplay.stop();
+                            // });
+                            // $('.slideBox .swiper-slide').on('mouseleave', function () {
+                            //     if (!$('.slideBox .swiper-button-autoplay').hasClass('pause')) {
+                            //         visualBanner.autoplay.start();
+                            //     }
+                            // });
+                            $(document).on('click','.slideBox .swiper-button-autoplay', function () {
+                                var _this = $(this);
+                                if (!_this.hasClass('play')) {
+                                    visualBanner.autoplay.stop();
+                                    _this.removeClass('pause').addClass('play').find('span').text('다시재생');
+                                } else {
+                                    visualBanner.autoplay.start();
+                                    _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                                }
+                                return false;
+                            });
+                            $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
+                            visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
+                                $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
+                                $('.slideBox .swiper-slide').css('opacity', '1');
+                                $('.slideBox').css('overflow', 'hidden');
+                                $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
+                            });
                         });
                     </script>
                 </div>
@@ -318,6 +301,14 @@
             <div class="mainContent">
                 <div class="contentMajor4">
                     <div class="bannerBox1">
+                        <h3>기존 필터 대비 수명이 200% 이상 향상된 울트라 나노 필터</h3>
+                        <p>크린에어테크가 특허 기술로 자체생산합니다.</p>
+                        <div class="btnBox1">
+                            <a href="#"><img src="./images/main/icon16.png" alt=""/></a>
+                            <a href="#"><img src="./images/main/icon15.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="bannerBox1">
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -335,7 +326,7 @@
                             <div class="swiper-button-next"></div>
                         
                             <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                            <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
                         <!-- <h3>기존 필터 대비 수명이 200% 이상 향상된 울트라 나노 필터</h3>
                         <p>크린에어테크가 특허 기술로 자체생산합니다.</p>
