@@ -27,7 +27,7 @@
 .titleType1::before{content:'';display:block;width:30px;height:3px;background:var(--blue_1);margin-bottom:10px;}
 .sectionType1 + .sectionType1 {margin-top:100px;}
 
-/* corp_info */
+/* sub-01-01-00 회사소개-안내 */
 .subCon1Flex{display:flex;gap:20px;align-items:center;margin-bottom:47px;}
 .subCon1Title{flex-basis:490px;flex-shrink:0;}
 .subCon1Title>h2{font-size:40px;line-height:58px;font-weight:700;margin-bottom:15px;}
@@ -70,7 +70,7 @@
 .subCon1BoxText>p{font-size:18px;line-height:26px;color:var(--black-1);}
 .subCon1BoxText>p>span{color:var(--blue_1);}
 
-/* corp_history */
+/* sub-01-02-00 회사소개-연혁 */
 .subCon2Flex{display:flex;align-items:center;justify-content:space-between;}
 .subCon2Flex>h2{font-size:40px;line-height:50px;color:#000;}
 .subCon2Flex>h2>span{font-size:40px;color:#1c98d1;}
@@ -90,7 +90,7 @@
 .historyList>li>img{margin-left:auto;}
 .historyList>li::after{content:'';display:block;height:2px;position:absolute;left:0;right:0;bottom:0;z-index:1;background:#f1f2f5;}
 
-/* corp_certificate */
+/* sub-01-03-00 회사소개-인증서 */
 .certificateMenu{display:flex;align-items:center;margin-bottom:100px;}
 .certificateMenu>li{flex-basis:0;min-width:0;flex-grow:1;border:1px solid #e2e5eb;font-size:18px;letter-spacing:-0.18px;color:#000;background:#fff;text-align:center;}
 .certificateMenu>li>a{display:inline-block;width:100%;height:60px;line-height:60px;}
@@ -102,7 +102,7 @@
 .certifiListFlex{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:100px;}
 .certifiListFlex>li{min-width:206px;vertical-align:top;}
 
-/* corp_client  */
+/* sub-01-04-00 거래실적  */
 .majorClientList{display:flex;flex-wrap:wrap;gap:16px;padding:24px;background:#fafafa;margin-bottom:100px;}
 .majorClientList>li>img{vertical-align:top;}
 .subcondescription{margin-bottom:30px;font-size:18px;letter-spacing:-0.18px;line-height:40px;color:#2e2e2e;}
@@ -117,8 +117,7 @@
 .subBtn2{position:relative;z-index:1;}
 .subBtn2>a{display:inline-block;position:absolute;bottom:0;right:0;z-index:1;font-size:14px;line-height:20px;color:#2e2e2e;}
 
-
-/* slide  main창  slidesection에 스크립트 공통 */
+/* slide  main slidesection에 스크립트 공통 */
 .slide{position:relative;z-index:1;}
 .slide .slideFlex{display:flex;gap:22px;margin-bottom:30px;}
 .slide .slideFlex>li img{vertical-align:middle;}
@@ -127,15 +126,13 @@
 .slide .prev{background:url(../images/common/prev.png) no-repeat;left:0;}
 .slide .next{background:url(../images/common/next.png) no-repeat;right:2px;}
 
-
-/* corp_case */
+/* sub-01-05-00 회사소개-시공사례 */
 .subConLocation.mb120 {margin-bottom:120px;}
 .listType1 {display:flex;gap:9px;margin:40px 0 30px;}
 .listType1>li{padding:0 20px;border-radius:20px;background:#f4f4f4;}
 .listType1>li>a{display:inline-block;height:44px;line-height:44px;font-size:16px;letter-spacing:-0.16px;color:#2e2e2e;}
 .listType1>li.on{background:#1c98d1;}
 .listType1>li.on>a{color:#fff;}
-
 .searchArea{display:flex;padding:14px;margin-bottom:60px;border-radius:7px;background:#f4f4f4;}
 .searchType1{box-sizing:border-box;width:360px;height:34px;}
 .searchType1{position:relative;z-index:1;margin-right:10px;}
@@ -145,13 +142,11 @@
 .searchType1.blue1{margin-left:auto;margin-top:-48px;margin-bottom:20px;}
 .searchType1.blue1>input{border:1px solid #1C98D1;border-radius:2px;}
 .searchType1.blue1 .icon8{background:url(../images/sub/sub_etc/icon8.png) 0 0 no-repeat;}
-
 .searchArea>select {box-sizing:border-box;width:150px;height:34px;padding:0 17px;margin-left:auto;;border:1px solid #e2e5eb;border-radius:5px;font-size:14px;letter-spacing:-0.14px;color:#000;}
 .iconGnb {display:flex;margin-left:7px;}
 .iconGnb>li>a{display:inline-block;width:34px;height:34px;text-indent:999px;color:transparent;}
 .iconGnb>li .iconGnbCover1{background:url(../images/sub/sub_etc/icon_03.jpg)no-repeat;}
 .iconGnb>li .iconGnbCover2{background:url(../images/sub/sub_etc/icon_04.jpg)no-repeat;margin-left:-2px;}
-
 .cardbox1 {display:flex;flex-wrap:wrap;gap:60px 20px;margin-bottom:60px;}
 .cardbox1>li{min-width:0;flex-basis:305px;flex-grow:0;}
 .cardbox1>li>a>img {vertical-align:top;}
@@ -160,7 +155,6 @@
 .cardText>ul{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px;}
 .cardText>ul>li{height:26px;padding:0 12px;line-height:26px;border:1px solid #e2e5eb;border-radius:20px;text-align:center;font-size:14px;letter-spacing:-0.14px;}
 .cardText .date{display:block;padding-left:20px;font-size:14px;line-height:16px;letter-spacing:-0.14px;color:#aaa;background:url(../images/sub/sub_etc/icon_05.png) left center no-repeat;}
-
 .carboxPage{position:relative;z-index:1;}
 .carboxPage .prev,
 .carboxPage .next{display:block;width:28px;height:30px;position:absolute;top:50%;transform:translateY(-50%);text-indent:999px;color:transparent;}
@@ -170,7 +164,7 @@
 .pageType1>li>a{display:inline-block;width:30px;height:30px;line-height:30px;;text-align:center;box-sizing:border-box;border:1px solid #e2e5eb;background:#fff}
 .pageType1>li.on>a{border-bottom:3px solid #1c98d1;}
 
-/* corp_news */
+/* sub-01-06-00 회사소개-뉴스 */
 .listTitle{display:flex;height:60px;align-items:center;border-top:1px solid #000;border-bottom:1px solid #e2e5eb;background:#fafafa;}
 .listTitle>li{flex-basis:0;flex-grow:1;font-size:16px;letter-spacing:-0.16px;line-height:24px;text-align: center;color:#2e2e2e;}
 .listTitle>li.date{align-self:right;min-width:0;flex-basis:200px;flex-shrink:0;flex-grow:0;}
@@ -179,7 +173,7 @@
 .listType2>li>img{margin-right:60px;}
 .listType2>li>span{margin-left:auto;}
 
-/* corp_recruit */
+/* sub-01-07-00 회사소개-채용 */
 .subVisualType1{position:relative;z-index:1;margin:80px 0 100px;}
 .subVisualType1 .subVisualtextBox{position:absolute;top:70px;right:30px;z-index:1;}
 .subVisualtextBox>h3{width:556px;height:58px;font-size:20px;letter-spacing:-0.2px;line-height:29px;color:#075586;margin-bottom:22px;}
@@ -217,7 +211,7 @@
 .noticeBox1>p>span{margin-right:9px;color:#1C98D1;}
 .noticeBox1 .btnType2{display:inline-block;width:260px;height:40px;line-height:40px;font-size:14px;text-align:center;color:#fff;background:#1C98D1;border-radius:4px;}
 
-/*corp_location */
+/*sub-01-08-00 회사소개-오시는길 */
 .sectionType1 .coverType2{margin-bottom:60px;}
 .listType5{margin-bottom:60px;border-top:1px solid #000;}
 .listType5>li{display:flex;height:94px;align-items:center;font-size:16px;letter-spacing:-0.16px;line-height:24px;color:#2e2e2e;border-bottom:1px solid #e2e5eb;}
@@ -227,7 +221,7 @@
 
 
 /* 고객센터 서브페이지 */
-/* customer_info */
+/* sub-02-01-00 고객센터-안내 */
 .customerSection1{background:#fafafa;}
 .customerSection1 .flexType10{box-sizing:border-box;display:flex;gap:55px;height:206px;padding:40px 24px;margin-bottom:100px;}
 .customerSection1 .flexType10>li{position:relative;z-index:1;width:374px;}
@@ -264,7 +258,7 @@
 .flexType13 .notice>ul>li>a{display:flex;justify-content:space-between;}
 .flexType13 .notice>ul>li>a>p, .notice>ul>li>a>span{font-size:16px;letter-spacing:-0.16px;line-height:30px;color:#2e2e2e;}
 
-/* customer_question */
+/* sub-02-03-00 고객센터-자주하는질문 */
 .customerSection2 .menuList1{display:flex;align-items:center;margin-bottom:60px;}
 .customerSection2 .menuList1>li{flex:1;height:60px;line-height:60px;border:1px solid #e2e5eb;text-align:center;color:#000;background:#fff;}
 .customerSection2 .menuList1>li>a{display:inline-block;width:100%;height:60px;line-height:60px;font-size:18px;letter-spacing:-0.18px;}
@@ -280,7 +274,7 @@
 .alignType1 .searchType2>input[type=text]::placeholder{color:#ddd}
 .alignType1 .searchType2>a{overflow:hidden;display:inline-block;width:16px;height:16px;position:absolute;top:50%;right:10px;transform:translateY(-50%);text-indent:999px;color:transparent;vertical-align:middle;background:url(../images/sub/sub_etc/icon8.png) 0 0 no-repeat;}
 
-/* 공통 table : customer_question & customer_action customer_notice */
+/* 공통 table : 자주하는질문 & 간단조치방법 & 공지사항 */
 .colTable{margin-bottom:60px;}
 .colTable .thead{height:60px;background:#fafafa;text-align:center;border-top:1px solid #000;border-bottom:1px solid #e2e5eb;}
 .thead>tr{box-sizing:border-box;}
@@ -301,7 +295,7 @@
 .tbody>tr>td.alignType4{text-align:center;}
 .tbody>tr>td.alignType5{text-align:center;}
 
-/* customer_catalog */
+/* sub-02-05-00 고객센터-카탈로그*/
 .customerSection2{margin-bottom:200px;}
 .customerSection2 .flexType13{display:flex;gap:30px;flex-wrap:wrap;}
 .customerSection2 .flexType13>li{box-sizing:border-box;display:flex;gap:50px;min-width:625px;flex-shrink:0;flex-grow:0;height:284px;padding:25px;background:#FAFAFA;}
@@ -310,7 +304,7 @@
 .customerSection2 .flexType13 .textType5>p{margin-bottom:30px;font-size:16px;letter-spacing:-0.16px;line-height:24px;color:#2e2e2e;}
 .customerSection2 .flexType13 .textType5>a{display:block;width:134px;height:30px;line-height:30px;font-size:14px;border-radius:4px;text-align:center;background:#1C98D1;color:#fff;}
 
-/* customer_agency */
+/* sub-02-07-00 고객센터-대리점/영업소 */
 .boxType3{width:1280px;height:60px;margin-bottom:90px;border-radius:4px;font-size:20px;font-weight:500;letter-spacing:-0.2px;line-height:60px;color:#fff;background:#1C98D1;text-align:center;}
 .customerSection2 .flexType14{display:flex;flex-wrap:wrap;width:1280px;margin-bottom:72px;border:1px solid #E2E5EB;}
 .customerSection2 .flexType14>li{display:flex;width:256px;height:52px;text-align:center;}
@@ -327,7 +321,7 @@
 .customerSection2 .alignType8 .listType6 .textType7{width:205px;}
 .customerSection2 .alignType8>img{width:359px;height:664px;position:absolute;top:0;right:140px;z-index:1;}
 
-/* customer_pay */
+/* sub-02-08-00 고객센터-카드결제 */
 .customerSection2 .boxType4{box-sizing:border-box;display:flex;justify-content:center;width:1280px;height:132px;padding:40px 0;margin-bottom:100px;border:1px solid #e2e5eb;border-radius:4px;background:#FAFAFA;}
 .customerSection2 .boxType4>p{position:relative;z-index:1;margin-right:17px;font-size:18px;font-weight:500;letter-spacing:-0.18px;line-height:26px;color:#000;}
 .customerSection2 .boxType4>p::before{content:'';display:inline-block;position:absolute;top:5px;left:-60px;z-index:1;width:40px;height:40px;margin-right:20px;background:url(../images/sub/sub_etc/icon26.png) no-repeat;}
@@ -338,7 +332,13 @@
 .customerSection2 .alignType9>img{margin:30px 0 30px;}
 .customerSection2 .alignType9>p{font-size:20px;font-weight:500;letter-spacing:-0.2px;line-height:29px;color:#2e2e2e;text-decoration:underline;text-align:center;}
 
-/* customer_contact4-1 */
+/* sub-02-02-01 고객센터-문의 및 요청 */
+.customerSection2 .boxType5{box-sizing:border-box;position:relative;z-index:1;width:1280px;height:88px;padding:19px 19px 19px 19px;margin:49px 0 60px;border:1px solid #e2e5eb;border-radius:4px;}
+.customerSection2 .boxType5>p{display:inline-block;font-size:16px;letter-spacing:-0.16px;line-height:24px;color:#000;}
+.customerSection2 .boxType5::before{content:'';display:inline-block;width:50px;height:50px;margin-right:12px;background:url(../images/sub/sub_etc/icon27.png) no-repeat;vertical-align:top;}
+
+
+
 
 
 /* box-shadow:inset 0 0 10px red; */
