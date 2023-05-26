@@ -491,4 +491,11 @@
 .divideArea .companybanner>.companybanner2>p.bannerText1{position:absolute;top:30px;left:40px;z-index:1;}
 .divideArea .companybanner>.companybanner2>p.bannerText2{position:absolute;top:56px;left:50px;z-index:1;}
 
+
+
+
+/* 건들지마~~이상태로 시작하기 */
+/* 다시 건들면 화면 틀어짐 */
+
+
 /* box-shadow:inset 0 0 10px red; */
