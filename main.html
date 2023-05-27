@@ -135,6 +135,7 @@
                                 </li>
                             </ul>
                             <img src="./images/main/maincover7.png" alt="ceo사진"/>
+                            <a href="#" class="ceoBtn mobileOnly">CEO인사말<span>&gt;&gt;</span></a>
                         </li>
                         <li class="textType4">
                             <h4>카탈로그</h4>
@@ -191,8 +192,9 @@
                     <link rel="stylesheet" href="./css/swiper.css"/>
                     <script type="text/javascript" src="./js/swiper.js"></script>
                     <script type="text/javascript">
+                        var winWidth = $(window).width();
                         $(document).ready(function(){
-                            var visualBanner = new Swiper('.slideBox .swiper', {
+                            var swiperOption = {
                                 autoplay: {
                                     delay: 5000,
                                     disableOnInteraction: false
@@ -210,87 +212,62 @@
                                     clickable: false
                                 },
                                 loop: true,
-                            });
-                            $('.slideBox .swiper-pagination').prepend(
-                                '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
-                            // $('.slideBox .swiper-slide').on('mouseenter', function () {
-                            //     visualBanner.autoplay.stop();
-                            // });
-                            // $('.slideBox .swiper-slide').on('mouseleave', function () {
-                            //     if (!$('.slideBox .swiper-button-autoplay').hasClass('pause')) {
-                            //         visualBanner.autoplay.start();
-                            //     }
-                            // });
-                            $(document).on('click','.slideBox .swiper-button-autoplay', function () {
-                                var _this = $(this);
-                                if (!_this.hasClass('play')) {
-                                    visualBanner.autoplay.stop();
-                                    _this.removeClass('pause').addClass('play').find('span').text('다시재생');
-                                } else {
-                                    visualBanner.autoplay.start();
-                                    _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                            }
+                            $(window).resize(function(){
+                                winWidth = $(window).width();                                
+                                if(winWidth<780){
+                                    swiperOption.slidesPerView=3;
+                                }else{
+                                    swiperOption.slidesPerView=4;
                                 }
-                                return false;
+                                visualBanner = new Swiper('.slideBox .swiper', swiperOption);
+                                pcSlideSet();
                             });
-                            $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
-                            visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                                $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                                $('.slideBox .swiper-slide').css('opacity', '1');
-                                $('.slideBox').css('overflow', 'hidden');
-                                $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
-                            });
+                            if(winWidth<1280){
+                                swiperOption.slidesPerView=3;
+                            }else{
+                                swiperOption.slidesPerView=4;
+                                pcSlideSet();
+                            }
+                            var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
+                            pcSlideSet();
+                            function pcSlideSet(){
+                                $('.slideBox .swiper-pagination').prepend(
+                                '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
+                                $(document).on('click','.slideBox .swiper-button-autoplay', function () {
+                                    var _this = $(this);
+                                    if (!_this.hasClass('play')) {
+                                        visualBanner.autoplay.stop();
+                                        _this.removeClass('pause').addClass('play').find('span').text('다시재생');
+                                    } else {
+                                        visualBanner.autoplay.start();
+                                        _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                                    }
+                                    return false;
+                                });
+                                $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
+                                    visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
+                                    $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
+                                    $('.slideBox .swiper-slide').css('opacity', '1');
+                                    $('.slideBox').css('overflow', 'hidden');
+                                    $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
+                                });
+                            }                            
                         });
                     </script>
                 </div>
                 <div class="contentAside2">
                     <p>실시간 수주현황</p>
                     <a href="#">더보기&#43;</a>
-                    <ul class="menuBox4">
-                        <li>
-                            <p>○성전자(주)</p>
-                            <span>22-01-14</span>
-                        </li>
-                        <li>
-                            <p>○이닉스코리아(···</p>
-                            <span>22-01-13</span>
-                        </li>
-                        <li>
-                            <p>○성플랜트(주)</p>
-                            <span>22-01-13</span>
-                        </li>
-                        <li>
-                            <p>○앙보훈병원</p>
-                            <span>22-01-13</span>
-                        </li>
-                        <li>
-                            <p>○엘앤에프코리아···</p>
-                            <span>22-01-12</span>
-                        </li>
-                        <li>
-                            <p>○울대학교</p>
-                            <span>22-01-11</span>
-                        </li>
-                        <li>
-                            <p>○스템임플란트(···</p>
-                            <span>22-01-09</span>
-                        </li>
-                        <li>
-                            <p>○퓨존(주)</p>
-                            <span>22-01-08</span>
-                        </li>
-                        <li>
-                            <p>○한항공</p>
-                            <span>22-01-04</span>
-                        </li>
-                        <li>
-                            <p>○리코웍스코리아</p>
-                            <span>22-01-03</span>
-                        </li>
-                        <li>
-                            <p>○트리온</p>
-                            <span>22-01-01</span>
-                        </li>
-                    </ul>
+                    <div class="menuBox4">
+                        <ul class="cooperationUl">
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $('.contentAside2 .cooperationUl').load('./cooperation_list.html');
+                                });
+                            </script>
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </div>

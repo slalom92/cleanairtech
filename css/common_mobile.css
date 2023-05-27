@@ -10,9 +10,10 @@
 body{position:relative;min-width:320px;}
 
 /* header */
+#header{position:fixed;z-index:10;top:0;left:0;width:100%;background:#fff;}
 .topMenuToggleWrap{display:none;}
 .logo {width:156px;height:22px;vertical-align:middle;}
-.headerFlex{position:relative;z-index:1;display:flex;width:100%;height:40px;padding:18px 10px;margin:0 -10px 40px -10px;}
+.headerFlex{position:relative;z-index:1;display:flex;width:100%;height:40px;padding:18px 10px;margin:0 -10px 20px -10px;}
 .headerFlex .hambergerBtn{width:18px;height:18px;margin:0 22px 0 0;background:url(../images/mobile/common/btn_hamberger.png) 0 0 no-repeat;background-size:100%;}
 
 .headerFlex .language{display:flex;margin-left:auto;font-size:14px;color:var(--gray_8);}
@@ -25,11 +26,11 @@ body{position:relative;min-width:320px;}
 .headerFlex .search>input[type=text]{box-sizing:border-box;width:calc(100% - 30px);padding:0 0 0 20px;line-height:40px;vertical-align:middle;font-size:13px;border:none;outline:none}
 .headerFlex .search>a{overflow:hidden;display:inline-block;width:18px;height:18px;vertical-align:middle;text-indent:999px;color:transparent;background:url(../images/common/zoom.svg) 0 0 no-repeat;}
 
-.headerNav{display:none;position:absolute;z-index:3;top:0;left:0;width:87.5vw;min-height:100%;height:100%;background:#F7FBFC;}
-.headerNav>.wrapper{position:relative;z-index:3;width:100%;height:100%;padding:0;background:#F7FBFC;}
-.headerNav::before{content:'';position:fixed;top:0;left:0;z-index:1;display:block;width:100%;height:100%;background:rgba(0,0,0,0.3)}
+.headerNav{overflow-y:hidden;position:absolute;z-index:3;top:0;left:0;width:0;background:#F7FBFC;}
+.headerNav>.wrapper{overflow:hidden;position:relative;z-index:3;width:0;height:100%;padding:0;background:#F7FBFC;}
+.headerNav .bgLayer{position:fixed;top:0;left:0;z-index:1;display:none;width:100%;height:100%;background:rgba(0,0,0,0.3)}
 
-.headerNavFlex{min-height:100vh;background:#F7FBFC;}
+.headerNavFlex{overflow:hidden;width:0;min-height:100vh;background:#F7FBFC;}
 .headerNavFlex .search{width:100%;height:38px;border-bottom:1px solid var(--blue_1);background:#fff;}
 .headerNavFlex .search>input[type=text]{box-sizing:border-box;width:calc(100% - 30px);padding:0 0 0 30px;line-height:38px;vertical-align:middle;font-size:14px;border:none;outline:none}
 .headerNavFlex .search>a{overflow:hidden;display:inline-block;width:18px;height:18px;vertical-align:middle;text-indent:999px;color:transparent;background:url(../images/common/zoom.svg) 0 0 no-repeat;}
@@ -60,6 +61,9 @@ body{position:relative;min-width:320px;}
 .lnbArea>ul>li:nth-child(3)>a{background:url(../images/mobile/common/lnb_icon_3.png) 20px 7px no-repeat;}
 .lnbArea>ul>li:nth-child(4)>a{background:url(../images/mobile/common/lnb_icon_4.png) 20px 7px no-repeat;}
 .lnbArea .lnbTelBtn{box-sizing:border-box;display:block;width:36.4%;min-width:104px;max-width:120px;height:36px;padding:0 10px 0 33px;margin:18px auto 0;line-height:34px;text-align:center;color:#fff;font-size:13px;background:#1C98D1 url(../images/mobile/common/lnb_tel_icon.png) 10% 7px no-repeat;border-radius:4px;}
+
+/* contents */
+#contentsWrap{padding:96px 0 0 0}
 
 /* footer */
 #footer{background:#FAFAFA}

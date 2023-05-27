@@ -30,7 +30,7 @@
         if(!$('#gnb').length > 0){
             return false;
         }
-        if(winWidthPx>=1280){
+        if(winWidthPx>=1280){ //PC
             $('.headerNav').show();
             $(document).on('mouseover','.pcType .headerGnb>li>a',function(){
                 $('.pcType .headerGnb>li>a').removeClass('is_active');
@@ -49,7 +49,7 @@
                 }
             });
             return false;
-        }else{
+        }else{ // mobile
             // 하위 카테고리 유무
             $('.categoryOne>h5').each(function(){
                 if($(this).next('ul').length<1){
@@ -89,17 +89,28 @@
                 return false;
             });
             $('.hambergerBtn').bind('click',function(){
-                $('.headerNav').show();
+                if(!$('.headerNav').is(':animated')){
+                    $('.headerNav .bgLayer').stop().fadeIn();
+                    setTimeout(function(){
+                        $('.headerNav').css('overflow-y','visible');
+                    },300);
+                    $('.headerNav').delay(100).stop().animate({'width':'94%'},500);
+                    $('.headerNav>.wrapper,.headerNavFlex').stop().animate({'width':'100%'},300);
+                }
             });
             var startX,startY, endX,endY;
             $(document).on('touchstart','.headerNav.mobileType',function(event){
                 startX = event.originalEvent.changedTouches[0].screenX;
-                console.log(startX);
             });
             $(document).on('touchend','.headerNav.mobileType',function(event){
                 endX=event.originalEvent.changedTouches[0].screenX;
                 if(startX-endX>100){
-                    $('.headerNav').stop().hide();
+                    if(!$('.headerNav').is(':animated')){
+                        $('.headerNav .bgLayer').stop().fadeOut();
+                        $('.headerNav').css('overflow-y','hidden');
+                        $('.headerNav').stop().animate({'width':0},300);
+                        $('.headerNav>.wrapper,.headerNavFlex').stop().animate({'width':'0'},500);
+                    }
                 }
             });
             $(document).on('mousedown',function(event){
@@ -108,7 +119,12 @@
             $(document).on('mouseup',function(event){
                 endX = event.clientX;
                 if(startX-endX>100){
-                    $('.headerNav').stop().hide();
+                    if(!$('.headerNav').is(':animated')){
+                        $('.headerNav .bgLayer').fadeOut();
+                        $('.headerNav').css('overflow-y','hidden');
+                        $('.headerNav').stop().animate({'width':0},300);
+                        $('.headerNav>.wrapper,.headerNavFlex').stop().animate({'width':'0'},500);
+                    }
                 }
             });
         }
@@ -127,6 +143,10 @@
                 });
             }
         }else{
+            if(winTop>100){
+            }else{
+
+            }
             $('.headerNav').css({
                 'position':'absolute'
             });

@@ -1,0 +1,164 @@
+<script type="text/javascript">
+    var timer = 2000 // 초 설정
+    var scrollText ={
+        firstText : $('.contentAside2 .cooperationUl li').eq(0).html(),
+        scrolling : function(){
+            $('.contentAside2 .cooperationUl li').each(function(){
+                $(this).animate({
+                    'top': parseInt($(this).css('top')) - 28 +'px'
+                },1000);
+            });
+            var setRemove = setTimeout(
+                function(){
+                    $('.contentAside2 .cooperationUl li').eq(0).remove();
+                    $('.contentAside2 .cooperationUl').append('<li>'+scrollText.firstText+'</li>');
+                    $('.contentAside2 .cooperationUl li').each(function(){
+                        $(this).css({
+                            'top': ($(this).index() -1) * 28 +'px'
+                        });
+                    });
+                },timer)
+        }
+    }
+    $(document).ready(function(){
+        $('.contentAside2 .cooperationUl li').each(function(){
+            $(this).css({
+                'top': ($(this).index() -1) * 28 +'px'
+            });
+        });
+        var setScroll = setInterval(function(){scrollText.scrolling()},timer);
+        
+    });
+</script>
+<li>
+    <p>○성전자(주)</p>
+    <span>22-01-14</span>
+</li>
+<li>
+    <p>○이닉스코리아(</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○성플랜트(주)</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○앙보훈병원○앙보훈병원○앙보훈병원○앙보훈병원</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○엘앤에프코리아</p>
+    <span>22-01-12</span>
+</li>
+<li>
+    <p>○울대학교</p>
+    <span>22-01-11</span>
+</li>
+<li>
+    <p>○스템임플란트(</p>
+    <span>22-01-09</span>
+</li>
+<li>
+    <p>○퓨존(주)</p>
+    <span>22-01-08</span>
+</li>
+<li>
+    <p>○한항공</p>
+    <span>22-01-04</span>
+</li>
+<li>
+    <p>○리코웍스코리아</p>
+    <span>22-01-03</span>
+</li>
+<li>
+    <p>○트리온</p>
+    <span>22-01-01</span>
+</li>
+<li>
+    <p>○성전자(주)</p>
+    <span>22-01-14</span>
+</li>
+<li>
+    <p>○이닉스코리아(</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○성플랜트(주)</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○앙보훈병원</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○엘앤에프코리아</p>
+    <span>22-01-12</span>
+</li>
+<li>
+    <p>○울대학교</p>
+    <span>22-01-11</span>
+</li>
+<li>
+    <p>○스템임플란트(</p>
+    <span>22-01-09</span>
+</li>
+<li>
+    <p>○퓨존(주)</p>
+    <span>22-01-08</span>
+</li>
+<li>
+    <p>○한항공</p>
+    <span>22-01-04</span>
+</li>
+<li>
+    <p>○리코웍스코리아</p>
+    <span>22-01-03</span>
+</li>
+<li>
+    <p>○트리온</p>
+    <span>22-01-01</span>
+</li>
+<li>
+    <p>○성전자(주)</p>
+    <span>22-01-14</span>
+</li>
+<li>
+    <p>○이닉스코리아(</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○성플랜트(주)</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○앙보훈병원</p>
+    <span>22-01-13</span>
+</li>
+<li>
+    <p>○엘앤에프코리아</p>
+    <span>22-01-12</span>
+</li>
+<li>
+    <p>○울대학교</p>
+    <span>22-01-11</span>
+</li>
+<li>
+    <p>○스템임플란트(</p>
+    <span>22-01-09</span>
+</li>
+<li>
+    <p>○퓨존(주)</p>
+    <span>22-01-08</span>
+</li>
+<li>
+    <p>○한항공</p>
+    <span>22-01-04</span>
+</li>
+<li>
+    <p>○리코웍스코리아</p>
+    <span>22-01-03</span>
+</li>
+<li>
+    <p>○트리온</p>
+    <span>22-01-01</span>
+</li>
