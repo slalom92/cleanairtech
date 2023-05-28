@@ -74,8 +74,8 @@
                         </li>                
                     </ul>
                 </div>
-                <div class="contentAside1">
-                    <div class="asideBox1">
+                <div class="contentAside1 helpAside">
+                    <div class="asideBox1 pcOnly">
                         <p>도움이 필요하신가요?</p>
                         <span>환경설비 전문가의 노하우로<br/>꼼꼼하게 상담해 드립니다.</span>
                         <div class="boxType1">
@@ -145,7 +145,7 @@
                     </ul>
 
                 </div>
-                <div class="contentAside1">
+                <div class="contentAside1 tagAside">
                     <div class="menuBox3">
                         <img src="./images/main/icon14.png" alt=""/>
                         <p>다이렉트 다운로드</p>
@@ -176,6 +176,8 @@
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination">
@@ -193,70 +195,77 @@
                     <script type="text/javascript" src="./js/swiper.js"></script>
                     <script type="text/javascript">
                         var winWidth = $(window).width();
+                        var swiperOption = {
+                            autoplay: {
+                                delay: 1000,
+                                disableOnInteraction: false
+                            },
+                            spaceBetween: 25,
+                            slidesPerView: 4,
+                            slidesPerGroup : 4, // 넘길 갯수 지정
+                            navigation: {
+                                nextEl: '.slideBox .swiper-button-next',
+                                prevEl: '.slideBox .swiper-button-prev'
+                            },
+                            pagination: {
+                                el: '.slideBox .swiper-pagination',
+                                type: 'bullets',
+                                clickable: false
+                            },
+                            loop: true,
+                        }
                         $(document).ready(function(){
-                            var swiperOption = {
-                                autoplay: {
-                                    delay: 5000,
-                                    disableOnInteraction: false
-                                },
-                                spaceBetween: 25,
-                                slidesPerView: 4,
-                                slidesPerGroup : 2, // 넘길 갯수 지정
-                                navigation: {
-                                    nextEl: '.slideBox .swiper-button-next',
-                                    prevEl: '.slideBox .swiper-button-prev'
-                                },
-                                pagination: {
-                                    el: '.slideBox .swiper-pagination',
-                                    type: 'bullets',
-                                    clickable: false
-                                },
-                                loop: true,
-                            }
                             $(window).resize(function(){
                                 winWidth = $(window).width();                                
                                 if(winWidth<780){
                                     swiperOption.slidesPerView=3;
+                                    swiperOption.spaceBetween=15;
+                                    swiperOption.slidesPerGroup=1;
                                 }else{
                                     swiperOption.slidesPerView=4;
+                                    swiperOption.spaceBetween=25;
+                                    swiperOption.slidesPerGroup=4;
                                 }
-                                visualBanner = new Swiper('.slideBox .swiper', swiperOption);
+                                var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
                                 pcSlideSet();
                             });
-                            if(winWidth<1280){
+                            if(winWidth<780){
                                 swiperOption.slidesPerView=3;
+                                swiperOption.spaceBetween=15;
+                                swiperOption.slidesPerGroup=1;
                             }else{
                                 swiperOption.slidesPerView=4;
-                                pcSlideSet();
+                                swiperOption.spaceBetween=25;
+                                swiperOption.slidesPerGroup=4;
                             }
                             var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
                             pcSlideSet();
                             function pcSlideSet(){
                                 $('.slideBox .swiper-pagination').prepend(
                                 '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
-                                $(document).on('click','.slideBox .swiper-button-autoplay', function () {
-                                    var _this = $(this);
-                                    if (!_this.hasClass('play')) {
-                                        visualBanner.autoplay.stop();
-                                        _this.removeClass('pause').addClass('play').find('span').text('다시재생');
-                                    } else {
-                                        visualBanner.autoplay.start();
-                                        _this.removeClass('play').addClass('pause').find('span').text('일시정지');
-                                    }
-                                    return false;
-                                });
-                                $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
-                                    visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                                    $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                                    $('.slideBox .swiper-slide').css('opacity', '1');
-                                    $('.slideBox').css('overflow', 'hidden');
-                                    $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
-                                });
-                            }                            
+                            }
+                            $(document).on('click','.slideBox .swiper-button-autoplay', function () {
+                                var _this = $(this);
+                                if (!_this.hasClass('play')) {
+                                    visualBanner.autoplay.stop();
+                                    _this.removeClass('pause').addClass('play').find('span').text('다시재생');
+                                } else {
+                                    visualBanner.autoplay.start();
+                                    _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                                }
+                                return false;
+                            });
+                            // $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
+                            //     visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
+                            //     $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
+                            //     $('.slideBox .swiper-slide').css('opacity', '1');
+                            //     $('.slideBox').css('overflow', 'hidden');
+                            //     $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
+                            // });
                         });
                     </script>
                 </div>
-                <div class="contentAside2">
+                <div class="contentAside2 pcOnly">
                     <p>실시간 수주현황</p>
                     <a href="#">더보기&#43;</a>
                     <div class="menuBox4">
@@ -277,7 +286,7 @@
         <div class="wrapper">
             <div class="mainContent">
                 <div class="contentMajor4">
-                    <div class="bannerBox1">
+                    <div class="bannerBox1 pcOnly">
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -355,30 +364,30 @@
                     <div class="flexType9">
                         <div class="boxType2">
                             <h4>뉴스</h4>
-                            <a href="#">더보기&#43;</a>
+                            <a href="#" class="btnMore">더보기&#43;</a>
                             <div class="newBox">
                                 <img src="./images/main/maincover11.png" alt=""/>
                                 <ul>
-                                    <li><a href="#">크린에어테크 2022년 환경부 우수환경산업체 선정··· </a></li>
-                                    <li><a href="#">연합뉴스 "크린에어테크 환경품질책임제(RBPS) 도···</a></li>
-                                    <li><a href="#">경기신용보증재단 소식지 '좋은친구'에 보도</a></li>
-                                    <li><a href="#">경영혁신형 중소기업 메인비즈(Main-Biz) 인증 획 ···</a></li>                                      
+                                    <li><a href="#">크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정</a></li>             
+                                    <li><a href="#">크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정</a></li>             
+                                    <li><a href="#">크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정</a></li>             
+                                    <li><a href="#">크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정크린에어테크 2022년 환경부 우수환경산업체 선정</a></li>             
                                 </ul>
                             </div>
                         </div>
-                        <div class="boxType2">
+                        <div class="boxType2 mobileNotice">
                             <h4>공지사항</h4>
-                            <a href="#">더보기&#43;</a>
-                            <div class="noticBox">
+                            <a href="#" class="btnMore">더보기&#43;</a>
+                            <a class="noticBox">
                                 <h5>2023년 부산광역시 소규모사업장 지원사업 신청 접수</h5>
-                                <p>안녕하세요. 부산광역시 사상구 내 소규모 대기배출시설 설치사업장을 대상으로 배출시설 발생에 대한 전 단계 성능 평가 진단 후 방지시설 우선 설치를 지원해 드리는 정부지원 사업의 신청 접수를 받고 있습니다. 지원 대상을 확인하셔서 ···</p>
+                                <p>안녕하세요. 부산광역시 사상구 내 소규모 대기배출시설 설치사업장을 대상으로 배출시설 발생에 대한 전 단계 성능 평가 진단 후 방지시설 우선 설치를 지원해 드리는 정부지원 사업의 신청 접수를 받고 있습니다. 지원 대상을 확인하셔서사업의 신청 접수를 받고 있습니다. 지원 대상을 확인하셔서사업의 신청 접수를 받고 있습니다. 지원 대상을 확인하셔서사업의 신청 접수를 받고 있습니다. 지원 대상을 확인하셔서</p>
                                 <span>2032. 07. 18</span>
-                            </div>
+                            </a>
                         </div>
                         
                     </div>
                 </div>
-                <div class="contentAside4">
+                <div class="contentAside4 pcOnly">
                     <p>자주하는 질문</p>
                     <a href="#">더보기&#43;</a>
                     <ul class="menuBox5">
@@ -389,8 +398,6 @@
                         <li><a href="#"><span>Q</span>견적서를 받아보고 싶습니다.</a></li>
                         <li><a href="#"><span>Q</span>카드로 결제하고 싶어요.</a></li>
                         <li><a href="#"><span>Q</span>A/S를 신청하고 싶습니다.</a></li>
-                    </ul>
-                    </ul>
                     </ul>
                 </div>
             </div>
