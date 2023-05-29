@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* table */
+.rowTable{table-layout:fixed;width:100%;border-top:1px solid var(--black_0);}
+.rowTable th{padding:11px 0 11px 32px;line-height:40px;vertical-align:top;text-align:left;font-size:16px;letter-spacing: -0.01em;}
+.rowTable td{padding:13px 0;line-height:22px;vertical-align:top;font-size:16px;letter-spacing: -0.01em;}
+.rowTable td .radioWrap label{margin:0 4px 0 40px}
+.rowTable td .radioWrap label:first-child{margin-left:0}
+.rowTable td .search{border:1px solid var(--gray_8)}
+.rowTable td label[for="unknown"]{font-size:13px;font-weight:400;}
+.rowTable td .fullSizeTextarea{box-sizing:border-box;width:100%;height:180px;padding:6px 11px;border:1px solid var(--gray_4)}
+.rowTable td .fullSizeTextarea::placeholder{color:var(--gray_4)}
+.rowTable td .countByte{line-height:20px;text-align:right;font-size:13px;letter-spacing:-0.01em;}
+.rowTable td .inputTxt{box-sizing:border-box;height:40px;line-height:20px;padding:10px;border:1px solid var(--gray_4)}
+.rowTable td .flexBox{display:flex;gap:10.5px}
+.rowTable td .flexBox span{line-height:40px;}
+
+/* sub-02-02-0N */
+.customerSection2 .titleType2{padding:0 0 20px 0;font-size:20px;letter-spacing:-0.01em;font-weight:500}
+.customerSection2 .indiTermsAgrWrap{box-sizing:border-box;width:100%;padding:46px 44px;margin:60px 0;background:var(--gray_7);border-radius:8px;}
+.customerSection2 .indiTermsAgrWrap>p{padding:0 0 20px 0;font-size:14px;letter-spacing:-0.01em;font-weight:400}
+.customerSection2 .indiTermsAgrWrap .agrTermsRdo{padding:0 0 20px 0;}
+.customerSection2 .indiTermsAgrWrap .agrTermsRdo label{margin:0 8px 0 40px;font-size:14px;letter-spacing:-0.01em;vertical-align:middle;font-weight:400}
+.customerSection2 .indiTermsAgrWrap .agrTermsRdo label:first-child{margin-left:0}
+.customerSection2 .termsTxt{box-sizing:border-box;padding:28px;background:var(--white_1);border:1px solid var(--gray_4)}
+.customerSection2 .termsTxt ul{padding:0 0 0 14px}
+.customerSection2 .termsTxt ul li{list-style:disc;line-height:19px;font-size:14px;}
+.customerSection2 .termsTxt ul li + li{padding:10px 0 0 0;}
