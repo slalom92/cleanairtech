@@ -72,7 +72,7 @@
 .historyList>li{flex-direction:column;padding:16px 0}
 .historyList>li>h3{line-height:32px;font-size:23px;margin: 0 0 0 6px;}
 .historyList>li .historyList_year{padding:22px 0 0 6px}
-.historyList>li .historyList_year li{line-height:24px;font-size:14px;}
+.historyList>li .historyList_year li{padding:0 0 0 31px;text-indent:-31px;line-height:24px;font-size:14px;}
 .historyList>li>img{margin:12px 0 0 0;}
 .historyList>li::after{display:none}
 
