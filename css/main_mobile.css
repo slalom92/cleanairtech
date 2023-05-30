@@ -4,7 +4,7 @@
 @media screen and (max-width:1279px){
 
 
-.mainContent{display:block;margin:0 -10px 0 10px}
+.mainContent{display:block;}
 .contentMajor{box-sizing:border-box;width:100%;padding:30px 0;flex-grow:0;flex-shrink:0;}
 .contentAside1.helpAside{position:absolute;z-index:1;bottom:370px;left:0;box-sizing:border-box;width:100%;padding:0;min-width:0;background:#fff}
 .contentAside1.tagAside{position:absolute;z-index:1;bottom:480px;left:0;box-sizing:border-box;padding:0 10px;min-width:0;width:100%;background:#fff}
@@ -105,6 +105,7 @@
 
 
 /* slideSection  */
+.slideSection .mainContent{margin:0 -10px 0 10px}
 .contentMajor2{width:100%;padding-bottom:30px;flex-grow:0;flex-shrink:0;}
 .contentMajor2 .slideBox .swiper-slide a>img{width:21vw}
 .contentAside2{box-sizing:border-box;position:relative;z-index:1;padding:0 0 60px 27px;min-width:0;flex-basis:252px;flex-shrink:0;flex-grow:0;border-left:1px solid #e2e5eb;}
@@ -196,6 +197,10 @@
 
 /* section3 */
 .flexType6{display:block;gap:14px;width:100%;padding:30px 0;flex-grow:0;flex-shrink:0;}
+
+.contentMajor4{width:100%;padding-bottom:350px;flex-grow:0;flex-shrink:0;}
+.contentAside1.tagAside{bottom:500px}
+
 /* .flexType6>ul{height:382px;} */
 .flexType6>ul>li{width:100%;height:auto;flex-shrink:0;border-radius:4px;}
 .textType3 .maincover2{display:block;width:110px;height:30px;position:absolute;left:32px;bottom:10%;z-index:1;text-align:center;font-size:14px;line-height:30px;color:#fff;background:rgba(0, 0, 0, 0.7);}
