@@ -5,7 +5,7 @@
 
 /* sub_common */
 .subCon{margin-bottom:70px}
-.titleType1{font-size:17px;}
+.titleType1{font-size:17px;line-height:22px;}
 .textType1{font-size:14px;line-height:22px;margin-bottom:30px}
 .titleType1::before{height:2px;margin-bottom:7px}
 .visualArea{display:none}
@@ -76,5 +76,27 @@
 .historyList>li>img{margin:12px 0 0 0;}
 .historyList>li::after{display:none}
 
+/* sub-01-03-00 회사소개-인증서 */
+.certificateList{margin-bottom:10px;}
+.certificateList .titleType1{margin-bottom:21px}
+
+.certificateMenu{display:flex;align-items:center;flex-wrap:wrap;margin:60px 0 60px 0;}
+.certificateMenu>li{box-sizing:border-box;flex-basis:auto;width:calc(100% / 3);flex-grow:auto;border:1px solid #e2e5eb;font-size:14px;letter-spacing:-0.18px;color:#000;background:#fff;text-align:center;}
+.certificateMenu>li>a{display:inline-block;width:100%;height:34px;line-height:34px;font-size:14px;letter-spacing: -0.1em;}
+.certificateMenu>li{border-right:none;}
+.certificateMenu>li:nth-child(3n){border:1px solid #e2e5eb;}
+.certificateMenu>li.is_active{background:var(--blue_1);color:#fff;border:1px solid var(--blue_1)}
+.certificateMenu>li>button{height:60px;}
+
+.certifiListFlex{gap:5px;margin-bottom:60px;}
+.certifiListFlex>li{min-width:0;width:calc(100% / 3 - 4px);}
+.certifiListFlex>li img{width:100%;}
+
+.showBigOne .btnClose{width:40px;height:40px;background:url(../images/sub/sub_etc/btn_close_off.png) center no-repeat;background-size:22.4px;}
+.showBigOne .btnClose:hover{background:url(../images/sub/sub_etc/btn_close_on.png) center no-repeat;background-size:40px;}
+.showBigOne .btnPrev{display:block;width:40px;height:50px;background:url(../images/sub/sub_etc/btn_prev_off.png) center no-repeat;background-size:17px 26.5px;}
+.showBigOne .btnPrev:hover{background:url(../images/sub/sub_etc/btn_prev_on.png) center no-repeat;background-size:40px 50px;}
+.showBigOne .btnNext{display:block;width:40px;height:50px;background:url(../images/sub/sub_etc/btn_next_off.png) center no-repeat;background-size:17px 26.5px;}
+.showBigOne .btnNext:hover{background:url(../images/sub/sub_etc/btn_next_on.png) center no-repeat;background-size:40px 50px;}
 
 }
