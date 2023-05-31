@@ -99,4 +99,30 @@
 .showBigOne .btnNext{display:block;width:40px;height:50px;background:url(../images/sub/sub_etc/btn_next_off.png) center no-repeat;background-size:17px 26.5px;}
 .showBigOne .btnNext:hover{background:url(../images/sub/sub_etc/btn_next_on.png) center no-repeat;background-size:40px 50px;}
 
+/* 회사소개 거래처실적 */
+.majorClientWrap{padding:60px 0 0 0;}
+.majorClientList {gap:8px;padding:10px;justify-content: space-between;margin-bottom:60px;}
+.subcondescription {margin-bottom:20px;text-indent:-13px;padding:0 0 0 13px;font-size: 14px;line-height: 19px;}
+.transactionFlex {flex-direction: column;}
+.transaction>li>span {font-size: 13px;line-height: 31px;letter-spacing: -0.1em;}
+
+/* 회사소개 시공사례 */
+.locationState.mb120{margin-bottom:0}
+.sub010500 .subCon2Bar{margin-top:30px;}
+.listType1 {flex-wrap: wrap;margin: 20px 0;}
+.listType1>li>a {height: 32px;line-height: 32px;font-size: 13px;}
+.sub010500 .searchType1 {width: 100%;height: 34px;}
+.sub010500 .searchArea {flex-direction:column;gap:8px;border-radius:0;margin:0 -10px}
+.sub010500 .searchType1>input[type=text] {box-sizing:border-box;width: 100%;}
+.sub010500 .searchArea>select{width:100%;margin-left:0}
+.sub010500 .cardbox1 {gap:10px;padding-top:30px;margin-bottom: 30px;}
+.sub010500 .cardbox1>li{flex-basis:calc(50% - 5px);}
+.sub010500 .cardbox1>li img{width:100%;}
+.sub010500 .cardText>p {padding:0 6px;font-size: 14px;line-height: 19px;}
+.sub010500 .cardText{padding:11px 0}
+.sub010500 .cardText>ul>li {height:18px;padding: 0;line-height: 18px;border: none;border-radius:0;text-align:left;font-size: 13px;color:var(--blue_1);}
+.sub010500 .cardText>ul>li::before{content:'#';color:var(--blue_1);font-size: 13px;line-height: 18px;}
+.cardText .date {font-size: 13px;line-height: 17px;    letter-spacing: -0.14px;background: url(../images/sub/sub_etc/icon_05.png) 0 3px no-repeat;background-size:14px;}
+
+
 }

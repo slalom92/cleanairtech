@@ -181,7 +181,9 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
 
 /* common */
 .mobileOnly{display:none !important}
+.mobileOnlyFlex{display:none !important}
 .pcOnly{display:block}
+.pcOnlyFlex{display:flex}
 
 /* layouts */
 .wrapper {width:1280px; margin:0 auto;}

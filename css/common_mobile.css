@@ -5,7 +5,9 @@
 
 /* common */
 .mobileOnly{display:block}
+.mobileOnlyFlex{display:flex}
 .pcOnly{display:none !important}
+.pcOnlyFlex{display:none !important}
 .wrapper{width:calc(100% - 20px);padding:0 10px;min-width:300px;}
 body{position:relative;min-width:320px;}
 
