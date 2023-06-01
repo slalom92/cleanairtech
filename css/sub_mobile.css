@@ -10,6 +10,10 @@
 .titleType1::before{height:2px;margin-bottom:7px}
 .visualArea{display:none}
 .locationState{justify-content:left;}
+.pageType1{width:100%}
+.pageType1>li>a {width:26px;height:26px;line-height:26px;}
+.carboxPage .prev {left: -5px;}
+.carboxPage .next {right: -5px;}
 
 /* 회사소개 개요 */
 .tabType1Flex{display:none}
@@ -58,7 +62,7 @@
 /* 회사소개 연혁 */
 .subCon2Flex{overflow:hiddenb;flex-direction:column;align-items:baseline;margin-top:-20px;}
 .subCon2Flex>strong{display:block;padding-left:10px;opacity:0.1;font-size:40px;color:var(--black_1);font-weight:800}
-.subCon2Flex>h2{padding-left:10px;line-height:24px;font-size:18px;font-weight:500;}
+.subCon2Flex>h2{padding-left:10px;line-height:24px;font-size:18px;font-weight:400;}
 .subCon2Flex>h2>span{font-size:18px;font-weight:500;}
 .subCon2Bar{margin:60px -10px 0;padding-left:10px;overflow-x:auto;}
 .subCon2Bar::before{left:-10px;width:calc(100% + 10px);height:1px}
