@@ -128,5 +128,107 @@
 .sub010500 .cardText>ul>li::before{content:'#';color:var(--blue_1);font-size: 13px;line-height: 18px;}
 .cardText .date {font-size: 13px;line-height: 17px;    letter-spacing: -0.14px;background: url(../images/sub/sub_etc/icon_05.png) 0 3px no-repeat;background-size:14px;}
 
+/* 회사소개 sub-01-06-00 */
+.sub010600 .searchType1.blue1 {width: auto;height: 54px;padding: 10px;margin: 60px -10px 0 -10px;background: #f4f4f4;}
+.searchType1>input[type=text]{box-sizing:border-box;width:100%;}
+.searchType1>a {right: 20px;}
+.listTitle{display:none;}
+.listType2{padding-top:15px;margin-bottom:40px;}
+.listType2>li {overflow:hidden;display:block;padding:15px 10px;border:none}
+.listType2>li>img{float:left;width:30%;margin:0}
+.listType2>li>p{float:right;width:60%;padding-bottom:10px;font-size:14px;line-height:19px;}
+.listType2>li>span{float:right;width:60%;line-height:17px;font-size:13px;color:#AAAAAA}
+
+/* 회사소개 sub-01-07-00 */
+.subVisualType1{overflow:hidden;height:auto;padding:30px 0 0 0;margin:0 -10px}
+.subVisualType1>img{height:132px;}
+.subVisualType1 .subVisualtextBox{position:static}
+.subVisualtextBox>h3{width:100%;padding:30px 0 0 0;line-height:20px;text-align: center;font-size:15px;}
+.subVisualtextBox .btnType1{width:180px;height:40px;margin:0 auto 60px;line-height:40px;font-size:13px;}
+.listType3{flex-direction: column;padding:0;gap:20px;}
+.listType3>li{display:flex;width:100%;flex-basis:0;gap:25px;align-items: center;}
+.listType3>li::before {content: '';display: block;flex-basis:120px;width: 120px;height:120px;margin:0;}
+.listType3>li:nth-child(1)::before {background: url(../images/sub/sub_etc/Creative.png) center center no-repeat,url(../images/sub/sub_etc/circle1.png) 0 0 no-repeat;background-size:52px 45px,120px}
+.listType3>li:nth-child(2)::before {background: url(../images/sub/sub_etc/Challenge.png) center center no-repeat,url(../images/sub/sub_etc/circle2.png) 0 0 no-repeat;background-size:52px 45px,120px}
+.listType3>li:nth-child(3)::before {background: url(../images/sub/sub_etc/WorkEthic.png) center center no-repeat,url(../images/sub/sub_etc/circle3.png) 0 0 no-repeat;background-size:52px 45px,120px}
+.listType3>li>p{width:calc(100% - 145px);text-align:left;line-height:24px;font-size:14px;}
+.positionLevel>li{width:100%;text-align:center;height:20px;padding:20px 0;line-height:20px;font-size:15px;}
+.positionLevel>li:nth-child(1){color:var(--black_1);background: #d1eaf6;}
+.positionLevel>li:nth-child(2){color:var(--black_1);background: #a4d6ed;}
+.positionLevel>li:nth-child(3){color:var(--white_1);background: #76c1e3;}
+.positionLevel>li:nth-child(4){color:var(--white_1);background: #49acda;}
+.positionLevel>li:nth-child(5){color:var(--white_1);background: #1c98d1;}
+.sectionType1 .alignCenter{width:60%;margin:20px auto 0;line-height:19px;font-size:14px;}
+.subCon100{margin-bottom:60px}
+.fullBack{height:auto}
+.sectionType1 .flexType1{flex-direction:column;padding:0}
+.sectionType1 .flexType1>li{padding:30px 0;}
+.sectionType1 .flexType1>li + li{border-left:none;border-top:1px solid var(--gray_4)}
+.flexType1>li>h4{margin-bottom:10px;line-height:20px;font-size:15px;}
+.flexType1>li>p{line-height:19px;font-size:14px;}
+.textType2{line-height:21px;font-size:16px;margin-bottom:34px;}
+.flexType2{flex-direction:column;}
+.flexType2>li{flex-basis:100%;padding:30px 6px;}
+.flexType2>li>h5{line-height:20px;font-size:15px;}
+.flexType2>li>p{line-height:19px;font-size:14px;}
+.listType4{flex-direction: column;}
+.listType4>li{flex-basis:100%;padding-bottom:72px}
+.listType4>li::before {width:150px;height:150px;margin: 0 auto 30px;background-size:100%}
+.listType4>li:nth-child(1)::before {background: url(../images/sub/sub_etc/text1.png) center 50% no-repeat,url(../images/sub/sub_etc/circle4.png) 0 0 no-repeat;background-size: 58%,100%;}
+.listType4>li:nth-child(2)::before {background: url(../images/sub/sub_etc/text2.png) center 50% no-repeat,url(../images/sub/sub_etc/circle5.png) 0 0 no-repeat;background-size: 58%,100%;}
+.listType4>li:nth-child(3)::before {background: url(../images/sub/sub_etc/text3.png) center 50% no-repeat,url(../images/sub/sub_etc/circle6.png) 0 0 no-repeat;background-size: 58%,100%;}
+.listType4>li:nth-child(3){padding-bottom:0}
+.listType4>li>p{width:100%;height:38px;line-height:19px;font-size:14px;}
+.listType4>li::after{top:245px;;right:calc(50% - 15px);width:30px;height:30px;margin-left:15px;background: url(../images/sub/sub_etc/icon_9.jpg) -16px -16px no-repeat;}
+.noticeBox1{flex-direction:column;padding:20px;}
+.noticeBox1>p{width:60%;text-align:center;line-height:20px;font-size:15px;word-break: keep-all;}
+.noticeBox1>p>span{display:none;}
+.noticeBox1 .btnType2{height:36px;margin:22px auto 0;font-size:13px;line-height:36px;}
+
+/* 회사소개 오시는길 01-08-00 */
+.sectionType1 .coverType2{overflow:hidden;height:500px;margin:0 -10px;margin-bottom:40px}
+.sectionType1 .coverType2>img{margin:0 auto;}
+.listType5{}
+.listType5>li{padding:26px 0;height:auto;line-height:20px;font-size:15px;}
+.listType5>li>p{width:30%;padding:0}
+.listType5>li>span{width:70%;padding:0;}
+
+/* 고객센터 안내 02-01-00 */
+.customerSection1{margin:30px 0 0 0}
+.customerSection1 .flexType10 {gap:38px;height:auto;padding:30px 10px;margin-bottom:60px;flex-direction: column;}
+.customerSection1 .flexType10>li{width:100%}
+.customerSection1 .flexType10>li::before{width:108px;height:108px;}
+.customerSection1 .flexType10>li:nth-child(1)::before {background: url(../images/sub/sub_etc/icon17.png) 0 0 no-repeat;background-size:100%}
+.customerSection1 .flexType10>li:nth-child(2)::before {background: url(../images/sub/sub_etc/icon18.png) 0 0 no-repeat;background-size:100%}
+.customerSection1 .flexType10>li:nth-child(3)::before {background: url(../images/sub/sub_etc/icon19.png) 0 0 no-repeat;background-size:100%}
+.customerSection1 .flexType10>li>div{margin-left:133px;}
+.customerSection1 .flexType10>li>div>p{line-height:21px;font-size:16px;}
+.customerSection1 .flexType10>li>div>span{line-height:19px;}
+.flexType11{flex-direction: column;gap:60px;margin-bottom:60px}
+.flexType11>li{width:100%}
+.flexType11>li>h4{padding-bottom:15px;margin-bottom:14px;line-height:22px;font-size:17px;}
+.flexType11>li>ol{padding:0 6px;}
+.flexType11>li>ol>li + li{margin:10px 0 0 0}
+.flexType11>li>ol>li>a{line-height:19px;font-size:14px;}
+.flexType11>li>a{font-size:12px;}
+.flexType12{flex-wrap:wrap;gap:30px;justify-content: space-evenly;padding:30px 40px;margin-bottom:60px}
+.flexType12>li>a::before{margin-bottom:12px}
+.flexType13{flex-direction: column-reverse;margin-bottom:70px}
+.flexType13 .notice{width:100%;}
+.flexType13 .notice>li{width:100%}
+.flexType13 .notice>li>h4{padding-bottom:15px;margin-bottom:14px;line-height:22px;font-size:17px;}
+.flexType13 .notice>li>ul{padding:0 6px;}
+.flexType13 .notice>li>ul>li>a p{line-height:28px;font-size:14px;}
+.flexType13 .notice>li>ul>li>a span{line-height:28px;font-size:14px;}
+.flexType13 .notice>li>a{font-size:12px;}
+.flexType13 .notice>ul>li>a>p{width:70%;overflow:hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;}
+.flexType13 .notice>ul>li>a>span{width:30%;text-align:right}
+.flexType13 .csBox1{flex-direction:column;align-items: center;width:100%;padding:30px 12px;gap:28px}
+.flexType13 .csBox1>img{width:60%;margin:0 auto}
+.flexType13 .csBox1>div{text-align:center;}
+.flexType13 .csBox1>div>h3{font-size:30px;}
+.flexType13 .csBox1>div>p{line-height:21px;font-size:16px;}
+.flexType13 .csBox1>div>ul{padding:8px 0}
+.flexType13 .csBox1>div>ul>li{text-align:left;line-height:18px}
 
 }
