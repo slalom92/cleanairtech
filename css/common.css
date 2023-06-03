@@ -76,6 +76,7 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 /* margin */
 .mt0{margin-top:0 !important;}
 .mt10{margin-top:10px !important;}
+.mt12{margin-top:12px !important;}
 .mt15{margin-top:15px !important;}
 .mt25{margin-top:25px !important;}
 .mt30{margin-top:30px !important;}
@@ -162,6 +163,7 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 /* lineheight */
 
 /* btns */
+.btnblue40{display:inline-block;padding:0 20px;height:40px;line-height:40px;vertical-align:top;color:#fff;font-size:14px;letter-spacing: -0.01em;background:var(--blue_1);border-radius:2px;}
 
 /* paging */
 .paging{position:relative;z-index:1;min-width:320px;margin:5px 0 0 0;line-height:20px;text-align:center;}
@@ -185,6 +187,7 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
 .mobileOnlyFlex{display:none !important}
 .pcOnly{display:block}
 .pcOnlyFlex{display:flex}
+.pcOnlyTableColumn{display:table-column}
 
 /* layouts */
 .wrapper {width:1280px; margin:0 auto;}

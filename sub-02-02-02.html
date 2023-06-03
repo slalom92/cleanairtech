@@ -51,7 +51,7 @@
     </div>
     <section class="customerSection2">
         <div class="wrapper">
-            <ul class="subCon2Bar">
+            <ul class="subCon2Bar tabMobileType1">
                 <li>
                     <a href="">문의·견적서 요청</a>
                 </li>
@@ -76,23 +76,33 @@
                 <table class="rowTable">
                     <caption>문의견적요청양식</caption>
                     <colgroup>
-                        <col width="166px" /><col width="1114px" />
+                        <col width="166px" class="pcOnlyTableColumn"/><col width="1114px" class="pcOnlyTableColumn"/>
                     </colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">구분<span class="redTxt">*</span></th>
                             <td>
                                 <div class="radioWrap">
-                                    <label for="categoryRdo_1">집진기</label>
-                                    <input type="radio" name="categoryRdo" id="categoryRdo_1" checked="checked"/>
-                                    <label for="categoryRdo_2">대기환경플랜트</label>
-                                    <input type="radio" name="categoryRdo" id="categoryRdo_2"/>
-                                    <label for="categoryRdo_3">대기자가측정</label>
-                                    <input type="radio" name="categoryRdo" id="categoryRdo_3"/>
-                                    <label for="categoryRdo_4">유해위험방지계획서</label>
-                                    <input type="radio" name="categoryRdo" id="categoryRdo_4"/>
-                                    <label for="categoryRdo_4">정부지원사업</label>
-                                    <input type="radio" name="categoryRdo" id="categoryRdo_4"/>
+                                    <span>
+                                        <label for="categoryRdo_1">집진기</label>
+                                        <input type="radio" name="categoryRdo" id="categoryRdo_1" checked="checked"/>
+                                    </span>
+                                    <span>
+                                        <label for="categoryRdo_2">대기환경플랜트</label>
+                                        <input type="radio" name="categoryRdo" id="categoryRdo_2"/>
+                                    </span>
+                                    <span>
+                                        <label for="categoryRdo_3">대기자가측정</label>
+                                        <input type="radio" name="categoryRdo" id="categoryRdo_3"/>
+                                    </span>
+                                    <span>
+                                        <label for="categoryRdo_4">유해위험방지계획서</label>
+                                        <input type="radio" name="categoryRdo" id="categoryRdo_4"/>
+                                    </span>
+                                    <span>
+                                        <label for="categoryRdo_5">정부지원사업</label>
+                                        <input type="radio" name="categoryRdo" id="categoryRdo_5"/>
+                                    </span>
                                 </div>
                             </td>
                         </tr>                       
@@ -105,11 +115,11 @@
                         </tr>
                     </tbody>                    
                 </table>
-                <h3 class="titleType2">회사정보를 알려주세요.</h3>
+                <h3 class="titleType2 mt40">회사정보를 알려주세요.</h3>
                 <table class="rowTable">
                     <caption>문의견적요청양식</caption>
                     <colgroup>
-                        <col width="166px" /><col width="1114px" />
+                        <col width="166px" class="pcOnlyTableColumn"/><col width="1114px" class="pcOnlyTableColumn"/>
                     </colgroup>
                     <tbody>
                         <tr>
@@ -131,7 +141,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">핸드폰</th>
+                            <th scope="row">방문지 주소<span class="redTxt">*</span></th>
+                            <td>                                
+                                <input type="text" title="직위/직책 입력" class="inputTxt width120" style="width:120px"/>
+                                <a href="#" class="btnblue40">우편번호</a>
+                                <div class="mt12">
+                                    <input type="text" title="담당자 입력" class="inputTxt" style="width:354px"/>
+                                    <input type="text" title="담당자 입력" class="inputTxt mobileMt10" style="width:354px"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">핸드폰<span class="redTxt">*</span></th>
                             <td>
                                 <div class="flexBox">
                                     <input type="text" title="핸드폰 첫째자리 입력" class="inputTxt" style="width:100px"/>
@@ -139,18 +160,6 @@
                                     <input type="text" title="핸드폰 둘째자리 입력" class="inputTxt" style="width:100px"/>
                                     <span>-</span>
                                     <input type="text" title="핸드폰 셋째자리 입력" class="inputTxt" style="width:100px"/>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">전화</th>
-                            <td>
-                                <div class="flexBox">
-                                    <input type="text" title="전화 첫째자리 입력" class="inputTxt" style="width:100px"/>
-                                    <span>-</span>
-                                    <input type="text" title="전화 둘째자리 입력" class="inputTxt" style="width:100px"/>
-                                    <span>-</span>
-                                    <input type="text" title="전화 셋째자리 입력" class="inputTxt" style="width:100px"/>
                                 </div>
                             </td>
                         </tr>

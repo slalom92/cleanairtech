@@ -8,8 +8,10 @@
 .mobileOnlyFlex{display:flex}
 .pcOnly{display:none !important}
 .pcOnlyFlex{display:none !important}
+.pcOnlyTableColumn{display:none !important}
 .wrapper{width:calc(100% - 20px);padding:0 10px;min-width:300px;}
 body{position:relative;min-width:320px;}
+.mt40{margin-top:40px !important}
 
 /* header */
 #header{position:fixed;z-index:10;top:0;left:0;width:100%;background:#fff;}
@@ -63,6 +65,10 @@ body{position:relative;min-width:320px;}
 .lnbArea>ul>li:nth-child(3)>a{background:url(../images/mobile/common/lnb_icon_3.png) 20px 7px no-repeat;}
 .lnbArea>ul>li:nth-child(4)>a{background:url(../images/mobile/common/lnb_icon_4.png) 20px 7px no-repeat;}
 .lnbArea .lnbTelBtn{box-sizing:border-box;display:block;width:36.4%;min-width:104px;max-width:120px;height:36px;padding:0 10px 0 33px;margin:18px auto 0;line-height:34px;text-align:center;color:#fff;font-size:13px;background:#1C98D1 url(../images/mobile/common/lnb_tel_icon.png) 10% 7px no-repeat;border-radius:4px;}
+
+/* submenu */
+.aside{display:none}
+.sideBox{display:none}
 
 /* contents */
 #contentsWrap{padding:96px 0 0 0}
