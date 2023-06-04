@@ -169,8 +169,8 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 
 /* paging */
 .paging{position:relative;z-index:1;min-width:320px;margin:5px 0 0 0;line-height:20px;text-align:center;}
-.paging>a{display:inline-block;*zoom:1;*display:inline;width:20px;height:20px;margin:0 5px;box-sizing:border:box;line-height:20px;text-align:center;font-size:10px;color:#000;font-weight:400;vertical-align:middle;background:#fff;border-radius:10px;border:1px solid #8e8d8d}
-.paging>strong{display:inline-block;*zoom:1;*display:inline;width:20px;height:20px;margin:0 5px;box-sizing:border:box;line-height:20px;text-align:center;font-size:10px;color:#ed3350;font-weight:400;vertical-align:middle;background:#fff;border-radius:10px;border:1px solid #f48193}
+.paging>a{display:inline-block;*zoom:1;*display:inline;width:20px;height:20px;margin:0 5px;box-sizing:border-box;line-height:20px;text-align:center;font-size:10px;color:#000;font-weight:400;vertical-align:middle;background:#fff;border-radius:10px;border:1px solid #8e8d8d}
+.paging>strong{display:inline-block;*zoom:1;*display:inline;width:20px;height:20px;margin:0 5px;box-sizing:border-box;line-height:20px;text-align:center;font-size:10px;color:#ed3350;font-weight:400;vertical-align:middle;background:#fff;border-radius:10px;border:1px solid #f48193}
 .paging>a.nextBtn{border:none;width:20px;height:20px;}
 .paging>a.nextBtn img{width:100%;vertical-align:middle}
 .paging>a.prevBtn{border:none;width:20px;height:20px;}

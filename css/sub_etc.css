@@ -422,8 +422,10 @@
 .contentBox .allProduct>ul>li .cardBox3>ul>li>span.textType9{display:inline-block;font-size:13px;line-height:16px;color:#2e2e2e;width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 
 /* sub-03-00-00 오른쪽 박스-지역별 연락처 */
-.sideBox{box-sizing:border-box;position:absolute;top:0px;right:0;z-index:1;padding:32px 20px 30px 20px;margin-right:-260px;width:200px;border:1px solid #367CC2;border-radius:4px;background:#fff;}
+.sideBox{box-sizing:border-box;position:absolute;top:472px;left:50%;z-index:2;padding:32px 20px 30px 20px;margin-left:700px;width:200px;border:1px solid #367CC2;border-radius:4px;background:#fff;}
 .sideBox::before{content:'';display:block;position:absolute;top:-60px;left:50%;width:1px;height:60px;background:#367CC2;}
+.sideBox.off{border:none !important;padding:0}
+.sideBox.off::before{content:'';display:none}
 .sideBox .sideBoxType1>li{padding:0 0 16px 45px;border-bottom:1px solid #f4f4f4;}
 .sideBox .sideBoxType1>li{margin-bottom:16px;}
 .sideBox .sideBoxType1>li:nth-child(1){background:url(../images/sub/sub_etc/icon30.png) 0 4px no-repeat;}
@@ -441,7 +443,8 @@
 .sideBox .textType12>img{vertical-align:top;}
 .sideBox .textType13>a{box-sizing:border-box;display:inline-block;padding:0 15px;height:27px;border:1px solid #e2e5eb;border-radius:14px;font-size:12px;letter-spacing:-0.12px;line-height:27px;color:#2e2e2e;}
 .sideBox .textType13>a + a{margin-top:5px;}
-.sideBox .sideBoxbtn{display:block;position:absolute;bottom:-22px;right:10px;width:50px;height:22px;line-height:22px;background:#367CC2;color:#fff;border-radius:0 0 4px 4px;text-align:center;}
+.sideBox .sideBoxbtn{display:block;position:absolute;top:auto;bottom:-22px;right:10px;width:50px;height:22px;line-height:22px;background:#367CC2;color:#fff;border-radius:0 0 4px 4px;text-align:center;}
+.sideBox.off .sideBoxbtn{bottom:auto;top:-82px}
 
 /* sub-03-01-02 contentBox  */
 /* 왼쪽 이미지 영역과 오른쪽 상품정보 영역 사이 gap 조정함  */

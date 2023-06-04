@@ -143,13 +143,65 @@
                 });
             }
         }else{
-            if(winTop>100){
-            }else{
-
-            }
             $('.headerNav').css({
                 'position':'absolute'
             });
+        }
+    },
+    rightMenuToggle : function(){
+        if($('.sideBox').length>0){
+            if($('.sideBox').css('display')=='none'){
+                return false;
+            }
+            $('.sideBoxbtn').bind('click',function(){
+                if(!$('.sideBox').hasClass('off')){                
+                    $('.sideBox>ul,.sideBox>div').stop().slideUp(300);
+                    var hideFn = setTimeout(function(){
+                        $('.sideBox').addClass('off').removeClass('on');
+                        $('.sideBoxbtn').text('Open').css({
+                            'border-radius' : '4px 4px 0 0'
+                        });
+                    },300);
+                }else{
+                    $('.sideBox>ul,.sideBox>div').stop().slideDown(300);
+                    var hideFn = setTimeout(function(){
+                        $('.sideBox').removeClass('off').addClass('on');
+                        $('.sideBoxbtn').text('Close').css({
+                            'border-radius' : '0 0 4px 4px'
+                        });
+                    },300);
+                }
+                return false;
+            });
+        }
+    },
+    rightMenuScroll : function(){
+        if(winTop>100){
+            $('.sideBox').css({
+                'top' : winTop+ 112 +'px'
+            });
+        }else{
+            $('.sideBox').css({
+                'top' : '472px'
+            });
+        }
+    },
+    rightMenuHide : function(){
+        if(winWidthPx<1700){
+            $('.sideBox').animate({
+                'margin-left' : '500px'
+            },300);
+            $('.sideBox>ul,.sideBox>div').stop().slideUp(300);
+                var hideFn = setTimeout(function(){
+                $('.sideBox').addClass('off').removeClass('on');
+                $('.sideBoxbtn').text('Open').css({
+                    'border-radius' : '4px 4px 0 0'
+                });
+            },300);
+        }else{
+            $('.sideBox').animate({
+                'margin-left' : '700px'
+            },300);
         }
     }
 }
@@ -162,6 +214,7 @@ $(document).ready(function(){
     init.topRightNav(); // 우측상단 네비
     init.gnbNav(); // 상단 네비
     init.gnbScroll(); // 상단 네비 고정
+    init.rightMenuToggle(); // 우측 퀵메뉴
 });
 // 리사이즈 시 호출
 $(window).on('resize',function(){
@@ -170,9 +223,12 @@ $(window).on('resize',function(){
     init.topRightNav(); // 우측상단 네비
     init.gnbNav(); // 상단 네비
     init.gnbScroll(); // 상단 네비 고정
+    init.rightMenuHide(); // 우측네비 자동
 });
 // 스크롤 시 호출
 $(window).on('scroll',function(){
     winTop = $(window).scrollTop();
+    winWidthPx = $(window).width();
     init.gnbScroll(); // 상단 네비 고정
+    init.rightMenuScroll(); // 우측 퀵메뉴
 });
