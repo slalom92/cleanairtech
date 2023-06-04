@@ -215,6 +215,7 @@ $(document).ready(function(){
     init.gnbNav(); // 상단 네비
     init.gnbScroll(); // 상단 네비 고정
     init.rightMenuToggle(); // 우측 퀵메뉴
+    init.rightMenuHide(); // 우측네비 자동
 });
 // 리사이즈 시 호출
 $(window).on('resize',function(){
