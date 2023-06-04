@@ -4,14 +4,17 @@
 @media screen and (max-width:1279px){
 
 /* common */
+table{width:100%;table-layout:fixed;}
 .mobileOnly{display:block}
 .mobileOnlyFlex{display:flex}
 .pcOnly{display:none !important}
 .pcOnlyFlex{display:none !important}
-.pcOnlyTableColumn{display:none !important}
+.pcOnlyTableColumn{display:none !important;}
 .wrapper{width:calc(100% - 20px);padding:0 10px;min-width:300px;}
 body{position:relative;min-width:320px;}
 .mt40{margin-top:40px !important}
+.scrollXArea{width:calc(100% + 16px);overflow-x:auto}
+.contentBox{flex-basis:100%;}
 
 /* header */
 #header{position:fixed;z-index:10;top:0;left:0;width:100%;background:#fff;}

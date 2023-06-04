@@ -81,6 +81,7 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 .mt25{margin-top:25px !important;}
 .mt30{margin-top:30px !important;}
 .mt36{margin-top:36px !important;}
+.mt40{margin-top:40px !important;}
 .mt42{margin-top:42px !important;}
 .mt50{margin-top:50px !important;}
 .mt60{margin-top:60px !important;}
@@ -98,6 +99,7 @@ select,input{vertical-align:middle;font-family: 'Noto Sans KR', sans-serif}
 
 .mb0{margin-bottom:0 !important;}
 .mb10{margin-bottom:10px !important;}
+.mb60{margin-bottom:60px !important;}
 
 /* padding */
 .pt0{padding-top:0 !important;}
@@ -188,6 +190,7 @@ a.skipNaviBtn:active {left:50%;margin-left:-100px;z-index:10000;}
 .pcOnly{display:block}
 .pcOnlyFlex{display:flex}
 .pcOnlyTableColumn{display:table-column}
+.mobileTable{display:none}
 
 /* layouts */
 .wrapper {width:1280px; margin:0 auto;}
