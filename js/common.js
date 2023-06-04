@@ -187,8 +187,8 @@
         }
     },
     rightMenuHide : function(){
-        if(winWidthPx<1700){
-            $('.sideBox').animate({
+        if(winWidthPx<=1700){
+            $('.sideBox').stop().animate({
                 'margin-left' : '500px'
             },300);
             $('.sideBox>ul,.sideBox>div').stop().slideUp(300);
@@ -199,7 +199,7 @@
                 });
             },300);
         }else{
-            $('.sideBox').animate({
+            $('.sideBox').stop().animate({
                 'margin-left' : '700px'
             },300);
         }
