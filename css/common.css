@@ -391,4 +391,6 @@ body{background-color:#fff;}
 .csCenterInfoList {display:flex;justify-content:space-between;font-size:14px;font-weight:normal;}
 .csCenterInfoList>h4 {line-height:20px;font-size:14px;font-weight:normal;}
 
+.mobileTopBtn{display:none}
+
 }

@@ -203,6 +203,17 @@
                 'margin-left' : '700px'
             },300);
         }
+    },
+    scrollTopMobile : function(){
+        if(winWidthPx<1280){
+            if(winTop>100){
+                $('.mobileTopBtn').stop().show();
+            }else{
+                $('.mobileTopBtn').stop().hide();
+            }
+        }else{
+            $('.mobileTopBtn').stop().hide();
+        }
     }
 }
 // 문서 호출 시
@@ -216,15 +227,18 @@ $(document).ready(function(){
     init.gnbScroll(); // 상단 네비 고정
     init.rightMenuToggle(); // 우측 퀵메뉴
     init.rightMenuHide(); // 우측네비 자동
+    init.scrollTopMobile(); // 하단 버튼 호출
 });
 // 리사이즈 시 호출
 $(window).on('resize',function(){
+    winTop = $(window).scrollTop();
     winWidthPx = $(window).width();
     init.setting();
     init.topRightNav(); // 우측상단 네비
     init.gnbNav(); // 상단 네비
     init.gnbScroll(); // 상단 네비 고정
     init.rightMenuHide(); // 우측네비 자동
+    init.scrollTopMobile(); // 하단 버튼 호출
 });
 // 스크롤 시 호출
 $(window).on('scroll',function(){
@@ -232,4 +246,5 @@ $(window).on('scroll',function(){
     winWidthPx = $(window).width();
     init.gnbScroll(); // 상단 네비 고정
     init.rightMenuScroll(); // 우측 퀵메뉴
+    init.scrollTopMobile(); // 하단 버튼 호출
 });

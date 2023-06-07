@@ -106,4 +106,6 @@ body{position:relative;min-width:320px;}
 .csCenterInfo>h3{line-height:21px;color:var(--white_1);font-size:15px;}
 .csCenterInfo>p{line-height:21px;color:var(--white_1);font-size:21px;font-weight:700}
 
+.mobileTopBtn{position:fixed;z-index:9;bottom:30px;left:50%;display:none;width:26px;height:26px;margin-left:-13px;}
+
 }
