@@ -180,7 +180,9 @@
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination">
+                            <div class="swiperContolBox">
+                                <a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>
+                                <div class="swiper-pagination"></div>
                             </div>
                         
                             <!-- If we need navigation buttons -->
@@ -198,11 +200,11 @@
                         var swiperOption = {
                             autoplay: {
                                 delay: 1000,
-                                disableOnInteraction: false
+                                disableOnInteraction: true
                             },
                             spaceBetween: 25,
                             slidesPerView: 4,
-                            slidesPerGroup : 4, // 넘길 갯수 지정
+                            slidesPerGroup : 4, // PC 넘길 갯수 지정
                             navigation: {
                                 nextEl: '.slideBox .swiper-button-next',
                                 prevEl: '.slideBox .swiper-button-prev'
@@ -210,38 +212,29 @@
                             pagination: {
                                 el: '.slideBox .swiper-pagination',
                                 type: 'bullets',
-                                clickable: false
+                                clickable: true
                             },
                             loop: true,
+                            breakpoints : {
+                                1280 : {
+                                    spaceBetween: 25,
+                                    slidesPerView: 4,
+                                    slidesPerGroup : 4, // PC 넘길 갯수 지정
+                                },
+                                1024 : {
+                                    spaceBetween: 25,
+                                    slidesPerView: 4,
+                                    slidesPerGroup : 4, // PC 넘길 갯수 지정
+                                },
+                                780 : {
+                                    spaceBetween : 15,
+                                    slidesPerView : 3,
+                                    slidesPerGroup : 1, // 모바일 넘길 갯수 지정
+                                },
+                            }
                         }
                         $(document).ready(function(){
-                            $(window).resize(function(){
-                                winWidth = $(window).width();                                
-                                if(winWidth<780){
-                                    swiperOption.slidesPerView=3;
-                                    swiperOption.spaceBetween=15;
-                                    swiperOption.slidesPerGroup=1;
-                                }else{
-                                    swiperOption.slidesPerView=4;
-                                    swiperOption.spaceBetween=25;
-                                    swiperOption.slidesPerGroup=4;
-                                }
-                            });
-                            if(winWidth<780){
-                                swiperOption.slidesPerView=3;
-                                swiperOption.spaceBetween=15;
-                                swiperOption.slidesPerGroup=1;
-                            }else{
-                                swiperOption.slidesPerView=4;
-                                swiperOption.spaceBetween=25;
-                                swiperOption.slidesPerGroup=4;
-                            }
                             var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
-                            pcSlideSet();
-                            function pcSlideSet(){
-                                $('.slideBox .swiper-pagination').prepend(
-                                '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
-                            }
                             $(document).on('click','.slideBox .swiper-button-autoplay', function () {
                                 var _this = $(this);
                                 if (!_this.hasClass('play')) {
@@ -253,13 +246,16 @@
                                 }
                                 return false;
                             });
-                            // $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
-                            //     visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                            //     $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                            //     $('.slideBox .swiper-slide').css('opacity', '1');
-                            //     $('.slideBox').css('overflow', 'hidden');
-                            //     $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
-                            // });
+                            $(window).on('resize',function(){
+                                var _this = $('.slideBox .swiper-button-autoplay');
+                                if (!_this.hasClass('play')) {
+                                    visualBanner.autoplay.start();
+                                } else {
+                                    visualBanner.autoplay.stop();
+                                }
+                                return false;
+
+                            });
                         });
                     </script>
                 </div>
@@ -295,6 +291,7 @@
                             </div>
                             <!-- If we need pagination -->
                             <div class="controllBox">
+                                <a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>
                                 <div class="swiper-pagination"></div>                        
                                 <!-- If we need navigation buttons -->
                                 <div class="swiper-button-prev"></div>
@@ -307,7 +304,7 @@
                             $(document).ready(function(){
                                 var oneBanner = new Swiper('.bannerBox1 .swiper', {
                                     autoplay: {
-                                        delay: 5000,
+                                        delay: 1000,
                                         disableOnInteraction: false
                                     },
                                     navigation: {
@@ -326,18 +323,6 @@
                                     },
                                     loop: true,
                                 });
-
-                                $('.bannerBox1 .swiper-pagination').append(
-                                    '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
-                                // $('.bannerBox1 .swiper-slide').on('mouseenter', function () {
-                                //     oneBanner.autoplay.stop();
-                                // });
-                                // $('.bannerBox1 .swiper-slide').on('mouseleave', function () {
-                                //     if (!$('.bannerBox1 .swiper-button-autoplay').hasClass('pause')) {
-                                //         oneBanner.autoplay.start();
-                                //     }
-                                // });
-                                $('.contentMajor4 .bannerBox1 .controllBox').delay(100).css('width',$('.bannerBox1 .swiper-pagination').width()+24);
                                 $(document).on('click','.bannerBox1 .swiper-button-autoplay', function () {
                                     var _this = $(this);
                                     if (!_this.hasClass('play')) {
@@ -348,13 +333,6 @@
                                         _this.removeClass('play').addClass('pause').find('span').text('일시정지');
                                     }
                                     return false;
-                                });
-                                $(document).on('focusin , focus', '.bannerBox1 .swiper-slide a', function () {
-                                    oneBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                                    $('.bannerBox1 .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                                    $('.bannerBox1 .swiper-slide').css('opacity', '1');
-                                    $('.bannerBox1').css('overflow', 'hidden');
-                                    $('.bannerBox1 .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
                                 });
                             });
                         </script>

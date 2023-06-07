@@ -165,19 +165,23 @@
             </div>
             <div class="sectionType1">
                 <h2 class="titleType1">회사사진</h2>
-                <div class="slide">
+                <div class="slideBox fullSize">
+                    <!-- Slider main container -->
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><a href="#"><img src="./images/sub/sub_etc/recruit2.png" alt=""/></a></div>
-                            <div class="swiper-slide"><a href="#"><img src="./images/sub/sub_etc/recruit2.png" alt=""/></a></div>
-                            <div class="swiper-slide"><a href="#"><img src="./images/sub/sub_etc/recruit3.png" alt=""/></a></div>
-                            <div class="swiper-slide"><a href="#"><img src="./images/sub/sub_etc/recruit4.png" alt=""/></a></div>
-                            <div class="swiper-slide"><a href="#"><img src="./images/sub/sub_etc/recruit4.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination">
+                        <div class="swiperContolBox">
+                            <a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>
+                            <div class="swiper-pagination"></div>
                         </div>
                     
                         <!-- If we need navigation buttons -->
@@ -188,12 +192,6 @@
                         <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
                 </div>
-                <div class="showBigOne">
-                    <a href="#" class="btnPrev">이전</a>
-                    <div class="showBigImg"><img src="./images/sub/sub_etc/certificate00_59.jpg" alt=""/></div>
-                    <a href="#" class="btnNext">다음</a>
-                    <a href="#" class="btnClose">닫기</a>
-                </div>
                 <link rel="stylesheet" href="./css/swiper.css"/>
                 <script type="text/javascript" src="./js/swiper.js"></script>
                 <script type="text/javascript">
@@ -201,53 +199,42 @@
                     var swiperOption = {
                         autoplay: {
                             delay: 1000,
-                            disableOnInteraction: false
+                            disableOnInteraction: true
                         },
                         spaceBetween: 22,
-                        slidesPerView: 4,
-                        slidesPerGroup : 4, // 넘길 갯수 지정
+                        slidesPerView: 5,
+                        slidesPerGroup : 4, // PC 넘길 갯수 지정
                         navigation: {
-                            nextEl: '.slide .swiper-button-next',
-                            prevEl: '.slide .swiper-button-prev'
+                            nextEl: '.slideBox .swiper-button-next',
+                            prevEl: '.slideBox .swiper-button-prev'
                         },
                         pagination: {
-                            el: '.slide .swiper-pagination',
+                            el: '.slideBox .swiper-pagination',
                             type: 'bullets',
-                            clickable: false
+                            clickable: true
                         },
                         loop: true,
+                        breakpoints : {
+                            1280 : {
+                                spaceBetween: 22,
+                                slidesPerView: 5,
+                                slidesPerGroup : 4, // PC 넘길 갯수 지정
+                            },
+                            1024 : {
+                                spaceBetween: 22,
+                                slidesPerView: 5,
+                                slidesPerGroup : 4, // PC 넘길 갯수 지정
+                            },
+                            780 : {
+                                spaceBetween : 15,
+                                slidesPerView : 3,
+                                slidesPerGroup : 1 // 모바일 넘길 갯수 지정
+                            },
+                        }
                     }
                     $(document).ready(function(){
-                        $(window).resize(function(){
-                            winWidth = $(window).width();                                
-                            if(winWidth<780){
-                                swiperOption.slidesPerView=3;
-                                swiperOption.spaceBetween=15;
-                                swiperOption.slidesPerGroup=1;
-                            }else{
-                                swiperOption.slidesPerView=5;
-                                swiperOption.spaceBetween=22;
-                                swiperOption.slidesPerGroup=5;
-                            }
-                            var visualBanner = new Swiper('.slide .swiper', swiperOption);
-                            pcSlideSet();
-                        });
-                        if(winWidth<780){
-                            swiperOption.slidesPerView=3;
-                            swiperOption.spaceBetween=15;
-                            swiperOption.slidesPerGroup=1;
-                        }else{
-                            swiperOption.slidesPerView=5;
-                            swiperOption.spaceBetween=22;
-                            swiperOption.slidesPerGroup=5;
-                        }
-                        var visualBanner = new Swiper('.slide .swiper', swiperOption);
-                        pcSlideSet();
-                        function pcSlideSet(){
-                            $('.slide .swiper-pagination').prepend(
-                            '<a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>');
-                        }
-                        $(document).on('click','.slide .swiper-button-autoplay', function () {
+                        var visualBanner = new Swiper('.slideBox.fullSize .swiper', swiperOption);
+                        $(document).on('click','.slideBox.fullSize .swiper-button-autoplay', function () {
                             var _this = $(this);
                             if (!_this.hasClass('play')) {
                                 visualBanner.autoplay.stop();
@@ -258,14 +245,16 @@
                             }
                             return false;
                         });
-                        // $(document).on('focusin , focus', '.slideBox .swiper-slide a', function () {
-                        //     visualBanner.autoplay.stop(); //포커스 진입시 자동 롤링 중지
-                        //     $('.slideBox .swiper-wrapper').css('transform', 'translate3d(0,0,0)');
-                        //     $('.slideBox .swiper-slide').css('opacity', '1');
-                        //     $('.slideBox').css('overflow', 'hidden');
-                        //     $('.slideBox .swiper-button-autoplay').removeClass('pause').addClass('play').find('span').text('재생하기');
-                        // });
-
+                    });
+                </script>
+                <div class="showBigOne">
+                    <a href="#" class="btnPrev">이전</a>
+                    <div class="showBigImg"><img src="./images/sub/sub_etc/certificate00_59.jpg" alt=""/></div>
+                    <a href="#" class="btnNext">다음</a>
+                    <a href="#" class="btnClose">닫기</a>
+                </div>
+                <script type="text/javascript">                    
+                    $(document).ready(function(){
                         // 크게보기
                         var imgArray = [];
                         var clickedSrc;
@@ -317,29 +306,6 @@
                         }
                     });
                 </script>
-                <!-- <div class="slide">
-                    <ul class="slideFlex">
-                        <li><img src="./images/sub/sub_etc/recruit1.png" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/recruit2.png" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/recruit3.png" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/recruit4.png" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/recruit5.png" alt=""/></li>
-                    </ul>
-                    <a href="#a" class="prev"><span class="ir">이전</span></a>
-                    <a href="#a" class="next"><span class="ir">다음</span></a>
-                    <div class="control">
-                        <div>
-                            <a href="#" class="pause on"><span class="ir">일시정지</span></a>
-                        </div>
-                        <ul class="controlBox">
-                            <li class="on"><a href="#"><span class="ir">회사1</span></a></li>
-                            <li><a href="#"><span class="ir">회사2</span></a></li>
-                            <li><a href="#"><span class="ir">회사3</span></a></li>
-                            <li><a href="#"><span class="ir">회사4</span></a></li>                            
-                            <li><a href="#"><span class="ir">회사5</span></a></li>                            
-                        </ul>
-                    </div>
-                </div> -->
             </div>
             <div class="noticeBox1">
                 <p><span>&bull;</span>채용공고 확인 및 입사지원은 사람인(https://www.saramin.co.kr)에서 온라인 지원만 가능합니다.</p>

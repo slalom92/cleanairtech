@@ -319,31 +319,88 @@
                     <h3 class="titleType1">시공사례</h3>
                     <a href="#">더보기&#43;</a>
                 </div>
-                <div class="slide">
-                    <ul class="slideFlex">
-                        <li><img src="./images/sub/sub_etc/transaction_121.jpg" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/transaction_119.jpg" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/transaction_121.jpg" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/transaction_123.jpg" alt=""/></li>
-                        <li><img src="./images/sub/sub_etc/transaction_121.jpg" alt=""/></li>
-                    </ul>
-                    <a href="#a" class="prev"><span class="ir">이전</span></a>
-                    <a href="#a" class="next"><span class="ir">다음</span></a>
-                    <div class="control">
-                        <div>
-                            <!-- <a href="#" class="play on"><span class="ir">시작</span></a> -->
-                            <a href="#" class="pause on"><span class="ir">일시정지</span></a>
+                <div class="slideBox fullSize">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
                         </div>
-                        <ul class="controlBox">
-                            <li class="on"><a href="#"><span class="ir">시공사례1</span></a></li>
-                            <li><a href="#"><span class="ir">시공사례2</span></a></li>
-                            <li><a href="#"><span class="ir">시공사례3</span></a></li>
-                            <li><a href="#"><span class="ir">시공사례4</span></a></li>                            
-                            <li><a href="#"><span class="ir">시공사례4</span></a></li>                            
-                        </ul>
-                    </div>
+                        <!-- If we need pagination -->
+                        <div class="swiperContolBox">
+                            <a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
                 </div>
+                <link rel="stylesheet" href="./css/swiper.css"/>
+                <script type="text/javascript" src="./js/swiper.js"></script>
+                <script type="text/javascript">
+                    var winWidth = $(window).width();
+                    var swiperOption = {
+                        autoplay: {
+                            delay: 1000,
+                            disableOnInteraction: true
+                        },
+                        spaceBetween: 22,
+                        slidesPerView: 5,
+                        slidesPerGroup : 4, // PC 넘길 갯수 지정
+                        navigation: {
+                            nextEl: '.slideBox .swiper-button-next',
+                            prevEl: '.slideBox .swiper-button-prev'
+                        },
+                        pagination: {
+                            el: '.slideBox .swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                        },
+                        loop: true,
+                        breakpoints : {
+                            1280 : {
+                                spaceBetween: 22,
+                                slidesPerView: 5,
+                                slidesPerGroup : 4, // PC 넘길 갯수 지정
+                            },
+                            1024 : {
+                                spaceBetween: 22,
+                                slidesPerView: 5,
+                                slidesPerGroup : 4, // PC 넘길 갯수 지정
+                            },
+                            780 : {
+                                spaceBetween : 15,
+                                slidesPerView : 3,
+                                slidesPerGroup : 1 // 모바일 넘길 갯수 지정
+                            },
+                        }
+                    }
+                    $(document).ready(function(){
+                        var visualBanner = new Swiper('.slideBox.fullSize .swiper', swiperOption);
+                        $(document).on('click','.slideBox.fullSize .swiper-button-autoplay', function () {
+                            var _this = $(this);
+                            if (!_this.hasClass('play')) {
+                                visualBanner.autoplay.stop();
+                                _this.removeClass('pause').addClass('play').find('span').text('다시재생');
+                            } else {
+                                visualBanner.autoplay.start();
+                                _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                            }
+                            return false;
+                        });
+                    });
+                </script>
                 
             </div>
         </div>

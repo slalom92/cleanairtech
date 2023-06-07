@@ -13,7 +13,7 @@ table{width:100%;table-layout:fixed;}
 .wrapper{width:calc(100% - 20px);padding:0 10px;min-width:300px;}
 body{position:relative;min-width:320px;}
 .mt40{margin-top:40px !important}
-.scrollXArea{width:calc(100% + 16px);overflow-x:auto}
+.scrollXArea{width:calc(100% + 14px);overflow-x:auto}
 .contentBox{flex-basis:100%;}
 
 /* header */

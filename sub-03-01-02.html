@@ -446,7 +446,98 @@
                             <h2 class="titleType1">시공사례</h2>
                             <a href="#">더보기&#43;</a>
                         </div>
-                        <div class="slideTESTBOX"></div>
+                        <div class="slideBox slide030102">
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiperContolBox">
+                                    <a href="#" class="swiper-button-autoplay pause"><span class="ir">일시정지</span></a>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>
+                        </div>
+                        <link rel="stylesheet" href="./css/swiper.css"/>
+                        <script type="text/javascript" src="./js/swiper.js"></script>
+                        <script type="text/javascript">
+                            var winWidth = $(window).width();
+                            var swiperOption = {
+                                autoplay: {
+                                    delay: 1000,
+                                    disableOnInteraction: true
+                                },
+                                spaceBetween: 25,
+                                slidesPerView: 4,
+                                slidesPerGroup : 4, // PC 넘길 갯수 지정
+                                navigation: {
+                                    nextEl: '.slideBox .swiper-button-next',
+                                    prevEl: '.slideBox .swiper-button-prev'
+                                },
+                                pagination: {
+                                    el: '.slideBox .swiper-pagination',
+                                    type: 'bullets',
+                                    clickable: true
+                                },
+                                loop: true,
+                                breakpoints : {
+                                    1280 : {
+                                        spaceBetween: 25,
+                                        slidesPerView: 4,
+                                        slidesPerGroup : 4, // PC 넘길 갯수 지정
+                                    },
+                                    1024 : {
+                                        spaceBetween: 25,
+                                        slidesPerView: 4,
+                                        slidesPerGroup : 4, // PC 넘길 갯수 지정
+                                    },
+                                    780 : {
+                                        spaceBetween : 15,
+                                        slidesPerView : 3,
+                                        slidesPerGroup : 1, // 모바일 넘길 갯수 지정
+                                    },
+                                }
+                            }
+                            $(document).ready(function(){
+                                var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
+                                $(document).on('click','.slideBox .swiper-button-autoplay', function () {
+                                    var _this = $(this);
+                                    if (!_this.hasClass('play')) {
+                                        visualBanner.autoplay.stop();
+                                        _this.removeClass('pause').addClass('play').find('span').text('다시재생');
+                                    } else {
+                                        visualBanner.autoplay.start();
+                                        _this.removeClass('play').addClass('pause').find('span').text('일시정지');
+                                    }
+                                    return false;
+                                });
+                                $(window).on('resize',function(){
+                                    var _this = $('.slideBox .swiper-button-autoplay');
+                                    if (!_this.hasClass('play')) {
+                                        visualBanner.autoplay.start();
+                                    } else {
+                                        visualBanner.autoplay.stop();
+                                    }
+                                    return false;
+    
+                                });
+                            });
+                        </script>
                     </section>
                     <section class="divideArea">
                         <h2 class="titleType1">주요특징</h2>
