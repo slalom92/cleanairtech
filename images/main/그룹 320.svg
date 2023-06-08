@@ -11,25 +11,25 @@
     <line id="선_26" data-name="선 26" y1="36" transform="translate(874.5 1106.92)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
     <line id="선_29" data-name="선 29" y1="30" transform="translate(861.5 1112.92)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
     <circle id="타원_2" data-name="타원 2" cx="5" cy="5" r="5" transform="translate(856 1107.42)" fill="red" opacity="0.8"/>
-    <rect id="사각형_8" data-name="사각형 8" width="2" height="2" transform="translate(895 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9" data-name="사각형 9" width="2" height="2" transform="translate(891 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-2" data-name="사각형 8" width="2" height="2" transform="translate(895 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-2" data-name="사각형 9" width="2" height="2" transform="translate(891 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-3" data-name="사각형 8" width="2" height="2" transform="translate(895 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-3" data-name="사각형 9" width="2" height="2" transform="translate(891 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-4" data-name="사각형 8" width="2" height="2" transform="translate(869 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-4" data-name="사각형 9" width="2" height="2" transform="translate(865 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-5" data-name="사각형 8" width="2" height="2" transform="translate(869 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-5" data-name="사각형 9" width="2" height="2" transform="translate(865 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-6" data-name="사각형 8" width="2" height="2" transform="translate(869 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-6" data-name="사각형 9" width="2" height="2" transform="translate(865 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-7" data-name="사각형 8" width="2" height="2" transform="translate(882 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-7" data-name="사각형 9" width="2" height="2" transform="translate(878 1128.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-8" data-name="사각형 8" width="2" height="2" transform="translate(882 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-8" data-name="사각형 9" width="2" height="2" transform="translate(878 1124.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-9" data-name="사각형 8" width="2" height="2" transform="translate(882 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-9" data-name="사각형 9" width="2" height="2" transform="translate(878 1120.42)" fill="#2e2e2e"/>
-    <rect id="사각형_8-10" data-name="사각형 8" width="2" height="2" transform="translate(882 1116.42)" fill="#2e2e2e"/>
-    <rect id="사각형_9-10" data-name="사각형 9" width="2" height="2" transform="translate(878 1116.42)" fill="#2e2e2e"/>
+    <rect id="사각형_8" data-name="사각형 8" width="2" height="2" transform="translate(895 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9" data-name="사각형 9" width="2" height="2" transform="translate(891 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-2" data-name="사각형 8" width="2" height="2" transform="translate(895 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-2" data-name="사각형 9" width="2" height="2" transform="translate(891 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-3" data-name="사각형 8" width="2" height="2" transform="translate(895 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-3" data-name="사각형 9" width="2" height="2" transform="translate(891 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-4" data-name="사각형 8" width="2" height="2" transform="translate(869 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-4" data-name="사각형 9" width="2" height="2" transform="translate(865 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-5" data-name="사각형 8" width="2" height="2" transform="translate(869 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-5" data-name="사각형 9" width="2" height="2" transform="translate(865 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-6" data-name="사각형 8" width="2" height="2" transform="translate(869 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-6" data-name="사각형 9" width="2" height="2" transform="translate(865 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-7" data-name="사각형 8" width="2" height="2" transform="translate(882 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-7" data-name="사각형 9" width="2" height="2" transform="translate(878 1128.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-8" data-name="사각형 8" width="2" height="2" transform="translate(882 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-8" data-name="사각형 9" width="2" height="2" transform="translate(878 1124.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-9" data-name="사각형 8" width="2" height="2" transform="translate(882 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-9" data-name="사각형 9" width="2" height="2" transform="translate(878 1120.42)" fill="var(--black_1)"/>
+    <rect id="사각형_8-10" data-name="사각형 8" width="2" height="2" transform="translate(882 1116.42)" fill="var(--black_1)"/>
+    <rect id="사각형_9-10" data-name="사각형 9" width="2" height="2" transform="translate(878 1116.42)" fill="var(--black_1)"/>
   </g>
 </svg>

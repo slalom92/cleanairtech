@@ -14852,7 +14852,7 @@ jQuery.cssHooks.borderColor = {
 colors = jQuery.Color.names = {
 	// 4.1. Basic color keywords
 	aqua: "#00ffff",
-	black: "#000000",
+	black: "var(--black_0)",
 	blue: "#0000ff",
 	fuchsia: "#ff00ff",
 	gray: "#808080",
@@ -14865,13 +14865,13 @@ colors = jQuery.Color.names = {
 	red: "#ff0000",
 	silver: "#c0c0c0",
 	teal: "#008080",
-	white: "#ffffff",
+	white: "var(--white_1)",
 	yellow: "#ffff00",
 
 	// 4.2.3. "transparent" color keyword
 	transparent: [ null, null, null, 0 ],
 
-	_default: "#ffffff"
+	_default: "var(--white_1)"
 };
 
 })( jQuery );
