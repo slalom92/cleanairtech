@@ -167,7 +167,7 @@
 .carboxPage .prev{background:url(../images/sub/sub_etc/icon6.png) no-repeat;left:calc(50% - 195px);}
 .carboxPage .next{background:url(../images/sub/sub_etc/icon7.png) no-repeat;right:calc(50% - 195px);}
 .pageType1{display:flex;gap:4px;justify-content:center;width:392px;margin:0 auto;}
-.pageType1>li>a{display:inline-block;width:30px;height:30px;line-height:30px;;text-align:center;box-sizing:border-box;border:1px solid var(--gray_4);background:#fff}
+.pageType1>li>a{display:inline-block;width:30px;height:30px;line-height:30px;;text-align:center;box-sizing:border-box;border:1px solid var(--gray_4);background:var(--white_1)}
 .pageType1>li.on>a{border-bottom:3px solid var(--blue_1);}
 
 /* sub-01-06-00 회사소개-뉴스 */
