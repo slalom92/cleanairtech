@@ -377,11 +377,20 @@
 .customerSection2 .boxType5>p{display:inline-block;font-size:16px;letter-spacing:-0.16px;line-height:24px;color:var(--black_0);}
 .customerSection2 .boxType5::before{content:'';display:inline-block;width:50px;height:50px;margin-right:12px;background:url(../images/sub/sub_etc/icon27.png) no-repeat;vertical-align:top;}
 
+
 /* sub-03-00-00 서브3-집진기 상품소개페이지 */
 /* 현재위치 안내 수정보안(sub1 + sub2 수정해야할지 확인하기) */
 .locationState{position:relative;z-index:3;display:flex;/*align-items:center;*/justify-content:right;margin:14px 0 27px;text-align:right;}
 .locationState>a{line-height:17px;}
-.locationState .iconType1{display:inline-block;width:17px;height:14px;vertical-align:middle;}
+.locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/icon28.png) 0 3px no-repeat;vertical-align:middle;}
+.sub_4 .locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/sub-04-13.png) 0 3px no-repeat;vertical-align:middle;}
+.sub_5 .locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/sub-05-16.png) 0 3px no-repeat;vertical-align:middle;}
+.sub_6 .locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/sub-06-02.png) 0 3px no-repeat;vertical-align:middle;}
+.sub_7 .locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/sub-07-02.png) 0 3px no-repeat;vertical-align:middle;}
+.sub_8 .locationState .iconHome{display:inline-block;width:17px;height:20px;line-height:20px;background:url(../images/sub/sub_etc/sub-08-02.png) 0 3px no-repeat;vertical-align:middle;}
+
+
+/* .locationState .iconType1{display:inline-block;width:17px;height:14px;vertical-align:middle;} */
 .locationState .iconType2{width:14px;height:14px;vertical-align: middle;}
 .locationState .iconType2_2{width:14px;height:14px;vertical-align: middle;}
 .locationState .iconType3{margin-left:10px;}
@@ -390,6 +399,11 @@
 .locationState span{display:inline-block;font-size:13px;letter-spacing:-0.13px;line-height:19px;color: var(--black_1);}
 .locationState.mb36{margin-bottom:36px;}
 .locationState .posRel:last-child .locationDropdown{left:auto;right:0}
+
+
+
+
+
 
 .sub_1 .locationState .posRel>a:hover span{color:var(--blue_1)}
 .sub_2 .locationState .posRel>a:hover span{color:var(--blue_1)}
