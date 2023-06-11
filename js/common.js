@@ -214,6 +214,23 @@
         }else{
             $('.mobileTopBtn').stop().hide();
         }
+    },
+    locationFn : function(){
+        $('.locationState .posRel>a').bind('click',function(){
+            
+            if(!$(this).next().is(':animated')){
+                if(!$(this).find('.iconText1').hasClass('on')){
+                    $('.locationDropdown').stop().slideUp();
+                    $(this).next().stop().slideDown();
+                    $('.iconText1').removeClass('on');
+                    $(this).find('.iconText1').addClass('on');
+                }else{
+                    $(this).next().stop().slideUp();
+                    $(this).find('.iconText1').removeClass('on');
+                }                
+            }
+            return false;
+        });
     }
 }
 // 문서 호출 시
@@ -228,6 +245,7 @@ $(document).ready(function(){
     init.rightMenuToggle(); // 우측 퀵메뉴
     init.rightMenuHide(); // 우측네비 자동
     init.scrollTopMobile(); // 하단 버튼 호출
+    init.locationFn(); // 로케이션 토글
 });
 // 리사이즈 시 호출
 $(window).on('resize',function(){

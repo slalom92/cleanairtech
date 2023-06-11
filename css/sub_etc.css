@@ -360,15 +360,36 @@
 
 /* sub-03-00-00 서브3-집진기 상품소개페이지 */
 /* 현재위치 안내 수정보안(sub1 + sub2 수정해야할지 확인하기) */
-.locationState{display:flex;align-items:center;justify-content:right;margin:14px 0 27px;text-align:right;}
+.locationState{position:relative;z-index:3;display:flex;/*align-items:center;*/justify-content:right;margin:14px 0 27px;text-align:right;}
 .locationState>a{line-height:17px;}
 .locationState .iconType1{display:inline-block;width:17px;height:14px;vertical-align:middle;}
 .locationState .iconType2{width:14px;height:14px;vertical-align: middle;}
 .locationState .iconType2_2{width:14px;height:14px;vertical-align: middle;}
 .locationState .iconType3{margin-left:10px;}
-.iconText1{margin:0 11px}
+.iconText1{padding:0 22px 0 0;margin:0 0 0 10px;background:url(../images/sub/sub_etc/icon29.png) calc(100% - 1px) center no-repeat;}
+.iconText1.on{background:url(../images/sub/sub_etc/icon29_on.png) calc(100% - 1px) center no-repeat;}
 .locationState span{display:inline-block;font-size:13px;letter-spacing:-0.13px;line-height:19px;color: var(--black_1);}
 .locationState.mb36{margin-bottom:36px;}
+.locationState .posRel:last-child .locationDropdown{left:auto;right:0}
+
+.sub_1 .locationState .posRel>a:hover span{color:var(--blue_1)}
+.sub_2 .locationState .posRel>a:hover span{color:var(--blue_2)}
+.sub_3 .locationState .posRel>a:hover span{color:var(--blue_3)}
+.sub_4 .locationState .posRel>a:hover span{color:var(--blue_4)}
+.sub_5 .locationState .posRel>a:hover span{color:var(--blue_5)}
+.sub_6 .locationState .posRel>a:hover span{color:var(--blue_6)}
+
+/* .sub_1 .locationState .posRel>a.is_active span{color:var(--blue_1)}
+.sub_2 .locationState .posRel>a.is_active span{color:var(--blue_2)}
+.sub_3 .locationState .posRel>a.is_active span{color:var(--blue_3)}
+.sub_4 .locationState .posRel>a.is_active span{color:var(--blue_4)}
+.sub_5 .locationState .posRel>a.is_active span{color:var(--blue_5)}
+.sub_6 .locationState .posRel>a.is_active span{color:var(--blue_6)} */
+
+.locationState .locationDropdown{display:none;position:absolute;z-index:1;top:30px;left:0;padding:12px;border:1px solid var(--gray_4);background:var(--white_1)}
+.locationState .locationDropdown.on{display:block;}
+.locationState .locationDropdown a{line-height:28px;font-size:13px;}
+
 
 /* sub-03-00-00 레이아웃 */
 .container1{display:flex;gap:32px;align-items:flex-start;position:relative;z-index:1;}
