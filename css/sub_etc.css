@@ -165,7 +165,7 @@
 .cardText .date{display:block;padding-left:20px;font-size:14px;line-height:16px;letter-spacing:-0.14px;color:var(--gray_8);background:url(../images/sub/sub_etc/icon_05.png) left center no-repeat;}
 .carboxPage{position:relative;z-index:1;}
 .carboxPage .prev,
-.carboxPage .next{display:block;width:28px;height:30px;position:absolute;top:50%;transform:translateY(-50%);text-indent:999px;color:transparent;}
+.carboxPage .next{overflow:hidden;display:block;width:28px;height:30px;position:absolute;top:50%;transform:translateY(-50%);text-indent:999px;color:transparent;}
 .carboxPage .prev{background:url(../images/sub/sub_etc/icon6.png) no-repeat;left:calc(50% - 195px);}
 .carboxPage .next{background:url(../images/sub/sub_etc/icon7.png) no-repeat;right:calc(50% - 195px);}
 .pageType1{display:flex;gap:4px;justify-content:center;width:392px;margin:0 auto;}

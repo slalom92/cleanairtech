@@ -39,7 +39,6 @@
                         showHidden = true;
                     }else{
                         showHidden = false;
-                        return false;
                     }
                 });
                 if(showHidden){
@@ -49,6 +48,7 @@
                     $('.headerGnb>li>a').removeClass('is_active');                
                     $('.headerGnb>li .subGnbLayer').stop().slideUp();
                 }
+                return false;
             });
             $(document).on('mouseover','.pcType .headerGnb>li>a',function(){
                 $('.pcType .headerGnb>li>a').removeClass('is_active');
@@ -289,6 +289,7 @@ $(document).ready(function(){
     init.rightMenuToggle(); // 우측 퀵메뉴
     init.rightMenuHide(); // 우측네비 자동
     init.scrollTopMobile(); // 하단 버튼 호출
+    init.rightMenuScroll(); // 우측 퀵메뉴
     init.locationFn(); // 로케이션 토글
 });
 // 리사이즈 시 호출
