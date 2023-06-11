@@ -430,7 +430,7 @@
 .contentBox .mainProduct{flex-direction:column;gap:10px}
 .contentBox .mainProduct>li{width:100%;height:auto;background-position:center 120%}
 .contentBox .mainProduct>li>a{display:flex;align-items: flex-end;min-height:200px}
-.contentBox .mainProduct>li>a>img{width:25%;margin-left:28px;margin-bottom: 5%;}
+.contentBox .mainProduct>li>a>img{position:static;width:25%;margin-left:28px;margin-bottom: 5%;}
 .contentBox .mainProduct>li .cardBox2{top:10%;left:43%;min-width:0;}
 .contentBox .mainProduct>li .cardBox2>h4{line-height:21px;font-size:16px;}
 .contentBox .mainProduct>li .cardBox2>p{padding:8px 0 0 0;line-height:18px;font-weight:400;font-size:14px;}

@@ -23,8 +23,8 @@
 .contentMajor .flexType3>li:hover{animation:updown 1s linear}
 .contentMajor .flexType3>li>a>h3{position:absolute;top:26px;left:32px;font-size:26px;font-weight:700;;letter-spacing:-0.52px;line-height:26px;}
 .contentMajor .flexType3>li>a>p{position:absolute;top:69px;left:32px;font-size:20px;font-weight:400;letter-spacing:-0.4px;line-height:26px;color: var(--black_1);}
-.contentMajor .flexType3>li:nth-child(1){width:494px;height:372px;;background:url(../images/main/mainbg1.png) no-repeat;color:var(--blue_7);}
-.contentMajor .flexType3>li:nth-child(2){background:url(../images/main/mainbg2.png) no-repeat;color:var(--blue_2);}
+.contentMajor .flexType3>li:nth-child(1){width:494px;height:372px;background:url(../images/main/mainbg1.png) no-repeat;background-size:cover;color:var(--blue_7);}
+.contentMajor .flexType3>li:nth-child(2){width:494px;height:372px;background:url(../images/main/mainbg2.png) no-repeat;background-size:cover;color:var(--blue_2);}
 
 .contentMajor .flexType4{display:flex;gap:14px;}
 .contentMajor .flexType4>li{box-sizing: border-box;min-width:0;flex-basis:240px;flex-shrink:0;height:180px;border-radius:8px;color:var(--white_1);}
