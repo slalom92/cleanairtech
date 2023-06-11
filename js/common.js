@@ -151,16 +151,20 @@
         if(winWidthPx>=1280){
             if($('body').hasClass('sub_1')||$('body').hasClass('sub_2')){
                 if(winTop>412){
+                    $('.tabType1Flex').addClass('fixed');
                     $('.tabType1Flex').css({
                         'position':'fixed',
                         'z-index':5,
                         'top':0,
                         'left':0,
                         'width':'100%',
+                        'height' : '52px'
                     });
                 }else{
+                    $('.tabType1Flex').removeClass('fixed');
                     $('.tabType1Flex').css({
-                        'position':'relative'
+                        'position':'relative',
+                        'height' : '68px'
                     });
                 }
             }else{                
