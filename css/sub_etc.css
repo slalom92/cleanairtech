@@ -415,6 +415,15 @@
 .sub_7 .locationState .posRel>a:hover span{color:var(--blue_5)}
 .sub_8 .locationState .posRel>a:hover span{color:var(--blue_6)}
 
+.sub_1 .locationState .locationDropdown a:hover{color:var(--blue_1)}
+.sub_2 .locationState .locationDropdown a:hover{color:var(--blue_1)}
+.sub_3 .locationState .locationDropdown a:hover{color:var(--blue_1)}
+.sub_4 .locationState .locationDropdown a:hover{color:var(--blue_2)}
+.sub_5 .locationState .locationDropdown a:hover{color:var(--blue_3)}
+.sub_6 .locationState .locationDropdown a:hover{color:var(--blue_4)}
+.sub_7 .locationState .locationDropdown a:hover{color:var(--blue_5)}
+.sub_8 .locationState .locationDropdown a:hover{color:var(--blue_6)}
+
 /* .sub_1 .locationState .posRel>a.is_active span{color:var(--blue_1)}
 .sub_2 .locationState .posRel>a.is_active span{color:var(--blue_2)}
 .sub_3 .locationState .posRel>a.is_active span{color:var(--blue_3)}
