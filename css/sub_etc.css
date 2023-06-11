@@ -13,7 +13,7 @@
 
 /* tabType1 Area */
 .tabType1{}
-.tabType1Flex{display:flex;justify-content:center;align-items:center;height:68px;margin-bottom:15px;border-bottom:1px solid var(--gray_5);box-sizing:border-box;}
+.tabType1Flex{display:flex;justify-content:center;align-items:center;height:68px;margin-bottom:15px;border-bottom:1px solid var(--gray_5);box-sizing:border-box;background:#fff;}
 .tabType1Flex>li>a{position:relative;z-index:1;}
 .tabType1Flex>li .is_active::after{content:'';display:block;position:absolute;left:0;right:0;bottom:-23px;z-index:1;height:3px;background:currentColor;}
 .tabType1Flex>li::before{content:' ';display:inline-block;width:2px;height:16px;margin:0 26px;background:var(--gray_5);vertical-align: middle;}

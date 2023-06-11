@@ -32,12 +32,23 @@
         }
         if(winWidthPx>=1280){ //PC
             $('.headerNav').show();
-            $('.headerMene').bind('toggle',function(){
-                $('.headerGnb>li').eq(1).find('a').first('a').addClass('is_active');                
-                $('.headerGnb>li').eq(1).find('a').first('a').next().stop().slideDown();
-                },function(){
-                $('.headerGnb>li>a').removeClass('is_active');                
-                $('.headerGnb>li .subGnbLayer').stop().slideUp();
+            var showHidden = true;
+            $('.headerMene').bind('click',function(){
+                $('.subGnbLayer').each(function(){
+                    if($(this).css('display')=='none'){
+                        showHidden = true;
+                    }else{
+                        showHidden = false;
+                        return false;
+                    }
+                });
+                if(showHidden){
+                    $('.headerGnb>li').eq(1).find('a').first('a').addClass('is_active');                
+                    $('.headerGnb>li').eq(1).find('a').first('a').next().stop().slideDown();
+                }else{
+                    $('.headerGnb>li>a').removeClass('is_active');                
+                    $('.headerGnb>li .subGnbLayer').stop().slideUp();
+                }
             });
             $(document).on('mouseover','.pcType .headerGnb>li>a',function(){
                 $('.pcType .headerGnb>li>a').removeClass('is_active');
@@ -138,16 +149,32 @@
     },
     gnbScroll : function(){
         if(winWidthPx>=1280){
-            if(winTop>100){
-                $('.headerNav').css({
-                    'position':'fixed',
-                    'top':0,
-                    'left':0
-                });
-            }else{
-                $('.headerNav').css({
-                    'position':'relative'
-                });
+            if($('body').hasClass('sub_1')||$('body').hasClass('sub_2')){
+                if(winTop>412){
+                    $('.tabType1Flex').css({
+                        'position':'fixed',
+                        'z-index':5,
+                        'top':0,
+                        'left':0,
+                        'width':'100%',
+                    });
+                }else{
+                    $('.tabType1Flex').css({
+                        'position':'relative'
+                    });
+                }
+            }else{                
+                if(winTop>100){
+                    $('.headerNav').css({
+                        'position':'fixed',
+                        'top':0,
+                        'left':0
+                    });
+                }else{
+                    $('.headerNav').css({
+                        'position':'relative'
+                    });
+                }
             }
         }else{
             $('.headerNav').css({
