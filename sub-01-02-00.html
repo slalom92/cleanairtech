@@ -81,10 +81,10 @@
             </div>
             <ul class="subCon2Bar">
                 <li class="is_active">
-                    <a href="">전체</a>
+                    <a href="#">전체</a>
                 </li>
                 <li>
-                    <a href="">현재 ~ 2021</a>
+                    <a href="#">현재 ~ 2021</a>
                 </li>
                 <li>
                     <a href="#">2020 ~ 2011</a>
@@ -93,9 +93,45 @@
                     <a href="#">2010 ~ 2002</a>
                 </li>
             </ul>
+            <script type="text/javascript">
+            $(document).ready(function(){
+                $('.subCon2Bar li>a').bind('click',function(){
+                    var clickedIdx = $(this).parent().index();
+                    $('.subCon2Bar>li').removeClass('is_active');
+                    $(this).parent().addClass('is_active');
+                    console.log(clickedIdx);
+                    switch(clickedIdx){
+                        case 0 :  $('.historyList>li').show();
+                        break;
+                        case 1 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(year >= 2021){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                        case 2 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(2020 >= year && year >= 2011){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                        case 3 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(2010 >= year && year >= 2002){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                    }
+                    return false;
+                });
+            });
+            </script>
             <!-- history list  -->
             <ul class="historyList">
-                <li>
+                <li id="2022">
                     <h3>2022</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>환경부 우수환경산업체 선정 (2회차 선정)</li>
@@ -108,7 +144,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2022.png" alt=""/>
                 </li>
-                <li>
+                <li id="2021">
                     <h3>2021</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>2022 경기도 유망환경기업 재지정</li>
@@ -119,7 +155,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2021.png" alt=""/>
                 </li>
-                <li>
+                <li id="2020">
                     <h3>2020</h3>
                     <ul class="historyList_year">
                         <li><span>11</span>삼성전자 1차 협력사 5년 연속 계약갱신</li>
@@ -129,7 +165,7 @@
                     </ul>                       
                     <img src="./images/sub/sub_etc/subhistory2012.png" alt=""/>
                 </li>                
-                <li>
+                <li id="2019">
                     <h3>2019</h3>
                     <ul class="historyList_year">
                         <li><span>05</span>베트남 환경기술전 ENVIROTEX 2019 출품</li>
@@ -138,7 +174,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2019.png" alt=""/>
                 </li>                
-                <li>
+                <li id="2018">
                     <h3>2018</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>경기도 일자리 우수기업 선정</li>
@@ -148,7 +184,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2010.png" alt=""/>
                 </li>
-                <li>
+                <li id="2017">
                     <h3>2017</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>에어펄스 집진기 CAPU 제품군에 대한 CE인증 획득</li>
@@ -158,7 +194,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2017.png" alt=""/>
                 </li>
-                <li>
+                <li id="2016">
                     <h3>2016</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>경기도 유망환경기업 선정</li>
@@ -168,7 +204,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2016.png" alt=""/>
                 </li>
-                <li>
+                <li id="2015">
                     <h3>2015</h3>
                     <ul class="historyList_year">
                         <li><span>11</span>‘습식 집진기’ 실용신안 등록</li>
@@ -180,7 +216,7 @@
                     </ul>                         
                     <img src="./images/sub/sub_etc/subhistory2015.png" alt=""/>
                 </li>
-                <li>
+                <li id="2014">
                     <h3>2014</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>김포시 김포중소기업대상 수상</li>
@@ -190,7 +226,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2014.png" alt=""/>
                 </li>
-                <li>
+                <li id="2013">
                     <h3>2013</h3>
                     <ul class="historyList_year">
                         <li><span>10</span>고용노동부 ‘강소기업’ 선정</li>
@@ -202,7 +238,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2013.png" alt=""/>
                 </li>
-                <li>
+                <li id="2012">
                     <h3>2012</h3>
                     <ul class="historyList_year">
                         <li><span>12</span>경기도 유망중소기업인증 획득</li>
@@ -211,7 +247,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2012.png" alt=""/>
                 </li>
-                <li>
+                <li id="2011">
                     <h3>2011</h3>
                     <ul class="historyList_year">
                         <li><span>09</span>그룹웨어 시스템 도입</li>
@@ -220,7 +256,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2019.png" alt=""/>
                 </li>
-                <li>
+                <li id="2010">
                     <h3>2010</h3>
                     <ul class="historyList_year">
                         <li><span>11</span>한국직원방송 희망 중소기업 출연</li>
@@ -230,7 +266,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2010.png" alt=""/>
                 </li>
-                <li>
+                <li id="2009">
                     <h3>2009</h3>
                     <ul class="historyList_year">
                         <li><span>09</span>ERP 시스템 도입</li>
@@ -241,7 +277,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2009.png" alt=""/>
                 </li>
-                <li>
+                <li id="2008">
                     <h3>2008</h3>
                     <ul class="historyList_year">
                         <li><span>11</span>이동식 에어펄스 집진기 KF-200 개발</li>
@@ -249,7 +285,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2008.png" alt=""/>
                 </li>
-                <li>
+                <li id="2007">
                     <h3>2007</h3>
                     <ul class="historyList_year">
                         <li><span>07</span>원통형 초소형 집진기 개발</li>
@@ -258,7 +294,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2007.png" alt=""/>
                 </li>
-                <li>
+                <li id="2006">
                     <h3>2006</h3>
                     <ul class="historyList_year">
                         <li><span>07</span>인천시 품질우수제품 지정업체 선정</li>
@@ -267,7 +303,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2006.png" alt=""/>
                 </li>
-                <li>
+                <li id="2005">
                     <h3>2005</h3>
                     <ul class="historyList_year">
                         <li><span>09</span>법인전환 (크린에어테크 주식회사)</li>
@@ -277,7 +313,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2005.png" alt=""/>
                 </li>
-                <li>
+                <li id="2004">
                     <h3>2004</h3>
                     <ul class="historyList_year">
                         <li><span>09</span>초소형 집진기 개발</li>
@@ -286,7 +322,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2004.png" alt=""/>
                 </li>
-                <li>
+                <li id="2003">
                     <h3>2003</h3>
                     <ul class="historyList_year">
                         <li><span>11</span>말레이시아 대리점 계약 체결(Cleanair Pollution Control & Engineering CO.,LTD)</li>
@@ -295,7 +331,7 @@
                     </ul>
                     <img src="./images/sub/sub_etc/subhistory2003.png" alt=""/>
                 </li>
-                <li>
+                <li id="2002">
                     <h3>2002</h3>
                     <ul class="historyList_year">
                         <li><span>10</span>크린에어테크 설립</li>
