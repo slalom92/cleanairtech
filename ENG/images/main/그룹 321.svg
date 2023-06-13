@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="45" viewBox="0 0 54 45">
+  <g id="그룹_321" data-name="그룹 321" transform="translate(-852 -1000)">
+    <path id="패스_1220" data-name="패스 1220" d="M0,.5v28" transform="translate(889.5 1012)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-width="1"/>
+    <path id="패스_1221" data-name="패스 1221" d="M0,.5v22" transform="translate(881.5 1018)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-width="1"/>
+    <path id="패스_1223" data-name="패스 1223" d="M0,36V0" transform="translate(857.5 1004.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_34" data-name="선 34" y2="33" transform="translate(897.5 1007.5)" fill="none" stroke="red" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_37" data-name="선 37" y2="18" transform="translate(873.5 1022.5)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_38" data-name="선 38" y2="13" transform="translate(865.5 1027.5)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-width="1"/>
+    <path id="패스_1222" data-name="패스 1222" d="M0,0H44" transform="translate(857.5 1040.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <circle id="타원_3" data-name="타원 3" cx="5" cy="5" r="5" transform="translate(852 1035)" fill="red" opacity="0.8"/>
+    <path id="다각형_4" data-name="다각형 4" d="M3.5,0,7,5H0Z" transform="translate(854 1000)"/>
+    <path id="다각형_5" data-name="다각형 5" d="M3.5,0,7,5H0Z" transform="translate(906 1037) rotate(90)"/>
+  </g>
+</svg>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>연혁 > 회사소개 :: 크린에어테크</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<link href="./css/common.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="./js/common.js"></script> -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="sub_1">
+<a href="#contents" class="skipNaviBtn">skip navigator</a> 
+<!-- //header -->
+<header id="header">
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#header").load("./include/header.html")
+        });
+    </script>
+</header>
+<!-- header// -->
+<!-- //contents -->
+<section id="contentsWrap">
+    <div class="visualArea type1">
+        <h3>회사소개</h3>
+    </div>
+    <div class="tabType1">
+        <div class="wrapper">
+            <ul class="tabType1Flex">
+                <li><a href="#">개요</a></li>
+                <li><a href="#" class="is_active">연혁</a></li>
+                <li><a href="#">인증서</a></li>
+                <li><a href="#">거래실적</a></li>
+                <li><a href="#">시공사례</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">오시는길</a></li>                
+            </ul>
+            <div class="locationState mb36">
+                <a href="#" class="iconHome"><span class="ir">home</span></a>
+                <span class="iconType3"><em class="gtTxt">&gt;</em></span>
+                <div class="posRel">
+                    <a href="#"><span class="iconText1">회사소개</span></a>
+                    <ul class="locationDropdown">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">집진기</a></li>
+                        <li><a href="#">대기환경플랜트</a></li>
+                        <li><a href="#">인&middot;허가</a></li>
+                        <li><a href="#">대기자가측정</a></li>
+                        <li><a href="#">유해위험방지계획서</a></li>
+                        <li><a href="#">정부지원사업</a></li>
+                    </ul>
+                </div>
+                <div class="posRel">
+                    <a href="#"><span class="iconText1">연혁</span></a>
+                    <ul class="locationDropdown">
+                        <li><a href="#">개요</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">인증서</a></li>
+                        <li><a href="#">거래실적</a></li>
+                        <li><a href="#">시공사례</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subCon">
+        <div class="wrapper">
+            <div class="subCon2Flex mb3">
+                <strong class="mobileOnly">HISTORY</strong>
+                <h2><span>크린에어테크</span>의 도전과 성장의<br>발자취를 소개합니다!</h2>
+                <img src="./images/sub/sub_etc/subcon2Cover02_01.jpg" alt="" class="pcOnly"/>
+            </div>
+            <ul class="subCon2Bar">
+                <li class="is_active">
+                    <a href="#">전체</a>
+                </li>
+                <li>
+                    <a href="#">현재 ~ 2021</a>
+                </li>
+                <li>
+                    <a href="#">2020 ~ 2011</a>
+                </li>
+                <li>
+                    <a href="#">2010 ~ 2002</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+            $(document).ready(function(){
+                $('.subCon2Bar li>a').bind('click',function(){
+                    var clickedIdx = $(this).parent().index();
+                    $('.subCon2Bar>li').removeClass('is_active');
+                    $(this).parent().addClass('is_active');
+                    console.log(clickedIdx);
+                    switch(clickedIdx){
+                        case 0 :  $('.historyList>li').show();
+                        break;
+                        case 1 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(year >= 2021){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                        case 2 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(2020 >= year && year >= 2011){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                        case 3 :  $('.historyList>li').hide().each(function(){
+                            var year = parseInt($(this).attr('id'));
+                            if(2010 >= year && year >= 2002){
+                                $(this).show();
+                            }
+                        });
+                        break;
+                    }
+                    return false;
+                });
+            });
+            </script>
+            <!-- history list  -->
+            <ul class="historyList">
+                <li id="2022">
+                    <h3>2022</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>환경부 우수환경산업체 선정 (2회차 선정)</li>
+                        <li><span>09</span>전국 품질분임조 경진대회 은상 수상</li>
+                        <li><span>05</span>벤처기업 - 혁신성장유형 인증 획득</li>
+                        <li><span>04</span>경영혁신형 중소기업(Main-Biz) 인증 획득 (재인증)</li>
+                        <li><span>04</span>기술혁신형 중소기업(Inno-Biz) 인증 획득 (재인증)</li>
+                        <li><span>01</span>삼성전자 1차 협력사 7년 연속 계약갱신 </li>
+                        <li><span>01</span>2022 경기도 유망환경기업 재지정</li>                        
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2022.png" alt=""/>
+                </li>
+                <li id="2021">
+                    <h3>2021</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>2022 경기도 유망환경기업 재지정</li>
+                        <li><span>07</span>2021 환경산업기술 온라인 박람회 참가</li>
+                        <li><span>07</span>2021 그린뉴딜 온택트 일자리 박람회 참가</li>
+                        <li><span>01</span>국회의원(박상혁 의원) 표창장 수상</li>
+                        <li><span>01</span>삼성전자 1차 협력사 6년 연속 계약갱신</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2021.png" alt=""/>
+                </li>
+                <li id="2020">
+                    <h3>2020</h3>
+                    <ul class="historyList_year">
+                        <li><span>11</span>삼성전자 1차 협력사 5년 연속 계약갱신</li>
+                        <li><span>05</span>고용노동부 ‘강소기업’ 선정</li>
+                        <li><span>02</span>매일경제 코로나19 음압병실용 음압기 보도</li>
+                        <li><span>01</span>2020 청년친화 강소기업 재선정</li>                        
+                    </ul>                       
+                    <img src="./images/sub/sub_etc/subhistory2012.png" alt=""/>
+                </li>                
+                <li id="2019">
+                    <h3>2019</h3>
+                    <ul class="historyList_year">
+                        <li><span>05</span>베트남 환경기술전 ENVIROTEX 2019 출품</li>
+                        <li><span>02</span>고용노동부 ‘청년친화강소기업’ 재선정</li>
+                        <li><span>01</span>OBS TV ‘탐나는 기업 신나는 일자리’ 소개</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2019.png" alt=""/>
+                </li>                
+                <li id="2018">
+                    <h3>2018</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>경기도 일자리 우수기업 선정</li>
+                        <li><span>05</span>‘전기 집진장치’ 특허증 등록</li>
+                        <li><span>03</span>품질경영시스템(ISO9001) 및 환경경영시스템(ISO14001) 인증 획득</li>
+                        <li><span>02</span>고용노동부 ‘청년친화강소기업’ 선정</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2010.png" alt=""/>
+                </li>
+                <li id="2017">
+                    <h3>2017</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>에어펄스 집진기 CAPU 제품군에 대한 CE인증 획득</li>
+                        <li><span>10</span>‘나노입자 코팅장치’ 특허증 등록</li>
+                        <li><span>10</span>한국경제TV뉴스 ‘자율·창의 중시 강소기업의 남다른 경영’ 소개</li>
+                        <li><span>04</span>고용노동부 ‘강소기업’ 선정</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2017.png" alt=""/>
+                </li>
+                <li id="2016">
+                    <h3>2016</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>경기도 유망환경기업 선정</li>
+                        <li><span>05</span>'집진판에 고흡수성수지가 도포된 습식 전기 집진기‘ 특허증 등록</li>
+                        <li><span>05</span>대기배출시설 자가측정 사업부 운영</li>
+                        <li><span>04</span>포스코(POSCO) QSS(Quick Six Sigma) 혁신활동 도입</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2016.png" alt=""/>
+                </li>
+                <li id="2015">
+                    <h3>2015</h3>
+                    <ul class="historyList_year">
+                        <li><span>11</span>‘습식 집진기’ 실용신안 등록</li>
+                        <li><span>07</span>‘항만용 비산먼지 발생 억제 호퍼장치’ 특허증 등록</li>
+                        <li><span>07</span>음압병실용 음압기 CNDH-100 개발</li>
+                        <li><span>05</span>레이저 플라즈마 퓸 집진기 CAPH 개발</li>
+                        <li><span>03</span>매일경제신문 울트라 나노 필터 기사보도</li>
+                        <li><span>01</span>울산항만공사 '친환경호퍼(그린호퍼) 개발 성공' 감사패 수상</li>
+                    </ul>                         
+                    <img src="./images/sub/sub_etc/subhistory2015.png" alt=""/>
+                </li>
+                <li id="2014">
+                    <h3>2014</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>김포시 김포중소기업대상 수상</li>
+                        <li><span>08</span>울산항만공사 비산먼지 발생 억제 호퍼장치 ‘그린 호퍼’ 개발</li>
+                        <li><span>04</span>하향기류식 모듈형 스마트 집진기 개발</li>
+                        <li><span>03</span>MBC, KBS, CBS, 경인방송 라디오 광고 시작</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2014.png" alt=""/>
+                </li>
+                <li id="2013">
+                    <h3>2013</h3>
+                    <ul class="historyList_year">
+                        <li><span>10</span>고용노동부 ‘강소기업’ 선정</li>
+                        <li><span>09</span>이노비즈 ‘취업하고 싶은 기업’ 선정</li>
+                        <li><span>08</span>포스코 ICT 협력업체등록</li>
+                        <li><span>08</span>울산항만공사 연구개발사업 협약</li>
+                        <li><span>03</span>매일경제신문 ‘나노코팅필터’ 기사보도</li>
+                        <li><span>02</span>인제대학교 산업환기 교제에 소개</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2013.png" alt=""/>
+                </li>
+                <li id="2012">
+                    <h3>2012</h3>
+                    <ul class="historyList_year">
+                        <li><span>12</span>경기도 유망중소기업인증 획득</li>
+                        <li><span>06</span>국내 최초 산업용 울트라 나노 필터 개발</li>
+                        <li><span>04</span>포스코 인도 Exhaust 시스템 플랜트 수출계약체결</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2012.png" alt=""/>
+                </li>
+                <li id="2011">
+                    <h3>2011</h3>
+                    <ul class="historyList_year">
+                        <li><span>09</span>그룹웨어 시스템 도입</li>
+                        <li><span>04</span>러시아 TEHNION 社 수출계약 체결</li>
+                        <li><span>01</span>크린에어테크 부설 연구소 설립</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2019.png" alt=""/>
+                </li>
+                <li id="2010">
+                    <h3>2010</h3>
+                    <ul class="historyList_year">
+                        <li><span>11</span>한국직원방송 희망 중소기업 출연</li>
+                        <li><span>10</span>SBS 중소기업 대한민국의 힘 출연</li>
+                        <li><span>04</span>‘필터의 분진제거가 용이한 집진기’ 특허증 등록</li>
+                        <li><span>01</span>본사 및 공장 김포골드밸리 신축·이전</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2010.png" alt=""/>
+                </li>
+                <li id="2009">
+                    <h3>2009</h3>
+                    <ul class="historyList_year">
+                        <li><span>09</span>ERP 시스템 도입</li>
+                        <li><span>07</span>인천시 유망중소기업 선정</li>
+                        <li><span>06</span>중소기업청, 중소기업유통센터 추천상품 선정 (KF-200)</li>
+                        <li><span>06</span>대기오염방지시설업 등록 (2014년 대기환경전문공사업으로 명칭변경)</li>
+                        <li><span>04</span>초경량 음압기 CND-50 개발</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2009.png" alt=""/>
+                </li>
+                <li id="2008">
+                    <h3>2008</h3>
+                    <ul class="historyList_year">
+                        <li><span>11</span>이동식 에어펄스 집진기 KF-200 개발</li>
+                        <li><span>10</span>김포시 본사사옥 착공</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2008.png" alt=""/>
+                </li>
+                <li id="2007">
+                    <h3>2007</h3>
+                    <ul class="historyList_year">
+                        <li><span>07</span>원통형 초소형 집진기 개발</li>
+                        <li><span>06</span>‘집진기용 흡입아암부 구조’ 특허증 등록</li>
+                        <li><span>05</span>INNO-BIZ 인증 획득</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2007.png" alt=""/>
+                </li>
+                <li id="2006">
+                    <h3>2006</h3>
+                    <ul class="historyList_year">
+                        <li><span>07</span>인천시 품질우수제품 지정업체 선정</li>
+                        <li><span>07</span>ISO 14001 인증 획득</li>
+                        <li><span>01</span>석면 음압기 개발</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2006.png" alt=""/>
+                </li>
+                <li id="2005">
+                    <h3>2005</h3>
+                    <ul class="historyList_year">
+                        <li><span>09</span>법인전환 (크린에어테크 주식회사)</li>
+                        <li><span>09</span>ISO 9001 인증 획득</li>
+                        <li><span>05</span>전기집진기 개발</li>
+                        <li><span>01</span>태국 대리점 계약 체결 (M.E.C ASIA PACIFIC CO.,LTD)</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2005.png" alt=""/>
+                </li>
+                <li id="2004">
+                    <h3>2004</h3>
+                    <ul class="historyList_year">
+                        <li><span>09</span>초소형 집진기 개발</li>
+                        <li><span>05</span>집진기용 암후드 개발</li>
+                        <li><span>01</span>악취·유기용제 집진기 개발</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2004.png" alt=""/>
+                </li>
+                <li id="2003">
+                    <h3>2003</h3>
+                    <ul class="historyList_year">
+                        <li><span>11</span>말레이시아 대리점 계약 체결(Cleanair Pollution Control & Engineering CO.,LTD)</li>
+                        <li><span>05</span>고효율 에어펄스 집진기 개발</li>
+                        <li><span>01</span>중국 대리점 계약 체결 (上海長金環保科技有限公司)</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2003.png" alt=""/>
+                </li>
+                <li id="2002">
+                    <h3>2002</h3>
+                    <ul class="historyList_year">
+                        <li><span>10</span>크린에어테크 설립</li>
+                    </ul>
+                    <img src="./images/sub/sub_etc/subhistory2002.png" alt=""/>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- contents// -->
+<!-- //footer -->
+<footer id="footer">
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#footer").load("./include/footer.html")
+    });
+</script>  
+</footer>
+<!-- footer// -->
+</body>
+</html>
