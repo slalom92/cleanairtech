@@ -1,40 +1,3 @@
-<script type="text/javascript">
-    var timer = 2000 // 초 설정
-    var listLength = $('.contentAside2 .cooperationUl li').length;
-    var scrollText ={
-        firstText : $('.contentAside2 .cooperationUl li').eq(0).html(),
-        scrolling : function(){
-            $('.contentAside2 .cooperationUl li').each(function(){
-                $(this).animate({
-                    'top': parseInt($(this).css('top')) - 28 +'px'
-                },timer);
-            });
-            scrollText.firstText=$('.contentAside2 .cooperationUl li').eq(0).html();
-            $('.contentAside2 .cooperationUl').append('<li>'+scrollText.firstText+'</li>');
-            $('.contentAside2 .cooperationUl li').last().css({
-                'top': ($(this).index() -1) * 28 +'px'
-            });
-            var setRemove = setTimeout(
-                function(){
-                    $('.contentAside2 .cooperationUl li').eq(0).remove();
-                    
-                    $('.contentAside2 .cooperationUl li').each(function(){
-                        $(this).css({
-                            'top': ($(this).index() -3) * 28 +'px'
-                        });
-                    });
-                },timer)
-        }
-    }
-    $(document).ready(function(){
-        $('.contentAside2 .cooperationUl li').each(function(){
-            $(this).css({
-                'top': ($(this).index() -1) * 28 +'px'
-            });
-        });
-        var setScroll = setInterval(function(){scrollText.scrolling()},timer);        
-    });
-</script>
 <li>
     <p>○성전자(주)</p>
     <span>22-01-14</span>
@@ -91,3 +54,34 @@
     <p>○리코웍스코리아</p>
     <span>22-01-03</span>
 </li>
+<script type="text/javascript">
+    $(document).ready(function(){
+        setRollingBanner();
+    });
+    function setRollingBanner(){
+        const $wrap = $('.showHere');
+        const $list = $('.cooperationUl');
+        let wrapWidth = $wrap.height();
+        let listWidth = $list.height();
+        const speed = 20; //1초에 몇픽셀 이동하는지 설정
+
+        //리스트 복제
+        let $clone = $list.clone();
+        $wrap.append($clone);
+        flowBannerAct()
+
+        //배너 실행 함수
+        function flowBannerAct() {
+            //무한 반복을 위해 리스트를 복제 후 배너에 추가
+            if (listWidth < wrapWidth) {
+                const listCount = Math.ceil(wrapWidth * 2 / listWidth);
+                console.log(listCount);
+                for (let i = 2; i < listCount; i++) {
+                    $clone = $clone.clone();
+                    $wrap.append($clone);
+                }
+            }
+            $wrap.find('.cooperationUl').css({ 'animation': `${listWidth / speed}s linear infinite flowRolling` }); 
+        } 
+    }
+</script>

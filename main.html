@@ -12,7 +12,7 @@
 <script type="text/javascript" src="./js/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body class="sub_0">
 <a href="#contents" class="skipNaviBtn">skip navigator</a> 
 <!-- //header -->
 <header id="header">
@@ -115,11 +115,13 @@
             <div class="mainContent">
                 <div class="flexType6">
                     <ul class="flexTypeList">
-                        <li class="textType3"><a href="#" class="maincover2">회사소개 <em class="gtTxt">&gt;</em><em class="gtTxt">&gt;</em></a></li>
+                        <li class="textType3"><a href="#" class="maincover2"><span>회사소개 <em class="gtTxt">&gt;</em><em class="gtTxt">&gt;</em></span></a></li>
                         <li class="textType3">
-                            <h4>인증서</h4>
-                            <p>특허 · 인증 · 실용신안<br/> 의장등록 · 디자인등록 · 수상</p>
-                            <a href="#" class="btnType3">더보기&#43;</a>
+                            <a href="#">
+                                <h4>인증서</h4>
+                                <p>특허 · 인증 · 실용신안<br/> 의장등록 · 디자인등록 · 수상</p>
+                                <span class="btnType3">더보기&#43;</span>
+                            </a>
                         </li>
                     </ul>
                     <ul class="flexTypeList1">
@@ -135,14 +137,18 @@
                                 </li>
                             </ul>
                             <div class="ceo">
-                                <img src="./images/main/maincover7.png" alt="ceo사진"/>
-                                <a href="#" class="ceoBtn">CEO인사말<span><em class="gtTxt">&gt;</em><em class="gtTxt">&gt;</em></span></a>
+                                <a href="#" class="ceoBtn">
+                                    <img src="./images/main/maincover7.png" alt="ceo사진"/>
+                                    <strong href="#">CEO인사말<span><em class="gtTxt">&gt;</em><em class="gtTxt">&gt;</em></span></strong>
+                                </a>
                             </div>
                         </li>
                         <li class="textType4">
-                            <h4>카탈로그</h4>
-                            <p>국문 · 영문 카탈로그<br/>설치사례집</p>
-                            <a href="#" class="btnType3">더보기&#43;</a>
+                            <a href="#">
+                                <h4>카탈로그</h4>
+                                <p>국문 · 영문 카탈로그<br/>설치사례집</p>
+                                <span class="btnType3">더보기&#43;</span>
+                            </a>
                         </li>
                     </ul>
 
@@ -201,8 +207,8 @@
                         var winWidth = $(window).width();
                         var swiperOption = {
                             autoplay: {
-                                delay: 1000,
-                                disableOnInteraction: true
+                                delay: 3000,
+                                disableOnInteraction: false
                             },
                             spaceBetween: 25,
                             slidesPerView: 4,
@@ -265,14 +271,15 @@
                     <p>실시간 수주현황</p>
                     <a href="#">더보기&#43;</a>
                     <div class="menuBox4">
-                        <ul class="cooperationUl">
-                            <script type="text/javascript">
-                                $(document).ready(function(){
-                                    $('.contentAside2 .cooperationUl').load('./cooperation_list.html');
-                                });
-                            </script>
-                        </ul>
-                    </div>
+                        <div class="showHere">
+                            <ul class="cooperationUl">
+                            </ul>         
+                        </div>               
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $('.contentAside2 .cooperationUl').load('./cooperation_list.html');
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -306,7 +313,7 @@
                             $(document).ready(function(){
                                 var oneBanner = new Swiper('.bannerBox1 .swiper', {
                                     autoplay: {
-                                        delay: 1000,
+                                        delay: 3000,
                                         disableOnInteraction: false
                                     },
                                     navigation: {
