@@ -229,7 +229,7 @@
 .sectionType1 .swiper-pagination-bullet-active {opacity: 1;background:#007aff;}
 
 /* 회사소개 오시는길 01-08-00 */
-.sectionType1 .coverType2{overflow:hidden;height:500px;margin:0 -10px;margin-bottom:40px}
+.sectionType1 .coverType2{overflow:hidden;width:calc(100vw - 17px);height:80vw;margin:0 -10px;margin-bottom:40px}
 .sectionType1 .coverType2>img{margin:0 auto;}
 .listType5{}
 .listType5>li{padding:26px 0;height:auto;line-height:20px;font-size:15px;}
