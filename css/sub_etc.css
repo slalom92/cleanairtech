@@ -239,7 +239,7 @@
 .noticeBox1 .btnType2:hover{background:#1C83D1}
 
 /*sub-01-08-00 회사소개-오시는길 */
-.sectionType1 .coverType2{margin-bottom:60px;}
+.sectionType1 .coverType2{margin-bottom:60px;width:1280px;height:500px;}
 .listType5{margin-bottom:60px;border-top:1px solid var(--black_0);}
 .listType5>li{display:flex;height:94px;align-items:center;font-size:16px;letter-spacing:-0.16px;line-height:24px;color:var(--black_1);border-bottom:1px solid var(--gray_4);}
 .listType5>li>p{box-sizing:border-box;width:170px;padding:0 54px;font-weight:400;}
