@@ -80,7 +80,8 @@
                 <div class="coverType2" id="map">
                     <!-- <img src="./images/sub/sub_etc/location.png" alt=""/> -->
                 </div>
-                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=808a6b027e67929d22ae31bd13a79f8e"></script>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=808a6b027e67929d22ae31bd13a79f8e"></script> <!-- [중요]:퍼블 페이지 URL accesskey 입니다. 실제 서비스 변경 키는 아래 소스 주석해제해 주세요. -->
+                <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ec88b4bb62667048718f99524b2cb5e9"></script> --> <!-- [중요]:전달 주신 accesskey 입니다.  -->
                 <script type="text/javascript">
                     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
                     var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -97,6 +98,10 @@
                     });
                     // 마커가 지도 위에 표시되도록 설정합니다
                     marker.setMap(map);
+                    // 윈도우 리사이즈 시
+                    $(window).on('resize',function(){
+                        var relayoutFn = setTimeout(function(){map.relayout();},500);
+                    });
                 </script>
                 <!-- 지도 영역 // -->
                 <ul class="listType5">
