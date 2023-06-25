@@ -80,7 +80,7 @@
                 }
                 return false;
             });
-            $(document).on('mouseover','.headerGnb>li>a',function(){
+            $('.headerGnb>li>a').on('mouseover',function(){
                 if(!$('.subGnbLayer').is(':animated')){
                     $('.headerGnb>li>a').removeClass('is_active');
                     $(this).addClass('is_active');
