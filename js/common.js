@@ -226,11 +226,11 @@
         }
         if(winWidthPx>=1280){ //PC
             $(document).off(mobileGnbFn());
-            pcGnbFn();
+            $(document).on(pcGnbFn());
             return false;
         }else{ // mobile
             $(document).off(pcGnbFn());
-            mobileGnbFn();
+            $(document).on(mobileGnbFn());
             return false;
         }
     },
