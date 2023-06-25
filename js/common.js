@@ -85,9 +85,9 @@
                     $('.headerGnb>li>a').removeClass('is_active');
                     $(this).addClass('is_active');
                     $('.sideBox').css('z-index',1);
-                    if($(this).next().css('display')=='block'){
-                        return false;
-                    }
+                    // if($(this).next().css('display')=='block'){
+                        // return false;
+                    // }
                     // $('.subGnbLayer').slideUp(200);
                     $('.subGnbLayer').hide();
                     // $(this).next().stop().slideDown();
