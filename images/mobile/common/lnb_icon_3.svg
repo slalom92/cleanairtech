@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.613" height="16.818" viewBox="0 0 22.613 16.818">
+  <g id="그룹_435" data-name="그룹 435" transform="translate(-7.547 -9.182)">
+    <g id="그룹_29" data-name="그룹 29" transform="translate(7.547 9.183)">
+      <path id="패스_25" data-name="패스 25" d="M298.382,1013.1l-.729-.729L296.194,1008c-.239-1.053-1.119-2.188-2.188-2.188H283.064c-1.069,0-1.949,1.135-2.188,2.188l-1.459,4.377-.729.729a3,3,0,0,0-1.459,2.188v5.106h22.613v-5.106A3,3,0,0,0,298.382,1013.1Z" transform="translate(-277.229 -1005.81)" fill="#1c98d1"/>
+    </g>
+    <g id="그룹_30" data-name="그룹 30" transform="translate(11.194 10.641)">
+      <path id="패스_26" data-name="패스 26" d="M392.459,1046.554H377.141l.729-4.377c.112-.488.958-.729,1.459-.729h10.942c.5,0,1.347.242,1.459.729Z" transform="translate(-377.141 -1041.448)" fill="#fff"/>
+    </g>
+    <g id="그룹_39" data-name="그룹 39" transform="translate(17.03 10.641)">
+      <path id="패스_35" data-name="패스 35" d="M545.909,1046.554H540.8l-4.377-5.106h7.294c.5,0,1.347.242,1.459.729Z" transform="translate(-536.426 -1041.448)" fill="#fff"/>
+    </g>
+    <g id="사각형_13" data-name="사각형 13" transform="translate(8.547 24)" stroke="#000" stroke-width="1">
+      <path d="M0,0H3A0,0,0,0,1,3,0V1A1,1,0,0,1,2,2H1A1,1,0,0,1,0,1V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h2a0,0,0,0,1,0,0V1a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,1V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+    <circle id="타원_5" data-name="타원 5" cx="1" cy="1" r="1" transform="translate(26.66 18)" fill="#fff"/>
+    <circle id="타원_6" data-name="타원 6" cx="1" cy="1" r="1" transform="translate(9.047 18)" fill="#fff"/>
+    <g id="사각형_1558" data-name="사각형 1558" transform="translate(26.16 24)" stroke="#000" stroke-width="1">
+      <path d="M0,0H3A0,0,0,0,1,3,0V1A1,1,0,0,1,2,2H1A1,1,0,0,1,0,1V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h2a0,0,0,0,1,0,0V1a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,1V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+  </g>
+</svg>

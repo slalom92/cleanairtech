@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_expand_more" transform="translate(0 24) rotate(-90)">
+    <rect id="rectangle" width="24" height="24" fill="none"/>
+    <path id="path" d="M16.6,8.6,12,13.2,7.4,8.6,6,10l6,6,6-6Z" fill-rule="evenodd"/>
+  </g>
+</svg>

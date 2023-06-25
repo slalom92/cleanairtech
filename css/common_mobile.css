@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 /* 768px 이하 아이패드 세로기준 */
-@media screen and (max-width:1279.999999999999999px){
-
+@media all and (max-width:1279px){
 /* common */
 table{width:100%;table-layout:fixed;}
 .mobileOnly{display:block}
@@ -103,11 +102,11 @@ body{position:relative;min-width:320px;}
 .lnbArea>h3{width:100%;height:30px;line-height:28px;text-indent:20px;font-size:14px;color:var(--black_1);border-radius:4px 4px 0 0;background:#EEF2F9}
 .lnbArea>ul{padding:10px 0;background:var(--white_1);border-radius:0 0 4px 4px;}
 .lnbArea>ul>li>a{display:block;height:38px;padding:0 20px 0 56px;line-height:36px;font-size:14px;color:var(--black_1);}
-.lnbArea>ul>li:nth-child(1)>a{background:url(../images/mobile/common/lnb_icon_1.png) 20px 7px no-repeat;}
-.lnbArea>ul>li:nth-child(2)>a{background:url(../images/mobile/common/lnb_icon_2.png) 20px 7px no-repeat;}
-.lnbArea>ul>li:nth-child(3)>a{background:url(../images/mobile/common/lnb_icon_3.png) 20px 7px no-repeat;}
-.lnbArea>ul>li:nth-child(4)>a{background:url(../images/mobile/common/lnb_icon_4.png) 20px 7px no-repeat;}
-.lnbArea .lnbTelBtn{box-sizing:border-box;display:block;width:36.4%;min-width:104px;max-width:120px;height:36px;padding:0 10px 0 33px;margin:18px auto 0;line-height:34px;text-align:center;color:var(--white_1);font-size:13px;background:var(--blue_1) url(../images/mobile/common/lnb_tel_icon.png) 10% 7px no-repeat;border-radius:4px;}
+.lnbArea>ul>li:nth-child(1)>a{background:url(../images/mobile/common/lnb_icon_1.svg) 20px 7px no-repeat;}
+.lnbArea>ul>li:nth-child(2)>a{background:url(../images/mobile/common/lnb_icon_2.svg) 20px 7px no-repeat;}
+.lnbArea>ul>li:nth-child(3)>a{background:url(../images/mobile/common/lnb_icon_3.svg) 20px 7px no-repeat;}
+.lnbArea>ul>li:nth-child(4)>a{background:url(../images/mobile/common/lnb_icon_4.svg) 20px 7px no-repeat;}
+.lnbArea .lnbTelBtn{box-sizing:border-box;display:block;width:36.4%;min-width:104px;max-width:120px;height:36px;padding:0 10px 0 33px;margin:18px auto 0;line-height:34px;text-align:center;color:var(--white_1);font-size:13px;background:var(--blue_1) url(../images/mobile/common/lnb_tel_icon.svg) 10% 7px no-repeat;border-radius:4px;}
 
 /* submenu */
 .aside{display:none}

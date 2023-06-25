@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="그룹_434" data-name="그룹 434" transform="translate(-1381 -582)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="25" cy="25" r="25" transform="translate(1381 582)" fill="#f4f4f4"/>
+    <rect id="사각형_21" data-name="사각형 21" width="25" height="33" transform="translate(1393 591)" fill="#fff"/>
+    <line id="선_40" data-name="선 40" y1="32" transform="translate(1393.5 591.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_41" data-name="선 41" x1="24.5" transform="translate(1393 591.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <path id="패스_38" data-name="패스 38" d="M0,33.316V.87" transform="translate(1417.5 590.13)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_43" data-name="선 43" x1="25" transform="translate(1393 623.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_44" data-name="선 44" x2="12" transform="translate(1399.5 598.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_45" data-name="선 45" x2="12" transform="translate(1399.5 604.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_46" data-name="선 46" x2="12" transform="translate(1399.5 610.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_47" data-name="선 47" x2="12" transform="translate(1399.5 616.42)" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="패스_17" data-name="패스 17" transform="translate(354.517 393.314)" fill="#1c98d1">
+      <path d="M 1051.806762695312 226.8340911865234 L 1053.544921875 221.4951782226562 L 1068.666381835938 207.1696166992188 L 1071.78857421875 210.4165191650391 L 1056.795043945312 224.6131439208984 L 1051.806762695312 226.8340911865234 Z" stroke="none"/>
+      <path d="M 1052.630126953125 225.9201965332031 L 1056.513427734375 224.1912078857422 L 1071.078857421875 210.3998718261719 L 1068.64990234375 207.8739166259766 L 1053.98095703125 221.7707672119141 L 1052.630126953125 225.9201965332031 M 1050.9833984375 227.7480010986328 L 1053.108764648438 221.2195739746094 L 1068.682739257812 206.4653167724609 L 1072.498168945312 210.4331512451172 L 1057.07666015625 225.0350799560547 L 1050.9833984375 227.7480010986328 Z" stroke="none" fill="#000"/>
+    </g>
+  </g>
+</svg>

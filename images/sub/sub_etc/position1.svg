@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240">
+  <g id="그룹_864" data-name="그룹 864" transform="translate(-320 -1744)">
+    <circle id="타원_94" data-name="타원 94" cx="120" cy="120" r="120" transform="translate(320 1744)" fill="rgba(28,152,209,0.2)"/>
+    <circle id="타원_95" data-name="타원 95" cx="120" cy="120" r="120" transform="translate(580 1744)" fill="rgba(28,152,209,0.4)"/>
+    <circle id="타원_96" data-name="타원 96" cx="120" cy="120" r="120" transform="translate(840 1744)" fill="rgba(28,152,209,0.6)"/>
+    <circle id="타원_97" data-name="타원 97" cx="120" cy="120" r="120" transform="translate(1100 1744)" fill="rgba(28,152,209,0.8)"/>
+    <circle id="타원_98" data-name="타원 98" cx="120" cy="120" r="120" transform="translate(1360 1744)" fill="#1c98d1"/>
+    <text id="사원" transform="translate(440 1873)" fill="#2e2e2e" font-size="20" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="-18.3" y="0">사원</tspan></text>
+    <text id="대리" transform="translate(700 1873)" fill="#2e2e2e" font-size="20" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="-18.3" y="0">대리</tspan></text>
+    <text id="과장" transform="translate(960 1873)" fill="#fff" font-size="20" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="-18.3" y="0">과장</tspan></text>
+    <text id="차장" transform="translate(1220 1873)" fill="#fff" font-size="20" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="-18.3" y="0">차장</tspan></text>
+    <text id="부장" transform="translate(1480 1873)" fill="#fff" font-size="20" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.01em"><tspan x="-18.3" y="0">부장</tspan></text>
+    <g id="그룹_860" data-name="그룹 860" transform="translate(-60.5 -308.5)">
+      <line id="선_167" data-name="선 167" x2="80" transform="translate(590.5 2178.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="선_168" data-name="선 168" x1="20" y1="20" transform="translate(650.5 2158.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="그룹_861" data-name="그룹 861" transform="translate(199.5 -308.5)">
+      <line id="선_167-2" data-name="선 167" x2="80" transform="translate(590.5 2178.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="선_168-2" data-name="선 168" x1="20" y1="20" transform="translate(650.5 2158.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="그룹_862" data-name="그룹 862" transform="translate(459.5 -308.5)">
+      <line id="선_167-3" data-name="선 167" x2="80" transform="translate(590.5 2178.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="선_168-3" data-name="선 168" x1="20" y1="20" transform="translate(650.5 2158.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="그룹_863" data-name="그룹 863" transform="translate(719.5 -308.5)">
+      <line id="선_167-4" data-name="선 167" x2="80" transform="translate(590.5 2178.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="선_168-4" data-name="선 168" x1="20" y1="20" transform="translate(650.5 2158.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

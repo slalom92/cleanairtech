@@ -12,7 +12,7 @@
 <script type="text/javascript" src="./js/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="sub_0">
+<body class="sub_main">
 <a href="#contents" class="skipNaviBtn">skip navigator</a> 
 <!-- //header -->
 <header id="header">
@@ -33,7 +33,7 @@
                         <li>
                             <a href="#">
                                 <h3>DUST COLLECTOR</h3>
-                                <p>품 질은 기본! 성능은 핵심! 혁신은 감동!<br/>크린에어테크 집진기를 경험하세요.</p>
+                                <p>품질은 기본! 성능은 핵심! 혁신은 감동!<br/>크린에어테크 집진기를 경험하세요.</p>
                             </a>
                         </li>
                         <li>
@@ -99,7 +99,7 @@
     <section class="section2">
         <div class="wrapper">
             <div class="flexType5">
-                <img src="./images/main/maincover1.png" alt=""/>
+                <img src="./images/main/maincover1.svg" alt=""/>
                 <div>
                     <p>
                         집진기 제조부터 설치시공, 인·허가, 자가측정, 유해위험방지 계획서까지 모든 것을 한번에!            
@@ -129,11 +129,11 @@
                             <ul class="flexType7">
                                 <li>
                                     <p>14년 연속<br/> 동종업계 매출 1위</p>
-                                    <img src="./images/main/maincover5.png" alt=""/>
+                                    <img src="./images/main/maincover5.svg" alt=""/>
                                 </li>
                                 <li>
                                     <p>대기환경전문공사업<br/> 정식등록업체</p>
-                                    <img src="./images/main/maincover6.png" alt=""/>
+                                    <img src="./images/main/maincover6.svg" alt=""/>
                                 </li>
                             </ul>
                             <div class="ceo">
@@ -155,7 +155,7 @@
                 </div>
                 <div class="contentAside1 tagAside">
                     <div class="menuBox3">
-                        <img src="./images/main/icon14.png" alt=""/>
+                        <img src="./images/main/icon14.svg" alt=""/>
                         <p>다이렉트 다운로드</p>
                         <ul>
                             <li><a href="#">#사업자등록증 다운받기</a></li>
@@ -175,17 +175,17 @@
                 <div class="contentMajor2">
                     <div class="slideBox">
                         <!-- Slider main container -->
-                        <h4>추천 설치시공 사례</h4>
+                        <h4>추천 설치사례</h4>
                         <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/sample_2.jpg" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/sample_3.jpg" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/sample_4.jpg" alt=""/></a></div>
                                 <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="./images/main/maincover9.png" alt=""/></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./images/main/sample_2.jpg" alt=""/></a></div>
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiperContolBox">
@@ -206,6 +206,7 @@
                     <script type="text/javascript">
                         var winWidth = $(window).width();
                         var swiperOption = {
+                            loop: true,
                             autoplay: {
                                 delay: 3000,
                                 disableOnInteraction: false
@@ -222,7 +223,6 @@
                                 type: 'bullets',
                                 clickable: true
                             },
-                            loop: true,
                             breakpoints : {
                                 1280 : {
                                     spaceBetween: 25,
@@ -235,7 +235,7 @@
                                     slidesPerGroup : 4, // PC 넘길 갯수 지정
                                 },
                                 780 : {
-                                    spaceBetween : 15,
+                                    spaceBetween : 25,
                                     slidesPerView : 3,
                                     slidesPerGroup : 1, // 모바일 넘길 갯수 지정
                                 },
@@ -243,7 +243,7 @@
                         }
                         $(document).ready(function(){
                             var visualBanner = new Swiper('.slideBox .swiper', swiperOption);
-                            $(document).on('click','.slideBox .swiper-button-autoplay', function () {
+                            $('.slideBox .swiper-button-autoplay').bind('click', function () {
                                 var _this = $(this);
                                 if (!_this.hasClass('play')) {
                                     visualBanner.autoplay.stop();
@@ -332,7 +332,7 @@
                                     },
                                     loop: true,
                                 });
-                                $(document).on('click','.bannerBox1 .swiper-button-autoplay', function () {
+                                $('.bannerBox1 .swiper-button-autoplay').bind('click',function () {
                                     var _this = $(this);
                                     if (!_this.hasClass('play')) {
                                         oneBanner.autoplay.stop();

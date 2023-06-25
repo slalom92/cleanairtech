@@ -8,7 +8,7 @@
 
 
 /* 1280px 이상 아이패드 세로기준 */
-@media screen and (min-width:1280px){
+@media all and (min-width:1280px){
 
 
 /* .l_wrapper {width:1280px;padding:0 10px;margin:0 auto;box-shadow: inset 0 0 10px red;} */
@@ -44,7 +44,7 @@
 
 .asideBox1>p{margin-bottom:1px;font-size:18px;font-weight:400;letter-spacing:-0.18px;line-height:26px;color:var(--blue_1);}
 .asideBox1>span{display:block;margin-bottom:20px;font-size:16px;font-weight:300;letter-spacing:-0.16px;line-height:24px;color:var(--black_1);}
-.boxType1{box-sizing:border-box;width:225px;height:86px;padding:13px 22px 17px 73px;border:2px solid var(--blue_1);border-radius:4px;background:url(../images/common/img_tel_gnb_1.png) 18px 20px no-repeat;}
+.boxType1{box-sizing:border-box;width:225px;height:86px;padding:13px 22px 17px 73px;border:2px solid var(--blue_1);border-radius:4px;background:url(../images/common/img_tel_gnb_1.svg) 18px 20px no-repeat;}
 .boxType1>p{font-size:16px;font-weight:400;line-height:24px;color:var(--black_1);}
 .boxType1>span{font-size:25px;font-weight:700;line-height:30px;letter-spacing:-0.52px;color:var(--blue_1);}
 .asideBox2{margin-top:70px;}
@@ -52,10 +52,10 @@
 .menuBox1>li{box-sizing:border-box;width:225px;height:62px;padding:18px 5px 20px 70px;border:1px solid var(--gray_4);border-radius:2px;background:6px 6px no-repeat;}
 .menuBox1>li + li{margin-top:8px;}
 .menuBox1>li>a{display:block;font-size:16px;font-weight:300;letter-spacing:-0.16px;line-height:24px;color:var(--black_1);}
-.menuBox1>li:nth-child(1){background-image:url(../images/main/icon10.png);}
-.menuBox1>li:nth-child(2){background-image:url(../images/main/icon11.png);}
-.menuBox1>li:nth-child(3){background-image:url(../images/main/icon12.png);}
-.menuBox1>li:nth-child(4){background-image:url(../images/main/icon13.png);}
+.menuBox1>li:nth-child(1){background-image:url(../images/main/icon10.svg);}
+.menuBox1>li:nth-child(2){background-image:url(../images/main/icon11.svg);}
+.menuBox1>li:nth-child(3){background-image:url(../images/main/icon12.svg);}
+.menuBox1>li:nth-child(4){background-image:url(../images/main/icon13.svg);}
 
 /* section2 */
 .section2{background:var(--gray_3);}

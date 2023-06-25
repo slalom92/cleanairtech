@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="126" viewBox="0 0 126 126">
+  <g id="그룹_1829" data-name="그룹 1829" transform="translate(-781 -672)">
+    <circle id="Ellipse_3_copy_3" data-name="Ellipse 3 copy 3" cx="63" cy="63" r="63" transform="translate(781 672)" fill="#f4f4f4"/>
+    <g id="그룹_29" data-name="그룹 29" transform="translate(806.201 704.76)">
+      <path id="패스_25" data-name="패스 25" d="M350.309,1031.01l-2.52-2.52-5.04-15.12c-.826-3.638-3.867-7.56-7.56-7.56h-37.8c-3.693,0-6.734,3.922-7.56,7.56l-5.04,15.12-2.52,2.52c-2.483,1.736-5.04,4.508-5.04,7.56v17.64h78.12v-17.64C355.349,1035.518,352.791,1032.746,350.309,1031.01Z" transform="translate(-277.229 -1005.81)" fill="#1c98d1"/>
+    </g>
+    <g id="그룹_30" data-name="그룹 30" transform="translate(818.801 709.801)">
+      <path id="패스_26" data-name="패스 26" d="M430.061,1059.088h-52.92l2.52-15.12c.387-1.685,3.31-2.52,5.04-2.52h37.8c1.73,0,4.653.835,5.04,2.52Z" transform="translate(-377.141 -1041.448)" fill="#fff"/>
+    </g>
+    <g id="그룹_39" data-name="그룹 39" transform="translate(838.961 709.801)">
+      <path id="패스_35" data-name="패스 35" d="M569.186,1059.088h-17.64l-15.12-17.64h25.2c1.73,0,4.653.835,5.04,2.52Z" transform="translate(-536.426 -1041.448)" fill="#fff"/>
+    </g>
+    <g id="사각형_12" data-name="사각형 12" transform="translate(869 755)" stroke="#000" stroke-width="1">
+      <path d="M0,0H10a0,0,0,0,1,0,0V8A1,1,0,0,1,9,9H1A1,1,0,0,1,0,8V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h9a0,0,0,0,1,0,0V8a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,8V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+    <g id="사각형_13" data-name="사각형 13" transform="translate(811 755)" stroke="#000" stroke-width="1">
+      <path d="M0,0H10a0,0,0,0,1,0,0V8A1,1,0,0,1,9,9H1A1,1,0,0,1,0,8V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h9a0,0,0,0,1,0,0V8a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,8V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+    <circle id="타원_5" data-name="타원 5" cx="5" cy="5" r="5" transform="translate(869 735)" fill="#fff"/>
+    <circle id="타원_6" data-name="타원 6" cx="5" cy="5" r="5" transform="translate(811 735)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="126" viewBox="0 0 126 126">
+  <g id="그룹_1828" data-name="그룹 1828" transform="translate(-360 -672)">
+    <circle id="타원_108" data-name="타원 108" cx="63" cy="63" r="63" transform="translate(360 672)" fill="#f4f4f4"/>
+    <rect id="사각형_21" data-name="사각형 21" width="49" height="65" transform="translate(399 702)" fill="#fff"/>
+    <line id="선_40" data-name="선 40" y1="65" transform="translate(398.5 702.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_41" data-name="선 41" x1="49" transform="translate(398.5 702.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <path id="패스_38" data-name="패스 38" d="M.408,65.869v-65" transform="translate(447.092 701.631)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_43" data-name="선 43" x1="49" transform="translate(398.5 767.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_44" data-name="선 44" x2="24" transform="translate(410.5 716.5)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_45" data-name="선 45" x2="24" transform="translate(410.5 728.5)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_46" data-name="선 46" x2="24" transform="translate(410.5 741.5)" fill="none" stroke="#000" stroke-width="1"/>
+    <line id="선_47" data-name="선 47" x2="24" transform="translate(410.5 753.5)" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="패스_17" data-name="패스 17" transform="translate(-628.426 512.986)" fill="#1c98d1">
+      <path d="M 1052.248046875 249.0438995361328 L 1055.86669921875 237.283447265625 L 1087.399536132812 206.7359313964844 L 1094.723754882812 214.9757232666016 L 1063.1416015625 243.5971221923828 L 1052.248046875 249.0438995361328 Z" stroke="none"/>
+      <path d="M 1053.069580078125 248.0741119384766 L 1062.856567382812 243.1805877685547 L 1094.021118164062 214.9377746582031 L 1087.37255859375 207.4582061767578 L 1056.306762695312 237.55322265625 L 1053.069580078125 248.0741119384766 M 1051.426513671875 250.013671875 L 1055.426513671875 237.013671875 L 1087.426513671875 206.013671875 L 1095.426513671875 215.013671875 L 1063.426513671875 244.013671875 L 1051.426513671875 250.013671875 Z" stroke="none" fill="#000"/>
+    </g>
+  </g>
+</svg>

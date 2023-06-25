@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="그룹_1160" data-name="그룹 1160" transform="translate(-626 -1210)">
+    <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" cx="50" cy="50" r="50" transform="translate(626 1210)" fill="#f4f4f4"/>
+    <g id="그룹_1159" data-name="그룹 1159" transform="translate(-67 -7)">
+      <g id="사각형_1067" data-name="사각형 1067" transform="translate(726 1235)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="42" height="58" stroke="none"/>
+        <rect x="0.5" y="0.5" width="41" height="57" fill="none"/>
+      </g>
+      <g id="그룹_1158" data-name="그룹 1158" transform="translate(719 1241.334)">
+        <g id="사각형_1064" data-name="사각형 1064" transform="translate(0 -0.334)" fill="#fff" stroke="#000" stroke-width="1">
+          <rect width="42" height="58" stroke="none"/>
+          <rect x="0.5" y="0.5" width="41" height="57" fill="none"/>
+        </g>
+        <g id="그룹_1157" data-name="그룹 1157" transform="translate(4.656 5.028)">
+          <rect id="사각형_1052" data-name="사각형 1052" width="11.988" height="12.974" transform="translate(0)" fill="#1c98d1"/>
+          <rect id="사각형_1053" data-name="사각형 1053" width="11.988" height="12.974" transform="translate(0 18.163)" fill="#1c98d1"/>
+          <rect id="사각형_1069" data-name="사각형 1069" width="11.988" height="12.974" transform="translate(0 35.461)" fill="#1c98d1"/>
+          <rect id="사각형_1055" data-name="사각형 1055" width="19.181" height="2.595" transform="translate(13.587)" fill="#aaa"/>
+          <rect id="사각형_1057" data-name="사각형 1057" width="19.181" height="2.595" transform="translate(13.587 5.189)" fill="#aaa"/>
+          <rect id="사각형_1066" data-name="사각형 1066" width="19.181" height="2.595" transform="translate(13.587 10.379)" fill="#aaa"/>
+          <rect id="사각형_1058" data-name="사각형 1058" width="19.181" height="2.595" transform="translate(13.587 18.163)" fill="#aaa"/>
+          <rect id="사각형_1059" data-name="사각형 1059" width="19.181" height="2.595" transform="translate(13.587 28.542)" fill="#aaa"/>
+          <rect id="사각형_1060" data-name="사각형 1060" width="19.181" height="2.595" transform="translate(13.587 23.352)" fill="#aaa"/>
+          <rect id="사각형_1061" data-name="사각형 1061" width="19.181" height="2.595" transform="translate(13.587 35.461)" fill="#aaa"/>
+          <rect id="사각형_1063" data-name="사각형 1063" width="19.181" height="2.595" transform="translate(13.587 40.65)" fill="#aaa"/>
+          <rect id="사각형_1065" data-name="사각형 1065" width="19.181" height="2.595" transform="translate(13.587 45.84)" fill="#aaa"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

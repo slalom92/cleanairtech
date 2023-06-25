@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="그룹_734" data-name="그룹 734" transform="translate(-315 -666)">
+    <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" cx="25" cy="25" r="25" transform="translate(315 666)" fill="#f4f4f4"/>
+    <g id="icon_social_notifications_24px" data-name="icon/social/notifications_24px" transform="translate(325 676)">
+      <rect id="Boundary" width="30" height="30" fill="none"/>
+      <path id="_Color" data-name=" ↳Color" d="M11,25.5a2.689,2.689,0,0,1-2.75-2.616h5.5A2.689,2.689,0,0,1,11,25.5Zm11-3.924H0V20.269l2.75-2.615V11.115A8.952,8.952,0,0,1,4.364,5.806,7.613,7.613,0,0,1,8.937,2.85V1.962a2.066,2.066,0,0,1,4.126,0V2.85a7.623,7.623,0,0,1,4.568,2.96,8.94,8.94,0,0,1,1.619,5.3v6.539L22,20.269v1.306Z" transform="translate(4 2)" fill="#1c98d1"/>
+    </g>
+  </g>
+</svg>

@@ -75,7 +75,7 @@
             //무한 반복을 위해 리스트를 복제 후 배너에 추가
             if (listWidth < wrapWidth) {
                 const listCount = Math.ceil(wrapWidth * 2 / listWidth);
-                console.log(listCount);
+                // console.log(listCount);
                 for (let i = 2; i < listCount; i++) {
                     $clone = $clone.clone();
                     $wrap.append($clone);
