@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="523.241" height="268.233" viewBox="0 0 523.241 268.233">
+  <g id="그룹_1295" data-name="그룹 1295" transform="translate(-697 -3519)">
+    <text id="_0" data-name="0" transform="translate(721 3771.238)" fill="#47a1db" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-7.77" y="0">0</tspan></text>
+    <text id="_50" data-name="50" transform="translate(721 3712)" fill="#47a1db" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-15.54" y="0">50</tspan></text>
+    <text id="_100" data-name="100" transform="translate(721 3653)" fill="#47a1db" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-23.31" y="0">100</tspan></text>
+    <text id="필터상태_좋음" data-name="필터상태 좋음" transform="translate(797 3712)" fill="#47a1db" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-40.208" y="0">필터상태 좋음</tspan></text>
+    <text id="필터청소_필요" data-name="필터청소 필요" transform="translate(797 3594)" fill="#86dd76" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-40.208" y="0">필터청소 필요</tspan></text>
+    <text id="필터교체_필요" data-name="필터교체 필요" transform="translate(797 3535)" fill="#ff4b00" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-40.208" y="0">필터교체 필요</tspan></text>
+    <text id="_150" data-name="150" transform="translate(721 3594)" fill="#86dd76" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-23.31" y="0">150</tspan></text>
+    <text id="_200" data-name="200" transform="translate(721 3535)" fill="#ff4b00" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-23.31" y="0">200</tspan></text>
+    <line id="선_249" data-name="선 249" x2="12.269" transform="translate(728.668 3762.932)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="선_241" data-name="선 241" x2="490.741" transform="translate(728.5 3762.932)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="그룹_1257" data-name="그룹 1257" transform="translate(67.258 -514)">
+      <text id="_4년" data-name="4년" transform="translate(1077.335 4297.233)" fill="#1a1311" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-10.325" y="0">4년</tspan></text>
+      <text id="_3년" data-name="3년" transform="translate(979.187 4297.233)" fill="#1a1311" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-10.325" y="0">3년</tspan></text>
+      <text id="_2년" data-name="2년" transform="translate(881.039 4297.233)" fill="#1a1311" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-10.325" y="0">2년</tspan></text>
+      <text id="_1년" data-name="1년" transform="translate(782.89 4297.233)" fill="#1a1311" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-10.325" y="0">1년</tspan></text>
+      <text id="최초" transform="translate(684.742 4297.233)" fill="#1a1311" font-size="14" font-family="NotoSansKR-Regular, Noto Sans KR"><tspan x="-12.88" y="0">최초</tspan></text>
+    </g>
+    <line id="선_270" data-name="선 270" y2="90" transform="translate(728.5 3553)" fill="none" stroke="#86dd76" stroke-linecap="square" stroke-width="2"/>
+    <line id="선_271" data-name="선 271" y2="27.5" transform="translate(728.5 3525.5)" fill="none" stroke="#ff4b00" stroke-linecap="square" stroke-width="2"/>
+    <line id="선_272" data-name="선 272" x2="491" transform="translate(728.5 3539.5)" fill="none" stroke="#ff4b00" stroke-linecap="square" stroke-width="1"/>
+    <path id="패스_1299" data-name="패스 1299" d="M-4952.258-10870.822s92.315-123.57,245.168-189.707" transform="translate(5680.926 14587)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="패스_1300" data-name="패스 1300" d="M-4952.257-10904.732s244.638-135.1,344.073-155.666" transform="translate(5680.926 14587)" fill="none" stroke="#d9af4d" stroke-width="2"/>
+    <path id="패스_1301" data-name="패스 1301" d="M-4952.258-10895.628s346.631-155.388,442.557-164.452" transform="translate(5680.758 14587)" fill="none" stroke="#34a0a4" stroke-width="4"/>
+    <line id="선_248" data-name="선 248" y1="118" transform="translate(728.5 3644.5)" fill="none" stroke="#47a1db" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

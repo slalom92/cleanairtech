@@ -222,8 +222,8 @@
 
 .contentMajor4 .bannerBox1 .controllBox{position:absolute;z-index:2;bottom:12px;left:auto;right:52px;display:inline-block;height:26px;min-width:74px;}
 .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay{position:absolute;z-index:1;right:-30px;}
-.contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.play{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_play.png) center no-repeat;}
-.contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.pause{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_stop.png) center no-repeat;}
+.contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.play{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_play.svg) center no-repeat;}
+.contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.pause{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_stop.svg) center no-repeat;}
 .contentMajor4 .bannerBox1 .swiper-pagination,.contentMajor4 .bannerBox1 .swiper-pagination-fraction{position:absolute;z-index:2;bottom:0;left:auto;right:0;display:inline-block;max-width:80px;min-width:50px;width:auto;height:26px;padding:0 12px;line-height:26px;text-align:center;font-size:12px;color:var(--white_1);background:rgba(0,0,0,0.38);border-radius:13px;}
 .contentMajor4 .bannerBox1 .swiper-button-prev, 
 .contentMajor4 .bannerBox1 .swiper-button-next{display:block;position:absolute;top:0;width:12px;height:12px;margin:0;color:var(--white_1);}
@@ -432,8 +432,8 @@
   
   .contentMajor4 .bannerBox1 .controllBox{position:absolute;z-index:2;bottom:12px;left:auto;right:52px;display:inline-block;height:26px;min-width:74px;}
   .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay{position:absolute;z-index:1;right:-30px;}
-  .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.play{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_play.png) center no-repeat;}
-  .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.pause{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_stop.png) center no-repeat;}
+  .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.play{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_play.svg) center no-repeat;}
+  .contentMajor4 .bannerBox1 .swiper .swiper-button-autoplay.pause{display:inline-block;width:26px;height:26px;background:url(../images/main/icon_stop.svg) center no-repeat;}
   .contentMajor4 .bannerBox1 .swiper-pagination,.contentMajor4 .bannerBox1 .swiper-pagination-fraction{position:absolute;z-index:2;bottom:0;left:auto;right:0;display:inline-block;max-width:80px;min-width:50px;width:auto;height:26px;padding:0 12px;line-height:26px;text-align:center;font-size:12px;color:var(--white_1);background:rgba(0,0,0,0.38);border-radius:13px;}
   .contentMajor4 .bannerBox1 .swiper-button-prev, 
   .contentMajor4 .bannerBox1 .swiper-button-next{display:block;position:absolute;top:0;width:12px;height:12px;margin:0;color:var(--white_1);}
