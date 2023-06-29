@@ -393,9 +393,9 @@
     scrollTopMobile : function(){
         if(winWidthPx<760){
             if(winTop>100){
-                $('.mobileTopBtn').show().stop().animate({'opacity':1},500).stop().delay(3000).fadeOut();
+                $('.mobileTopBtn').show().delay(3000).hide();
             }else{
-                $('.mobileTopBtn').stop().fadeOut().animate({'opacity':0},500);
+                $('.mobileTopBtn').stop().hide();
             }
         }else{
             $('.mobileTopBtn').stop().hide();

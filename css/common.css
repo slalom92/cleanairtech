@@ -674,6 +674,6 @@ body{background-color:var(--white_1);}
   .csCenterInfo>h3{line-height:21px;color:var(--white_1);font-size:15px;}
   .csCenterInfo>p{margin:0;line-height:21px;color:var(--white_1);font-size:21px;font-weight:700}
   
-  .mobileTopBtn{opacity:0;position:fixed;z-index:9;bottom:30px;left:50%;display:none;width:38px;height:38px;margin-left:-13px;background:url(../images/common/btn_top_mobile.svg) 0 0 no-repeat;background-size:100%;}
+  .mobileTopBtn{position:fixed;z-index:9;bottom:30px;left:50%;display:none;width:38px;height:38px;margin-left:-13px;background:url(../images/common/btn_top_mobile.svg) 0 0 no-repeat;background-size:100%;}
   
   }
