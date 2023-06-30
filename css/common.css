@@ -315,14 +315,15 @@ body{background-color:var(--white_1);}
 .headerNav.pcType{overflow-y:visible !important}
 .headerNavFlex {display:flex;}
 .headerMene{width:50px;height:32px;padding:18px 0 0 0;background:url(../images/common/menu.svg) center no-repeat;text-align:center;border-left: 1px solid var(--gray_4);border-right: 1px solid var(--gray_4);}
-/* .sub_1 .headerMene{background:var(--blue_1) url(../images/common/menu_on.svg) center no-repeat;} */
-/* .sub_2 .headerMene{background:var(--blue_1) url(../images/common/menu_on.svg) center no-repeat;} */
-.sub_3 .headerMene{background:var(--blue_1_3) url(../images/common/menu_on.svg) center no-repeat;}
-.sub_4 .headerMene{background:var(--blue_2) url(../images/common/menu_on.svg) center no-repeat;}
-.sub_5 .headerMene{background:var(--blue_3) url(../images/common/menu_on.svg) center no-repeat;}
-.sub_6 .headerMene{background:var(--blue_4) url(../images/common/menu_on.svg) center no-repeat;}
-.sub_7 .headerMene{background:var(--blue_5) url(../images/common/menu_on.svg) center no-repeat;}
-.sub_8 .headerMene{background:var(--blue_6) url(../images/common/menu_on.svg) center no-repeat;}
+.headerMene.active{background:var(--white_1) url(../images/common/icon_close_black.svg) center no-repeat;}
+.sub_1 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_2 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_3 .headerMene.active{background:var(--blue_1_3) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_4 .headerMene.active{background:var(--blue_2) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_5 .headerMene.active{background:var(--blue_3) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_6 .headerMene.active{background:var(--blue_4) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_7 .headerMene.active{background:var(--blue_5) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_8 .headerMene.active{background:var(--blue_6) url(../images/common/icon_close.svg) center no-repeat;}
 .headerGnb {display:flex;align-items:center;padding-left:15px;margin-right:25px;}
 .headerGnb>li>a{position:relative;z-index:3;display:inline-block;padding:13px 5px;margin:0 8px;font-size:16px;color:var(--black_0);}
 .headerGnb>li:nth-child(2)>a:hover,.headerGnb>li:nth-child(2)>a.is_active,.headerGnb>li:nth-child(2)>a.nowMenu{color:var(--blue_1_3)}
@@ -357,6 +358,29 @@ body{background-color:var(--white_1);}
 .sub_8 .topMenuToggle>ul>li>a:hover,.sub_8 .topMenuToggle>ul>li>a.is_active{color:var(--blue_6);} */
 
 /* gnb */
+.headerNav .showAllLayer{display:none;position:absolute;z-index:4;top:51px;left:50%;width:1278px;margin:0 0 0 -640px;background:var(--white_1);border:1px solid #E2E5EB;border-top:none}
+.headerNav .showAllLayer .flexWrap{display:flex;flex-wrap:wrap;}
+.headerNav .showAllLayer .flexWrap .boxOne{box-sizing:border-box;flex-basis:25%;min-height:260px;padding:37px 0 37px 28px;border-bottom:1px solid #F4F6FB;border-right:1px solid #F4F6FB;}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(5),.headerNav .showAllLayer .flexWrap .boxOne:nth-child(6),.headerNav .showAllLayer .flexWrap .boxOne:nth-child(7),.headerNav .showAllLayer .flexWrap .boxOne:nth-child(8){border-bottom:none;}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(4n){border-right:none}
+.headerNav .showAllLayer .flexWrap .boxOne h3{line-height:21px;font-size:16px;color:var(--black_0)}
+.headerNav .showAllLayer .flexWrap .boxOne ul{padding:12px 0 0 0;}
+.headerNav .showAllLayer .flexWrap .boxOne ul li{line-height:19px;font-size:14px;color:var(--black_0)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(1) ul li>a:hover{color:var(--blue_1)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(2) ul li>a:hover{color:var(--blue_1)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(3) ul li>a:hover{color:var(--blue_1_3)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(4) ul li>a:hover{color:var(--blue_2)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(5) ul li>a:hover{color:var(--blue_3)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(6) ul li>a:hover{color:var(--blue_4)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(7) ul li>a:hover{color:var(--blue_5)}
+.headerNav .showAllLayer .flexWrap .boxOne:nth-child(8) ul li>a:hover{color:var(--blue_6)}
+
+.sub_3 .headerNav .showAllLayer{border:1px solid var(--blue_1_3);border-top:none}
+.sub_4 .headerNav .showAllLayer{border:1px solid var(--blue_2);border-top:none}
+.sub_5 .headerNav .showAllLayer{border:1px solid var(--blue_3);border-top:none}
+.sub_6 .headerNav .showAllLayer{border:1px solid var(--blue_4);border-top:none}
+.sub_7 .headerNav .showAllLayer{border:1px solid var(--blue_5);border-top:none}
+.sub_8 .headerNav .showAllLayer{border:1px solid var(--blue_6);border-top:none}
 .subGnbLayer{display:none;position:absolute;z-index:2;top:49px;left:0;width:100%;min-width:1280px;background:var(--white_1);border-top:1px solid var(--gray_4);border-bottom:1px solid var(--gray_4)}
 .sub_1 .subGnbLayer{border-top:1px solid var(--blue_1);}
 .sub_2 .subGnbLayer{border-top:1px solid var(--blue_1);}
@@ -367,6 +391,7 @@ body{background-color:var(--white_1);}
 .sub_7 .subGnbLayer{border-top:1px solid var(--blue_5);}
 .sub_8 .subGnbLayer{border-top:1px solid var(--blue_6);}
 .dimmed{display:none;position:fixed;z-index:3;width:100vw;height:100vh;background:rgba(0,0,0,0.3)}
+.dimmed2{display:none;position:fixed;z-index:3;width:100vw;height:100vh;background:rgba(0,0,0,0.3)}
 .subGnbLayer .wrapper{display:flex;}
 .subGnbLayer .flexBox{display:flex;flex-wrap:wrap;flex-direction: column;padding:30px 0 0 0;}
 .subGnbLayer .mainGnb{padding:0 0 30px 0;}
@@ -541,6 +566,7 @@ body{background-color:var(--white_1);}
   .headerFlex .language .is_active_black{color:var(--black_0);}
   
   .headerFlex .search{position:absolute;z-index:1;bottom:-30px;left:10px;width:calc(100% - 20px);height:40px;border:1px solid var(--blue_1);}
+  .headerNav .showAllLayer{display:none}
   .sub_1 .headerFlex .search{border:1px solid var(--blue_1);}
   .sub_2 .headerFlex .search{border:1px solid var(--blue_1);}
   .sub_3 .headerFlex .search{border:1px solid var(--blue_1_3);}
