@@ -58,16 +58,19 @@
                 if(!$('.subGnbLayer').is(':animated')){
                     $('.headerGnb>li .subGnbLayer').stop().hide();
                     $('.dimmed').stop().hide();
+                    $('.sideBox').css('z-index',5);
                 }
                 if(!$('.showAllLayer').is(':animated')){
                     if($('.showAllLayer').css('display')!='none'){
                         $(this).next().stop().hide();
                         $('.dimmed2').stop().hide();
                         $(this).removeClass('active');
+                        $('.sideBox').css('z-index',5);
                     }else{
                         $(this).next().stop().show();
                         $('.dimmed2').stop().show();
                         $(this).addClass('active');
+                        $('.sideBox').css('z-index',1);
                     }
 
                     // $('.subGnbLayer').each(function(){
@@ -120,8 +123,14 @@
             });
             $(document).on('mouseover', function(e) {
                 // if(!$('.subGnbLayer').is(':animated')){
+                    if($('.showAllLayer').css('display')=='block'){
+                        return false;
+                    }
                     var $clicked = $(e.target);
                     if (!$clicked.parents().hasClass("headerNavFlex")){
+                    }
+                    if (!$clicked.parents().hasClass("headerNavFlex")){
+                        
                         $('.sideBox').css('z-index',5);
                         $('.headerGnb>li>a').removeClass('is_active');
                         // $('.subGnbLayer').stop().slideUp(200);
@@ -272,6 +281,12 @@
                         'width':'100%',
                         'height' : '52px'
                     });
+                    if($('.showAllLayer').css('display')!='none'){
+                        $('.showAllLayer').stop().hide();
+                        $('.dimmed2').stop().hide();
+                        $('.headerMene').removeClass('active');
+                        $('.sideBox').css('z-index',5);
+                    }
                 }else{
                     $('.tabType1Flex').removeClass('fixed');
                     $('.tabType1Flex').css({
@@ -286,7 +301,13 @@
                         'position':'fixed',
                         'top':0,
                         'left':0
-                    });
+                    });                    
+                    if($('.showAllLayer').css('display')!='none'){
+                        $('.showAllLayer').stop().hide();
+                        $('.dimmed2').stop().hide();
+                        $('.headerMene').removeClass('active');
+                        $('.sideBox').css('z-index',5);
+                    }
                     $('.pcTopBtn').stop().show();
                 }else{
                     $('.headerNav').css({
