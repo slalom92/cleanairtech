@@ -316,8 +316,8 @@ body{background-color:var(--white_1);}
 .headerNavFlex {display:flex;}
 .headerMene{width:50px;height:32px;padding:18px 0 0 0;background:url(../images/common/menu.svg) center no-repeat;text-align:center;border-left: 1px solid var(--gray_4);border-right: 1px solid var(--gray_4);}
 .headerMene.active{background:var(--white_1) url(../images/common/icon_close_black.svg) center no-repeat;}
-.sub_1 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;}
-.sub_2 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;}
+/* .sub_1 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;}
+.sub_2 .headerMene.active{background:var(--blue_1) url(../images/common/icon_close.svg) center no-repeat;} */
 .sub_3 .headerMene.active{background:var(--blue_1_3) url(../images/common/icon_close.svg) center no-repeat;}
 .sub_4 .headerMene.active{background:var(--blue_2) url(../images/common/icon_close.svg) center no-repeat;}
 .sub_5 .headerMene.active{background:var(--blue_3) url(../images/common/icon_close.svg) center no-repeat;}
@@ -333,12 +333,12 @@ body{background-color:var(--white_1);}
 .headerGnb>li:nth-child(6)>a:hover,.headerGnb>li:nth-child(6)>a.is_active,.headerGnb>li:nth-child(6)>a.nowMenu{color:var(--blue_5)}
 .headerGnb>li:nth-child(7)>a:hover,.headerGnb>li:nth-child(7)>a.is_active,.headerGnb>li:nth-child(7)>a.nowMenu{color:var(--blue_6)}
 
-.headerGnb>li:nth-child(2)>a:hover::after,.headerGnb>li:nth-child(2)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_1_3)}
-.headerGnb>li:nth-child(3)>a:hover::after,.headerGnb>li:nth-child(3)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_2)}
-.headerGnb>li:nth-child(4)>a:hover::after,.headerGnb>li:nth-child(4)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_3)}
-.headerGnb>li:nth-child(5)>a:hover::after,.headerGnb>li:nth-child(5)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_4)}
-.headerGnb>li:nth-child(6)>a:hover::after,.headerGnb>li:nth-child(6)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_5)}
-.headerGnb>li:nth-child(7)>a:hover::after,.headerGnb>li:nth-child(7)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_6)}
+/*.headerGnb>li:nth-child(2)>a:hover::after,*/.headerGnb>li:nth-child(2)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_1_3)}
+/*.headerGnb>li:nth-child(3)>a:hover::after,*/.headerGnb>li:nth-child(3)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_2)}
+/*.headerGnb>li:nth-child(4)>a:hover::after,*/.headerGnb>li:nth-child(4)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_3)}
+/*.headerGnb>li:nth-child(5)>a:hover::after,*/.headerGnb>li:nth-child(5)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_4)}
+/*.headerGnb>li:nth-child(6)>a:hover::after,*/.headerGnb>li:nth-child(6)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_5)}
+/*.headerGnb>li:nth-child(7)>a:hover::after,*/.headerGnb>li:nth-child(7)>a.is_active::after{content:'';display:block;position:absolute;z-index:4;bottom:0;left:0;width:100%;height:2px;background:var(--blue_6)}
 
 .headerSubmenu {display:flex;align-items:center;margin:12px 0;padding:0 12px;background:var(--gray_3);border-radius:6px}
 .headerSubmenu>li{display:inline-block;padding:0 14px;font-size:14px;letter-spacing:-0.14px;}

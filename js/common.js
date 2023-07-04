@@ -98,11 +98,21 @@
                 return false;
             });
             // 바깥 클릭시 닫기
-            $('.dimmed2').bind('click',function(){
-                $('.showAllLayer,.dimmed2').stop().hide();
-                $('.headerMene').removeClass('active');
+            $(document).on('click', function(e) {                
+                var $clicked = $(e.target);
+                if($('.showAllLayer').css('display')=='block'){
+                    if(!$clicked.parents().hasClass('headerNavFlex')){
+                        $('.showAllLayer,.dimmed2').stop().hide();
+                        $('.headerMene').removeClass('active');
+                    }
+                }
             });
             $(document).on('mouseover','.headerGnb>li>a',function(){
+                if($('.showAllLayer').css('display')=='block'){
+                    $('.headerGnb>li>a').removeClass('is_active');
+                    return false;
+                }
+
                 // if(!$('.subGnbLayer').is(':animated')){
                     $('.showAllLayer,.dimmed2').stop().hide();
                     $('.headerMene').removeClass('active');
@@ -127,10 +137,7 @@
                         return false;
                     }
                     var $clicked = $(e.target);
-                    if (!$clicked.parents().hasClass("headerNavFlex")){
-                    }
-                    if (!$clicked.parents().hasClass("headerNavFlex")){
-                        
+                    if (!$clicked.parents().hasClass("headerGnb")){
                         $('.sideBox').css('z-index',5);
                         $('.headerGnb>li>a').removeClass('is_active');
                         // $('.subGnbLayer').stop().slideUp(200);
@@ -336,6 +343,12 @@
             $('.headerNav').css({
                 'position':'absolute'
             });
+            if($('.showAllLayer').css('display')!='none'){
+                $('.showAllLayer').stop().hide();
+                $('.dimmed2').stop().hide();
+                $('.headerMene').removeClass('active');
+                $('.sideBox').css('z-index',5);
+            };
             if(winTop>70){
                 $('.headerFlex .search').hide();
                 $('.headerFlex').css({
