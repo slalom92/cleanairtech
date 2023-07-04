@@ -551,6 +551,7 @@ body{background-color:var(--white_1);}
   .scrollXArea{width:calc(100% + 10px);overflow-x:auto}
   .contentBox{flex-basis:100%;}
   .pcTopBtn{display:none !important}
+  .dimmed2{display:none !important}
   
   /* header */
   #header{position:fixed;z-index:10;top:0;left:0;width:100%;background:var(--white_1);}
@@ -566,7 +567,7 @@ body{background-color:var(--white_1);}
   .headerFlex .language .is_active_black{color:var(--black_0);}
   
   .headerFlex .search{position:absolute;z-index:1;bottom:-30px;left:10px;width:calc(100% - 20px);height:40px;border:1px solid var(--blue_1);}
-  .headerNav .showAllLayer{display:none}
+  .headerNav .showAllLayer{display:none !important}
   .sub_1 .headerFlex .search{border:1px solid var(--blue_1);}
   .sub_2 .headerFlex .search{border:1px solid var(--blue_1);}
   .sub_3 .headerFlex .search{border:1px solid var(--blue_1_3);}
