@@ -233,7 +233,7 @@ body{background-color:var(--white_1);}
 
 /* layout */
 .header {height:153px;min-width:1280px;}
-#header{z-index:2}
+#header{position:relative;z-index:3;background:#fff;}
 #contentsWrap{position:relative;z-index:2;}
 #footer{min-width:1280px;}
 

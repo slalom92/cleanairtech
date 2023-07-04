@@ -302,12 +302,12 @@
                         'top':0,
                         'left':0
                     });                    
-                    if($('.showAllLayer').css('display')!='none'){
-                        $('.showAllLayer').stop().hide();
-                        $('.dimmed2').stop().hide();
-                        $('.headerMene').removeClass('active');
-                        $('.sideBox').css('z-index',5);
-                    }
+                    // if($('.showAllLayer').css('display')!='none'){
+                    //     $('.showAllLayer').stop().hide();
+                    //     $('.dimmed2').stop().hide();
+                    //     $('.headerMene').removeClass('active');
+                    //     $('.sideBox').css('z-index',5);
+                    // }
                     $('.pcTopBtn').stop().show();
                 }else{
                     $('.headerNav').css({
@@ -473,6 +473,7 @@
 }
 // 문서 호출 시
 $(document).ready(function(){
+    $('body').prepend('<span class="dimmed2 pcOnly"></span>');
     //PC 사이즈
     winWidthPx = innerWidth;
     winTop = $(window).scrollTop();  
