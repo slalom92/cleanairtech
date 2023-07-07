@@ -325,14 +325,14 @@
 .tbody>tr>td.alignType4{text-align:center;}
 .tbody>tr>td.alignType5{text-align:center;}
 
-.colTable.tableStyle01{border-top:1px solid var(--blue_7);text-align:center;}
+.colTable.tableStyle01{border-top:1px solid var(--blue_7);text-align:center;background:var(--white_1)}
 .colTable.tableStyle01>thead th{height:33px;background:#e6eef5;}
 .colTable.tableStyle01 th, .colTable.tableStyle01 td{border:1px solid var(--gray_4);}
 .colTable.tableStyle01 td{height:33px;}
 .colTable.tableStyle01 .thead th{font-size:14px;font-weight:400;line-height:20px;color:var(--black_0);}
 .colTable.tableStyle01 .tbody td{font-size:14px;line-height:20px;color:var(--black_1);}
 
-.colTable.tableStyle02{border-top:1px solid var(--blue_7);text-align:center;}
+.colTable.tableStyle02{border-top:1px solid var(--blue_7);text-align:center;background:var(--white_1)}
 .colTable.tableStyle02>thead th{height:68px;background:#e6eef5;}
 .colTable.tableStyle02 th, .colTable.tableStyle02 td{border:1px solid var(--gray_4);}
 .colTable.tableStyle02 td{height:33px;}
@@ -409,7 +409,20 @@
 .locationArea{padding-bottom:12px;}
 
 
+/* lnb */
+.sub_3 .aside .asidelist .product>li:hover>a{color:var(--blue_7)}
+.sub_4 .aside .asidelist .product>li:hover>a{color:var(--blue_2)}
+.sub_5 .aside .asidelist .product>li:hover>a{color:var(--blue_3)}
+.sub_6 .aside .asidelist .product>li:hover>a{color:var(--blue_4)}
+.sub_7 .aside .asidelist .product>li:hover>a{color:var(--blue_5)}
+.sub_8 .aside .asidelist .product>li:hover>a{color:var(--blue_6)}
 
+.sub_3 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_7)}
+.sub_4 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_2)}
+.sub_5 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_3)}
+.sub_6 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_4)}
+.sub_7 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_5)}
+.sub_8 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_6)}
 
 
 
@@ -463,9 +476,10 @@
 .container1 .aside .asidelist.asidelistLast{padding-bottom:0;margin-bottom:0;border-bottom:none;}  /* 마지막 라인 제거*/
 .container1 .aside .asidelist>h3{margin-bottom:9px;font-size:18px;font-weight:400;letter-spacing:-0.18px;line-height:26px;color:var(--black_0);border-bottom:1px solid transparent}
 .container1 .aside .asidelist>h3.on{display:inline-block;border-bottom:1px solid var(--black_0);}
+.container1 .aside .asidelist>h3:hover{display:inline-block;border-bottom:1px solid var(--black_0);}
 /* .container1 .aside .product>li{display:flex;align-items:center;} */
 .container1 .aside .asidelist .product>li>a{font-size:14px;letter-spacing:-0.14px;}
-.container1 .aside .asidelist .product>li>a.numType1{display:inline-block;width:20px;height:16px;margin-right:8px;line-height:15px;text-align:center;border-radius:2px;background:#aaa;color:var(--white_1);font-size:11px;}
+.container1 .aside .asidelist .product>li>a.numType1{display:inline-block;width:20px;height:17px;margin-right:8px;line-height:17px;text-align:center;border-radius:2px;background:#aaa;color:var(--white_1);font-size:11px;}
 /* 박스안 숫자 텍스트 크기조절함! 폰트글꼴 자체크기 때문에 박스안에 숫자가 온전히 들어갈수가 없음 
 폰트사이즈 14px에서 11px로 조정함*/
 .container1 .aside .asidelist .product>li>a.textType8{line-height:26px;color:var(--black_1);}
@@ -534,10 +548,11 @@
 /* sub-03-01-02 contentBox  */
 /* 왼쪽 이미지 영역과 오른쪽 상품정보 영역 사이 gap 조정함  */
 .contentBox .productBox{display:flex;gap:18px;margin-bottom:100px;flex-wrap:wrap;}
-.contentBox .productBox .keyImg{width:434px;height:466px;}
+.contentBox .productBox .keyImg{width:432px;height:464px;border:1px solid var(--gray_4);border-radius:4px;background:var(--white_1);}
 .contentBox .productBox .dataArea{display:flex;gap:10px;}
-.contentBox .productBox .dataArea>ul>li{font-size:0;}
+.contentBox .productBox .dataArea>ul>li{border:1px solid var(--gray_4);border-radius:4px;background:var(--white_1);}
 .contentBox .productBox .dataArea>ul>li + li{margin-top:10px;}
+.contentBox .productBox .dataArea>ul>li a{display:block;width:56px;height:56px;}
 .contentBox .infoArea{box-sizing:border-box;min-width:0;flex-basis:480px;flex-grow:0;flex-shrink:0;padding:60px 35px 35px 35px;height:466px;border:1px solid var(--gray_4);border-radius:4px;background:var(--white_1);}
 .contentBox .infoArea .infoModel{display:flex;gap:22px;margin-bottom:20px;border-bottom:2px solid #f1f2f5;}
 .contentBox .infoArea .infoModel>p{padding-bottom:7px;font-size:16px;font-weight:400;line-height:24px;color:var(--black_0);}
