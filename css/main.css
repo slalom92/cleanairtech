@@ -4,7 +4,10 @@
 .contentMajor2 .swiperContolBox{display:flex;justify-content:center;align-items: center;padding:10px 0 0 0}
 .contentMajor2 .swiperContolBox .swiper-pagination{position:static}
 
-.contentMajor2 .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;}
+/* .contentMajor2 .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;} */
+
+.contentMajor2 .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:url(../images/main/dot1_off.svg) center no-repeat;opacity:1;border-radius:50%;}
+
 
 
 /* 1280px 이상 아이패드 세로기준 */
@@ -490,15 +493,19 @@
   .slideBox .swiperContolBox{display:flex;justify-content:center;align-items: center;padding:5.3vw 0 0 0}
   .slideBox .swiperContolBox .swiper-pagination{position:static}
   .slideBox{height: calc(43vw + 32px);}
-  .slideBox .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;}
-  .slideBox .swiper-pagination-bullet-active {opacity: 1;background:#007aff;}
+  /* .slideBox .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;}
+  .slideBox .swiper-pagination-bullet-active {opacity: 1;background:#007aff;} */
+  .slideBox .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:url(../images/main/dot1_off.svg) center no-repeat;opacity:1;border-radius:50%;}
+  .slideBox .swiper-pagination-bullet-active {opacity: 1;background:url(../images/main/dot1_on.svg) center no-repeat;}
   .slideBox .swiper-slide a>img{width:33vw}
   
   .slideBox.fullSize .swiperContolBox{display:flex;justify-content:center;align-items: center;padding:1.3vw 0 0 0}
   .slideBox.fullSize .swiperContolBox .swiper-pagination{position:static}
   .slideBox.fullSize{height: calc(48vw + 32px);}
-  .slideBox.fullSize .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;}
-  .slideBox.fullSize .swiper-pagination-bullet-active {opacity: 1;background:#007aff;}
+  /* .slideBox.fullSize .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:var(--gray_4);opacity:1;border-radius:50%;}
+  .slideBox.fullSize .swiper-pagination-bullet-active {opacity: 1;background:#007aff;} */
+  .slideBox.fullSize .swiper-pagination-bullet {display:inline-block;width:12px;height:12px;margin-right:4px;background:url(../images/main/dot1_off.svg) center no-repeat;opacity:1;border-radius:50%;}
+  .slideBox.fullSize .swiper-pagination-bullet-active {opacity: 1;background:url(../images/main/dot1_on.svg) center no-repeat;}
   .slideBox.fullSize .swiper-slide a>img{width:29vw}
   
   .section2{display:none}
