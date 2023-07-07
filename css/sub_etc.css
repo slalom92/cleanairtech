@@ -410,12 +410,12 @@
 
 
 /* lnb */
-.sub_3 .aside .asidelist .product>li:hover>a{color:var(--blue_7)}
-.sub_4 .aside .asidelist .product>li:hover>a{color:var(--blue_2)}
-.sub_5 .aside .asidelist .product>li:hover>a{color:var(--blue_3)}
-.sub_6 .aside .asidelist .product>li:hover>a{color:var(--blue_4)}
-.sub_7 .aside .asidelist .product>li:hover>a{color:var(--blue_5)}
-.sub_8 .aside .asidelist .product>li:hover>a{color:var(--blue_6)}
+.sub_3 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_7)}
+.sub_4 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_2)}
+.sub_5 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_3)}
+.sub_6 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_4)}
+.sub_7 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_5)}
+.sub_8 .aside .asidelist .product>li:hover>a:last-child{color:var(--blue_6)}
 
 .sub_3 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_7)}
 .sub_4 .aside .asidelist .product>li:hover>a.numType1{color:var(--white_1);background:var(--blue_2)}
