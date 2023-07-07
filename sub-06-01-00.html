@@ -54,7 +54,7 @@
                 <aside class="aside sub_06">
                     <h2>대기 자가측정</h2>
                     <div class="asidelist asidelistLast">
-                        <h3 class="on">자가측정의 대상 및 항목 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">자가측정의 대상 및 항목 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <!-- <a href="#" class="numType1">01</a>
@@ -63,6 +63,15 @@
                         </ul>
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 중앙 컨텐츠영역 -->
                 <section class="contentBox sub_05 sub_06">
                     <h2>자가측정 업무</h2>

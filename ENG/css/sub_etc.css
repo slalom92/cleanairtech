@@ -371,7 +371,7 @@
 /* sub-02-08-00 고객센터-카드결제 */
 .customerSection2 .boxType4{box-sizing:border-box;display:flex;justify-content:center;width:1280px;height:132px;padding:40px 0;margin-bottom:100px;border:1px solid var(--gray_4);border-radius:4px;background:var(--gray_7);}
 .customerSection2 .boxType4>p{position:relative;z-index:1;margin-right:17px;font-size:18px;font-weight:400;letter-spacing:-0.18px;line-height:26px;color:var(--black_0);}
-.customerSection2 .boxType4>p::before{content:'';display:inline-block;position:absolute;top:5px;left:-60px;z-index:1;width:40px;height:40px;margin-right:20px;background:url(../images/sub/sub_etc/icon26.png) no-repeat;}
+.customerSection2 .boxType4>p::before{content:'';display:inline-block;position:absolute;top:5px;left:-60px;z-index:1;width:40px;height:40px;margin-right:20px;background:url(../images/sub/sub_etc/icon26.svg) no-repeat;}
 .customerSection2 .boxType4 .searchType3{box-sizing:border-box;width:524px;height:52px;position:relative;z-index:1;}
 .customerSection2 .boxType4 .searchType3>input[type=text]{box-sizing:border-box;width:524px;height:52px;padding:0 10px;line-height:52px;vertical-align:middle;font-size:14px;border:1px solid var(--blue_1);border-radius:4px;outline:none;}
 .customerSection2 .boxType4 .searchType3>input[type=text]::placeholder{color:#ddd}

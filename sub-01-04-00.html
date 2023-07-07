@@ -17,6 +17,11 @@
 <!-- //header -->
 <header id="header">
     <? include "./include/header.html" ?>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#header").load("./include/header.html")
+        });
+    </script>
 </header>
 <!-- header// -->
 <!-- //contents -->
@@ -131,208 +136,26 @@
                 <h3 class="titleType1">실시간 거래현황</h3>
                 <p class="subcondescription"><span>&bull;</span>최근 3년간의 실제 거래내역이며, 매일 AM 01시에 최신 자료로 갱신 됩니다.</p>
                 <div class="transactionFlex">
-                    <ul class="transaction">
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성건설</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성준코스메</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성에스태크</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성도개발공</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성이엔지</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성엔텍</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">200CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성푸드</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성스</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성마켓코리</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성콤프렛서</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성자동화</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                    </ul>
-                    <ul class="transaction">
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성건설</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성준코스메</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성에스태크</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성도개발공</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성이엔지</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성엔텍</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">200CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성푸드</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성스</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성마켓코리</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성콤프렛서</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성자동화</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                    </ul>
-                    <ul class="transaction">
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성건설</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성준코스메</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성에스태크</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성도개발공</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성이엔지</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성엔텍</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">200CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성철도공사</span>
-                            <span class="mlauto">25CMM x 3대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성푸드</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-20</span>
-                            <span>삼성스</span>
-                            <span class="mlauto">20CMM x 2대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성마켓코리</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성콤프렛서</span>
-                            <span class="mlauto">80CMM x 10대</span>
-                        </li>
-                        <li>
-                            <span class="mr32">2022-12-19</span>
-                            <span>삼성자동화</span>
-                            <span class="mlauto">25CMM x 13대</span>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="showHere show1">
+                        <ul class="transaction" id="list_1">
+                        </ul>
+                    </div>
+                    <div class="showHere show2">
+                        <ul class="transaction" id="list_2">
+                        </ul>
+                    </div>
+                    <div class="showHere show3">
+                        <ul class="transaction" id="list_3">
+                        </ul>
+                    </div>
+                </div>                               
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('#list_1').load('./sub-01-04-00_list_1.html');
+                        $('#list_2').load('./sub-01-04-00_list_2.html');
+                        $('#list_3').load('./sub-01-04-00_list_3.html');
+                    });
+                </script>
                 <div class="subBtn2">
                     <h3 class="titleType1">시공사례</h3>
                     <a href="#" class="pcOnly">더보기&#43;</a>
@@ -440,6 +263,12 @@
 <!-- //footer -->
 <footer id="footer">
 <? include "./include/footer.html" ?>  
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#footer").load("./include/footer.html")
+    });
+</script>
 </footer>
 <!-- footer// -->
 </body>

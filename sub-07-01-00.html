@@ -54,7 +54,7 @@
                 <aside class="aside sub_07">
                     <h2 class="mb40">유해·위험방지<br/> 계획서</h2>
                     <div class="asidelist asidelistLast">
-                        <h3 class="on">계획서의 제출대상 사업장 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">계획서의 제출대상 사업장 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <!-- <a href="#" class="numType1">01</a>
@@ -63,6 +63,15 @@
                         </ul>
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 중앙 컨텐츠영역 -->
                 <section class="contentBox sub_05 sub_07">
                     <h2>유해·위험방지 계획서 업무</h2>

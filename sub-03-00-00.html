@@ -45,14 +45,14 @@
                 <aside class="aside">
                     <h2>집진기</h2>
                     <div class="asidelist">
-                        <h3 class="on">분진 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">분진 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
-                                <a href="#" class="numType1">01</a>
+                                <a href="#" class="numType1 on">01</a>
                                 <a href="#" class="textType8">스마트 나노 집진기</a>
                             </li>
                             <li>
-                                <a href="#" class="numType1 on">02</a>
+                                <a href="#" class="numType1">02</a>
                                 <a href="#" class="textType8 on">에어펄스 집진기</a>
                             </li>
                             <li>
@@ -102,7 +102,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>퓸 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">퓸 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">14</a>
@@ -127,7 +127,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>오일미스트 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">오일미스트 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">19</a>
@@ -144,7 +144,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>유기화합물·악취 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">유기화합물·악취 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">22</a>
@@ -161,7 +161,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>특수작업용 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">특수작업용 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">25</a>
@@ -186,7 +186,7 @@
                         </ul>
                     </div>
                     <div class="asidelist asidelistLast">
-                        <h3>기타 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">기타 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">30</a>
@@ -199,6 +199,15 @@
                         </ul>
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 중앙 상품영역 -->
                 <section class="contentBox">
                     <!-- 검색창영역 -->

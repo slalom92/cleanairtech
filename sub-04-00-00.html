@@ -16,11 +16,11 @@
 <!-- //header -->
 <header id="header">
     <? include "./include/header.html" ?>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function(){
            $("#header").load("./include/header.html")
         });
-    </script> -->
+    </script>
 </header>
 <!-- header// -->
 <!-- //contents -->
@@ -50,7 +50,7 @@
                 <aside class="aside sub_04">
                     <h2>대기환경플랜트</h2>
                     <div class="asidelist">
-                        <h3 class="on">함진가스 집진설비 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">함진가스 집진설비 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">01</a>
@@ -87,7 +87,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>유기화합물·악취 제거설비 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">유기화합물·악취 제거설비 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">14</a>
@@ -104,7 +104,7 @@
                         </ul>
                     </div>
                     <div class="asidelist asidelistLast">
-                        <h3>오일미스트 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">오일미스트 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">19</a>
@@ -112,7 +112,16 @@
                             </li>
                         </ul>
                     </div>
-                </aside>
+                </aside>                
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.asidelist>h3>a').bind('click',function(){
+                            $('.asidelist>h3').removeClass('on');
+                            $(this).parent().addClass('on');
+                            return false;
+                        });
+                    });
+                    </script>
                 <!-- 중앙 상품영역 -->
                 <section class="contentBox">
                     <!-- 검색창영역 -->
@@ -501,11 +510,11 @@
 <!-- //footer -->
 <footer id="footer">
 <? include "./include/footer.html" ?>  
-<!-- <script type="text/javascript">
+<script type="text/javascript">
         $(document).ready(function(){
            $("#footer").load("./include/footer.html")
         });
-    </script> -->
+    </script>
 </footer>
 <!-- footer// -->
 </body>

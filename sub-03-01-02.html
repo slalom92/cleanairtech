@@ -84,7 +84,7 @@
                 <aside class="aside">
                     <h2>집진기</h2>
                     <div class="asidelist">
-                        <h3 class="on">분진 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">분진 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">01</a>
@@ -141,7 +141,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>퓸 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">퓸 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">14</a>
@@ -166,7 +166,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>오일미스트 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">오일미스트 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">19</a>
@@ -183,7 +183,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>유기화합물·악취 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">유기화합물·악취 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">22</a>
@@ -200,7 +200,7 @@
                         </ul>
                     </div>
                     <div class="asidelist">
-                        <h3>특수작업용 집진기 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">특수작업용 집진기 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">25</a>
@@ -225,7 +225,7 @@
                         </ul>
                     </div>
                     <div class="asidelist asidelistLast">
-                        <h3>기타 <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">기타 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">30</a>
@@ -238,13 +238,20 @@
                         </ul>
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 제품 소개 -->
                 <section class="contentBox">
                     <section class="productBox">
                         <div class="dataArea">
                             <ul>
-                                <li><a href="#"><img src="./images/sub/sub_etc/sub-03-29.png" alt=""/></a></li>
-                                <li><a href="#"><img src="./images/sub/sub_etc/sub-03-29.png" alt=""/></a></li>
                                 <li><a href="#"><img src="./images/sub/sub_etc/sub-03-29.png" alt=""/></a></li>
                                 <li><a href="#"><img src="./images/sub/sub_etc/sub-03-29.png" alt=""/></a></li>
                                 <li><a href="#"><img src="./images/sub/sub_etc/sub-03-29.png" alt=""/></a></li>
@@ -295,10 +302,10 @@
                                 <img src="./images/sub/sub_etc/sub-03-30.png" alt=""/>
                             </div>
                             
-                            <p>제품사양</p>
+                            <p class="mt60">제품사양</p>
                             <!-- 제품사양 테이블 -->
                             <div class="scrollXArea">
-                                <table class="colTable tableStyle01">
+                                <table class="colTable tableStyle01 mb11">
                                     <caption>제품사양</caption>
                                     <colgroup>
                                         <col width="146px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" /><col width="86px" />

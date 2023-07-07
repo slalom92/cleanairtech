@@ -55,11 +55,20 @@
                 <aside class="aside sub_08">
                     <h2>정부지원사업</h2>
                     <div class="asidelist asidelistLast">
-                        <h3 class="on">클린사업장 조성지원사업 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><클린사업장 href="#">클린사업장 조성지원사업 <em class="gtTxt">&gt;</em></a></h3>
                         <div class="asidelist"></div>
-                        <h3>소규모 사업장 지원사업 <em class="gtTxt">&gt;</em></h3>                        
+                        <h3><a href="#">소규모 사업장 지원사업 <em class="gtTxt">&gt;</em></a></h3>                        
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 중앙 컨텐츠영역 -->
                 <section class="contentBox sub_05 sub_08">
                     <h2 class="mt0">클린사업장 조성지원사업 업무</h2>

@@ -1,0 +1,96 @@
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성건설</span>
+    <span class="mlauto">20CMM x 2대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성준코스메</span>
+    <span class="mlauto">25CMM x 3대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성에스태크</span>
+    <span class="mlauto">80CMM x 10대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성도개발공</span>
+    <span class="mlauto">20CMM x 2대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성이엔지</span>
+    <span class="mlauto">25CMM x 13대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성엔텍</span>
+    <span class="mlauto">80CMM x 10대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성철도공사</span>
+    <span class="mlauto">200CMM x 2대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성철도공사</span>
+    <span class="mlauto">25CMM x 3대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성푸드</span>
+    <span class="mlauto">80CMM x 10대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-20</span>
+    <span>삼성스</span>
+    <span class="mlauto">20CMM x 2대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-19</span>
+    <span>삼성마켓코리</span>
+    <span class="mlauto">25CMM x 13대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-19</span>
+    <span>삼성콤프렛서</span>
+    <span class="mlauto">80CMM x 10대</span>
+</li>
+<li>
+    <span class="mr32">2022-12-19</span>
+    <span>삼성자동화</span>
+    <span class="mlauto">25CMM x 13대</span>
+</li>
+<script type="text/javascript">
+    $(document).ready(function(){
+        setRollingBanner();
+    });
+    function setRollingBanner(){
+        const $wrap = $('.show2');
+        const $list = $('#list_2');
+        let wrapWidth = $wrap.height();
+        let listWidth = $list.height();
+        const speed = 20; //1초에 몇픽셀 이동하는지 설정
+
+        //리스트 복제
+        let $clone = $list.clone();
+        $wrap.append($clone);
+        flowBannerAct()
+
+        //배너 실행 함수
+        function flowBannerAct() {
+            //무한 반복을 위해 리스트를 복제 후 배너에 추가
+            if (listWidth < wrapWidth) {
+                const listCount = Math.ceil(wrapWidth * 2 / listWidth);
+                // console.log(listCount);
+                for (let i = 2; i < listCount; i++) {
+                    $clone = $clone.clone();
+                    $wrap.append($clone);
+                }
+            }
+            $wrap.find('.transaction').css({ 'animation': `${listWidth / speed}s linear infinite flowRolling` }); 
+        } 
+    }
+</script>

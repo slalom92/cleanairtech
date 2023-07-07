@@ -65,7 +65,7 @@
                 <aside class="aside sub_05">
                     <h2>인&middot;허가</h2>
                     <div class="asidelist">
-                        <h3 class="on">업무의 범위와 처리절차 <em class="gtTxt">&gt;</em></h3>
+                        <h3 class="on"><a href="#">업무의 범위와 처리절차 <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <!-- <a href="#" class="numType1">01</a>
@@ -74,7 +74,7 @@
                         </ul>
                     </div>
                     <div class="asidelist asidelistLast">
-                        <h3>배출시설의 분류 <em class="gtTxt">&gt;</em> <em class="gtTxt">&gt;</em></h3>
+                        <h3><a href="#">배출시설의 분류 <em class="gtTxt">&gt;</em> <em class="gtTxt">&gt;</em></a></h3>
                         <ul class="product">
                             <li>
                                 <a href="#" class="numType1">01</a>
@@ -95,6 +95,15 @@
                         </ul>
                     </div>
                 </aside>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.asidelist>h3>a').bind('click',function(){
+                        $('.asidelist>h3').removeClass('on');
+                        $(this).parent().addClass('on');
+                        return false;
+                    });
+                });
+                </script>
                 <!-- 중앙 컨텐츠영역 -->
                 <section class="contentBox1 sub_05">
                     <h2>설치허가 대상 특정대기유해물질 배출시설(제24조의2 관련)</h2>                    
