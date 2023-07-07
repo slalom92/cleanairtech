@@ -411,7 +411,7 @@ body{background-color:var(--white_1);}
 .subGnbLayer .categoryOne>ul{padding:16px 0 34px 0;}
 .subGnbLayer .categoryOne>ul>li{line-height:26px;}
 .subGnbLayer .categoryOne>ul>li>a{font-size:14px;color:var(--black_1);line-height:26px;}
-.subGnbLayer .categoryOne>ul>li>a>mark{display:inline-block;width:20px;height:16px;margin:0 5px 0 0;line-height:16px;text-align:center;color:var(--white_1);font-size:11px;background:#aaa;border-radius:2px;}
+.subGnbLayer .categoryOne>ul>li>a>mark{display:inline-block;width:20px;height:17px;margin:0 5px 0 0;line-height:16px;text-align:center;color:var(--white_1);font-size:11px;background:#aaa;border-radius:2px;}
 
 .subGnb_1 .flexBox{width:914px;height:425px}
 .subGnb_1 .bottomGnb::before{background:url(../images/common/img_tel_gnb_3.svg) 0 0 no-repeat;}
